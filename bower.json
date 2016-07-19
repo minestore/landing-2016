@@ -1,0 +1,11 @@
+{
+  "name": "minestore-new",
+  "version": "1.0.0",
+  "author": "ateliware",
+  "description": "Minestore New",
+  "license": "",
+  "dependencies": {
+    "foundation": "~5.4.7",
+    "motion-ui": "^1.2.2"
+  }
+}

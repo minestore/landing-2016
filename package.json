@@ -1,0 +1,11 @@
+{
+  "name": "minestore-new",
+  "version": "1.0.0",
+  "description": "Minestore New",
+  "main": "index.js",
+  "author": "ateliware",
+  "license": "",
+  "dependencies": {
+    "bower": "1.5.3"
+  }
+}
