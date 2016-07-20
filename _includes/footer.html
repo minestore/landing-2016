@@ -1,52 +1,75 @@
-<footer class="site-footer">
-
-  <div class="wrapper">
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="option-list">
-          <li><b>Blog</b></li>
-          <li>Checklist de um dono de e-commerce</li>
-          <li>5 estratégias para divulgar sua loja virtual</li>
-          <li>Como gerenciar uma loja virtual</li>
-          <li>6 Dicas para ter fotos incríveis</li>
-          <li>E-commerce é o canal ideal para moda</li>
+<footer>
+  <div class="row">
+    <nav>
+      <div  class="medium-3 columns">
+        <ul>
+          <li><h4><strong>Blog</strong></h4></li>
+          <li><a href="#">Checklist de um dono de e-commerce</a></li>
+          <li><a href="#">5 estratégias para divulgar sua loja virtual</a></li>
+          <li><a href="#">Como gerenciar uma loja virtual</a></li>
+          <li><a href="#">6 Dicas para ter fotos incríveis</a></li>
+          <li><a href="#">E-commerce é o canal ideal para moda</a></li>
         </ul>
       </div>
+    </nav>
 
-      <div class="footer-col footer-col-2">
-        <ul class="option-list">
-          <li><b>Empresa</b></li>
-          <li>Recursos</li>
-          <li>Comunidade minestore</li>
-          <li>Parceiros</li>
-          <li>Preços</li>
+    <nav>
+      <div class="medium-2 columns">
+        <ul>
+          <li><h4><strong>Empresa</strong></h4></li>
+          <li><a href="#">Recursos</a></li>
+          <li><a href="#">Comunidade minestore</a></li>
+          <li><a href="#">Parceiros</a></li>
+          <li><a href="#">Preços</a></li>
         </ul>
       </div>
+    </nav>
 
-      <div class="footer-col footer-col-3">
-        <ul class="option-list">
-          <li><b>Suporte</b></li>
-          <li>Ajuda</li>
-          <li>E-book</li>
-          <li><b>Conheça nossa solução enterprise</b></li>
+    <nav>
+      <div class="medium-3 columns">
+        <ul>
+          <li><h4><strong>Suporte</strong></h4></li>
+          <li><a href="#">Ajuda</a></li>
+          <li><a href="#">E-book</a></li>
+          <li><h4><strong>Conheça nossa solução enterprise</strong></h4></li>
           <li><a href="#">Saiba mais</a></li>
         </ul>
       </div>
+    </nav>
 
-      <div class="footer-col footer-col-4">
-        <ul class="option-list">
-          <li><b>Endereço</b></li>
-          <li>Av. Paraná, 202, Sala 403 CEP 80035-130, Curitiba, Paraná, Brasil</li>
-          <li><b>Telefone</b></li>
-          <li>+55 (41) 3010-2275</li>
-          <li><b>Contato</b></li>
-          <li>{{ site.email }}</li>
-          <li><b>Razão social</b></li>
-          <li>ateliware software ltda CNPJ: 14650011000121</li>
-        </ul>
-      </div>
-
+    <div class="medium-4 columns">
+      <address>
+        <h4><strong>Endereço</strong></h4></br>
+        Av. Paraná, 202, Sala 403 CEP 80035-130, Curitiba, Paraná, Brasil</br>
+        <h4><strong>Telefone</strong></h4></br>
+        +55 (41) 3010-2275</br>
+        <h4><strong>Contato</strong></h4></br>
+        {{ site.email }}</br>
+        <h4><strong>Razão social</strong></h4></br>
+        ateliware software ltda CNPJ: 14650011000121</br>
+      </address>
+      <ul>
+      </ul>
+    </div>
   </div>
 
+  <div class="medium-12 text-center columns">
+    <address>
+      <h4><strong>Endereço</strong></h4></br>
+      Av. Paraná, 202, Sala 403 CEP 80035-130, Curitiba, Paraná, Brasil</br>
+      <h4><strong>Telefone</strong></h4></br>
+      +55 (41) 3010-2275</br>
+      <h4><strong>Contato</strong></h4></br>
+      {{ site.email }}</br>
+      <h4><strong>Razão social</strong></h4></br>
+      ateliware software ltda CNPJ: 14650011000121</br>
+    </address>
+    <ul>
+    </ul>
+  </div>
 </footer>
+
+<script src="{{ "/assets/vendor/jquery/dist/jquery.min.js" | prepend: site.baseurl }}"></script>
+<script src="{{ "/assets/vendor/what-input/what-input.min.js" | prepend: site.baseurl }}"></script>
+<script src="{{ "/assets/vendor/foundation-sites/dist/foundation.min.js" | prepend: site.baseurl }}"></script>
+<script src="{{ "/assets/js/main.js" | prepend: site.baseurl }}"></script>
