@@ -36,6 +36,7 @@
 
       <div class="footer-col footer-col-4">
         <ul class="option-list">
+        
           <li><b>Endereço</b></li>
           <li>Av. Paraná, 202, Sala 403 CEP 80035-130, Curitiba, Paraná, Brasil</li>
           <li><b>Telefone</b></li>
@@ -50,3 +51,12 @@
   </div>
 
 </footer>
+
+<script type="text/javascript" src="{{ "/assets/vendor/foudantion/js/foundation.min.js" | prepend: site.baseurl }}" ></script>
+<script>
+  $(document).foundation();
+  var link_tab = window.location.hash.substr(1);
+if(link_tab){
+    $('[data-tabs]').eq(0).foundation('selectTab', $('#'+link_tab));
+}
+</script>

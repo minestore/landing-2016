@@ -2,4 +2,4 @@ _site
 .sass-cache
 .jekyll-metadata
 _node_modules/
-assets/_components/
+assets/vendor/

@@ -13,8 +13,8 @@ url: "http://yourdomain.com"
 sass:
   load_paths:
     - assets/_sass
-    - assets/_components/foundation/scss
-    - assets/_components/motion-ui/src
+    - assets/vendor/foundation/scss
+    - assets/vendor/motion-ui/src
 
 # Build settings
 markdown: kramdown
