@@ -1,0 +1,384 @@
+---
+layout: default
+title: Recursos
+permalink: /recursos
+
+imgs_first_roll:
+ - title: Frame Black
+   archive: frame-black.jpg
+ - title: Frame Color
+   archive: frame-color.jpg
+ - title: Sapphire White
+   archive: sapphire-white.jpg
+ - title: Sapphire
+   archive: sapphire.jpg
+ - title: Opala Flowers
+   archive: opala-flowers.jpg
+ - title: Onyx Light
+   archive: onyx-light.jpg
+ - title: Leaf
+   archive: leaf.jpg
+ - title: City
+   archive: city.jpg
+
+imgs_second_roll:
+ - title: Frame Light
+   archive: frame-light.jpg
+ - title: Topaz
+   archive: topaz.jpg
+ - title: Sapphire Black
+   archive: sapphire-black.jpg
+ - title: Opala Light
+   archive: opala-light.jpg
+ - title: Opala Black
+   archive: opala-black.jpg
+ - title: Onyx
+   archive: onyx.jpg
+ - title: Crystal
+   archive: crystal.jpg
+
+---
+
+
+<section class="row">
+	<header class="text-center row">
+		<div class="large-6 columns">
+			<h1>Tire todas as suas dúvidas sobre a minestore</h1>
+		</div>
+	</header>
+
+	<div class="row">
+		<div class="large-3 columns sticky-container" data-sticky-container>
+			<nav class="columns sticky" data-sticky data-anchor="magellan-content" data-sticky-on="large" data-events="scroll">
+				<ul class="vertical menu" data-magellan>
+					<li><a href="#temas">Temas (templates)</a></li>
+					<li><a href="#recursos">Recursos ilimitados</a></li>
+					<li><a href="#customize">Customize o seu tema</a></li>
+					<li><a href="#gerenciamento">Gerenciamento da loja</a></li>
+					<li><a href="#mobile">Mobile</a></li>
+					<li><a href="#produtos">Produtos e estoque</a></li>
+					<li><a href="#pagamento">Pagamento</a></li>
+					<li><a href="#conteudo">Conteúdo e suporte</a></li>
+					<li><a href="#marketing">Marketing e promoções</a></li>
+					<li><a href="#dominio">Domínio</a></li>
+					<li><a href="#frete">Frete</a></li>
+				</ul>
+			</nav>
+		</div>
+
+		<div class="large-9 columns" id="magellan-content">
+			<div class="sections">
+				<section id="temas" data-magellan-target="temas">
+					<h2>Temas (templates)</h2>
+					<div class="row">
+						<div class="large-6 columns">
+							{% for img in page.imgs_first_roll %}
+								<h3>{{ img.title }}</h3>
+								<img src="{{ "/assets/img/" | prepend: site.baseurl }}{{ img.archive }}" alt="{{ img.title }}" />
+							{% endfor %}
+						</div>
+
+						<div class="large-6 columns">
+							{% for img in page.imgs_second_roll %}
+								<h3>{{ img.title }}</h3>
+								<img src="{{ "/assets/img/" | prepend: site.baseurl }}{{ img.archive }}" alt="{{ img.title }}" />
+							{% endfor %}
+						</div>
+					</div>
+				</section>
+
+				<section id="recursos" data-magellan-target="recursos">
+					<h2>Recursos ilimitados :))</h2>
+					<div class="row">
+						<div class="large-6 columns">
+							<h3>Sem limite de produtos</h3>
+							<p>
+								Você não precisa pagar mais se quiser cadastrar mais produtos – aqui, o cadastro de produtos é ilimitado!
+							</p>
+							<h3>Acessos ilimitados (de visitantes)</h3>
+							<p>
+								Pagar valores diferenciados de acordo com o número de acessos que sua loja recebe? Aqui, não tem dessas! Você não paga mensalidade e tem acessos ilimitados.
+							</p>
+						</div>
+
+						<div class="large-6 columns">
+							<h3>Sem limite de imagens</h3>
+							<p>
+								É possível cadastrar quantas fotos você quiser para cada produto – e você ainda pode editar as fotos na própria plataforma e ganhar tempo.
+							</p>
+						</div>
+					</div>
+				</section>
+
+				<section id="customize" data-magellan-target="customize">
+					<h2>Customize o seu tema:)</h2>
+					<div class="row">
+						<div class="large-6 columns">
+							<h3>Temas totalmente customizáveis</h3>
+							<p>
+								Sabemos como sua marca é importante – por isso, você pode customizar seu tema do jeito que preferir, sem precisar mexer no código.
+							</p>
+							<h3>Editor de conteúdo</h3>
+							<p>
+								Escreva e reescreva quando precisar o Sobre e os Termos de Uso da sua loja virtual, tudo pela plataforma – sem precisar alterar nada no código!
+							</p>
+						</div>
+
+						<div class="large-6 columns">
+							<h3>Editor de HTML</h3>
+							<p>
+								Desenvolvemos material exclusivo para ajudar os lojistas a aumentarem as vendas e administrarem cada vez melhor a loja virtual.
+							</p>
+						</div>
+					</div>
+				</section>
+
+				<section id="gerenciamento" data-magellan-target="gerenciamento">
+					<h2>Gerenciamento da loja :)</h2>
+					<div class="row">
+						<div class="large-6 columns">
+							<h3>Gerenciamento de pedidos</h3>
+							<p>
+								Em nosso dashboard, você gerencia todos os pedidos da sua loja – feitos, pagos, a enviar, enviados… tudo de forma rápida e fácil.
+							</p>
+							<h3>Categorias</h3>
+							<p>
+								Organize sua loja  criando categorias e subcategorias para facilitar a vida do seu cliente na hora de encontrar o produto.
+							</p>
+							<h3>Atualizações constantes</h3>
+							<p>
+								Estamos melhorando a plataforma e os serviços o tempo todo – e você sempre é avisado. Suas necessidades guiam todas as mudanças que fazemos por aqui.
+							</p>
+						</div>
+
+						<div class="large-6 columns">
+							<h3>Rastreio pelo Google Analytics</h3>
+							<p>
+								Insira o código de rastreio do Analytics na sua loja virtual e acompanhe o movimento de clientes, para saber o que anda bem (e o que pode melhorar!)
+							</p>
+							<h3>Relatórios</h3>
+							<p>
+								Oferecemos vários tipos de relatórios diferentes, que permitem que a sua equipe acompanhe todas as entradas e saídas de produtos do seu e-commerce.
+							</p>
+						</div>
+					</div>
+				</section>
+
+				<section id="mobile" data-magellan-target="mobile">
+					<h2>Mobile</h2>
+					<div class="row">
+						<div class="large-6 columns">
+							<h3>Versão mobile</h3>
+							<p>
+								Seus clientes poderão navegar tranquilamente na sua loja pelo celular (e suas vendas aumentarão bastante com isso!).
+							</p>
+						</div>
+
+						<div class="large-6 columns">
+							<h3>Temas responsivos</h3>
+							<p>
+								Sua loja ficará linda e perfeitamente navegável no computador, celular ou tablet – assim, você vai vender muito mais.
+							</p>
+						</div>
+					</div>
+				</section>
+
+				<section id="produtos" data-magellan-target="produtos">
+					<h2>Produtos e estoque</h2>
+					<div class="row">
+						<div class="large-6 columns">
+							<h3>Gerenciamento de estoque</h3>
+							<p>
+								Manter seu estoque organizado e visualizar rapidamente quais produtos estão esgotando (ou não) é muito mais fácil.
+							</p>
+							<h3>Upload ilimitado de imagens</h3>
+							<p>
+								Quantas fotos são necessárias para ilustrar o seu produto? Independente do número, fique tranquilo: aqui você pode fazer o upload de quantas imagens quiser, sem pagar a mais por isso.
+							</p>
+							<h3>Redimensionamento das imagens para se adequar ao tema</h3>
+							<p>
+								Escolha o template que mais combina com a sua loja virtual sem preocupação. Os nossos temas já estão preparados para redimensionar automaticamente todas as imagens dos seus produtos.
+							</p>
+						</div>
+
+						<div class="large-6 columns">
+							<h3>Produtos com Variações</h3>
+							<p>
+								Você pode cadastrar variações nos seus produtos, como cor e tamanho. Além disso, tem a possibilidade de mudar o preço, as dimensões dos produtos e alterar a visibilidade de cada variação.
+							</p>
+							<h3>Tags para SEO</h3>
+							<p>
+								Um bom trabalho de SEO é fundamental para que o seu e-commerce seja encontrado nos mecanismos de busca. Na minestore,você pode adicionar tags que facilitam essa atividade.
+							</p>
+							<h3>Vídeo na descrição do produto</h3>
+							<p>
+								Vídeos que mostram o produto em uso ajudam na conversão das lojas virtuais. Por aqui, você pode fazer o upload dos vídeos que desejar e vender ainda mais.
+							</p>
+						</div>
+					</div>
+				</section>
+
+				<section id="pagamento" data-magellan-target="pagamento">
+					<h2>Pagamento</h2>
+					<div class="row">
+						<div class="large-6 columns">
+							<h3>Checkout transparente</h3>
+							<p>
+								Quando faz a compra, seu cliente não precisa sair da sua loja para efetuar o pagamento. Parece pouco, mas isso garante muito mais conversão e vendas.
+							</p>
+							<h3>Cartão de crédito</h3>
+							<p>
+								Oferecemos a possibilidade dos seus clientes fazerem pagamentos com as seguintes bandeiras de cartão de crédito: Visa, Mastercard, American Express, Aura, Diners Club, Hipercard e Elo, por meio das nossas parcerias com o PagSeguro, Moip e BCash.
+							</p>
+							<h3>MOIP</h3>
+							<p>
+								Mais de 50 mil empresas brasileiras oferecem a possibilidade de pagamento via Moip. Para trazer mais uma alternativa para os seus lojistas, a minestore também disponibiliza essa ferramenta.
+							</p>
+						</div>
+
+						<div class="large-6 columns">
+							<h3>Boleto</h3>
+							<p>
+								Ofereça o boleto bancário como alternativa de pagamentos para os compradores da sua loja virtual.
+							</p>
+							<h3>PagSeguro</h3>
+							<p>
+								O pagamento com Pagseguro é uma outra alternativa que a minestore oferece para os seus lojistas. A ferramenta oferece mais de 25 opções de cobranças diferentes, entre cartões de débito, crédito e boletos bancários.
+							</p>
+							<h3>Bcash</h3>
+							<p>
+								No total, mais de 40 mil lojas virtuais brasileiras têm o pagamento via BCash como opção. Pensando em trazer mais uma alternativa para os lojistas, a minestore também oferece essa ferramenta.
+							</p>
+						</div>
+					</div>
+				</section>
+
+				<section id="conteudo" data-magellan-target="conteudo">
+					<h2>Conteúdo e suporte</h2>
+					<div class="row">
+						<div class="large-6 columns">
+							<h3>Blog</h3>
+							<p>
+								Nosso blog tem de tudo: desde dicas para montar sua loja virtual até casos inspiradores de outros lojistas que estão vendendo bastante.
+							</p>
+							<h3>Parceiros certificados</h3>
+							<p>
+								Selecionamos profissionais certificados para prestarem serviços de confecção de temas exclusivos para a sua loja virtual usando a minestore.
+							</p>
+							<h3>Suporte amigável e atencioso</h3>
+							<p>
+								Nossa equipe está disponível para ajudá-lo sempre que você tiver dúvidas, reclamações ou qualquer problema. Você também pode tirar suas dúvidas na nossa Central de ajuda.
+							</p>
+						</div>
+
+						<div class="large-6 columns">
+							<h3>Ebooks gratuitos</h3>
+							<p>
+								Desenvolvemos material exclusivo para ajudar os lojistas a aumentarem as vendas e administrarem cada vez melhor a loja virtual.
+							</p>
+							<h3>Otimizada para buscadores</h3>
+							<p>
+								Sabemos o quanto é importante que sua loja virtual seja encontrada nos mecanismos de busca e, por isso, facilitamos seu trabalho de SEO.
+							</p>
+							<h3>Área de suporte</h3>
+							<p>
+								Nossa área de suporte é extensa e detalhada, com vários artigos para te ajudar a montar e gerenciar sua loja virtual. Acesse: www.minestore.com.br/ajuda
+							</p>
+						</div>
+					</div>
+				</section>
+
+				<section id="marketing" data-magellan-target="marketing">
+					<h2>Marketing e promoções</h2>
+					<div class="row">
+						<div class="large-6 columns">
+							<h3>Redes sociais</h3>
+							<p>
+								Coloque os links para as redes sociais na sua loja virtual e fidelize seus clientes, mantendo contato pelas mídias sociais.
+							</p>
+							<h3>Promoções e descontos</h3>
+							<p>
+								Configure promoções e ofereça descontos de quanto quiser em produtos e categorias específicos, ou ainda por valor de pedido.
+							</p>
+							<h3>Cupom desconto</h3>
+							<p>
+								Nossa plataforma possibilita que você ofereça cupons de desconto para os seus consumidores.
+							</p>
+							<h3>Consultoria em Marketing Digital</h3>
+							<p>
+								Quer anunciar sua loja virtual com o Google Adwords ou Facebook Ads, mas não sabe como fazer isso? Podemos te dar uma ajuda :)
+							</p>
+						</div>
+
+						<div class="large-6 columns">
+							<h3>Otimização de SEO</h3>
+							<p>
+								Adicione tags aos seus produtos para colocá-los nos mecanismos de busca e garantir que seus clientes te encontrem.
+							</p>
+							<h3>Frete grátis</h3>
+							<p>
+								Deseja oferecer frete grátis para os seus consumidores? Na minestore isso é muito fácil de fazer.
+							</p>
+							<h3>Suporte para newsletter</h3>
+							<p>
+								Adicione uma caixa para coletar o e-mail dos seus consumidores. Dessa maneira, você pode enviar informativos com a sua ferramenta de newsletter favorita.
+							</p>
+						</div>
+					</div>
+				</section>
+
+				<section id="dominio" data-magellan-target="dominio">
+					<h2>Domínio</h2>
+					<div class="row">
+						<div class="large-6 columns">
+							<h3>Utilize seu domínio próprio</h3>
+							<p>
+								Você pode configurar o domínio próprio da sua loja ou usar o domínio da minestore sem custo algum.
+							</p>
+							<h3>Utilize o domínio da minestore</h3>
+							<p>
+								Se você não quiser um domínio próprio, pode utilizar gratuitamente a opção fornecida pela minestore. Exemplo: www.nomedasualoja.minestore.com.br.
+							</p>
+						</div>
+
+						<div class="large-6 columns">
+							<h3>Segurança na compra e venda</h3>
+							<p>
+								A minestore possui certificado SSL, o que garante segurança para você e seu cliente com dados criptografados.
+							</p>
+						</div>
+					</div>
+				</section>
+
+				<section id="frete" data-magellan-target="frete">
+					<h2>Frete</h2>
+					<div class="row">
+						<div class="large-6 columns">
+							<h3>Integração com os Correios</h3>
+							<p>
+								A minestore conta com uma integração com os Correios. Dessa maneira, você pode facilmente encaminhar seus produtos via SEDEX ou PAC.
+							</p>
+							<h3>E-Sedex</h3>
+							<p>
+								Oferecemos a integração com o E-Sedex, ideal para as empresas que têm grandes volumes de venda.
+							</p>
+						</div>
+
+						<div class="large-6 columns">
+							<h3>Cálculo de frete automático no carrinho de compras</h3>
+							<p>
+								Seu cliente só precisa colocar o CEP e pronto: nossa plataforma calcula automaticamente o valor do frete.
+							</p>
+							<h3>Frete grátis</h3>
+							<p>
+								Deseja oferecer frete grátis para os seus consumidores? Na minestore isso é muito fácil de fazer.
+							</p>
+						</div>
+					</div>
+				</section>
+
+			</div>
+		</div>
+	</div>
+
+</section>
