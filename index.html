@@ -2,27 +2,7 @@
 layout: default
 ---
 
-<!--<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>-->
-
-<!-- HERO --> 
+<!-- HERO -->
 <section>
   <div class="row">
     <div class="hero-wrapper">
@@ -37,7 +17,6 @@ layout: default
     </div>
   </div>
 </section>
-
 
 <!-- STEPS -->
 <div class="position">
@@ -84,12 +63,9 @@ layout: default
             <h3>Eles já testaram, aprovaram e querem compartilhar essa experiência com você.</h3>
           </header>
         </div>
-        <div class="row">
-          <p>Carolina, da Pendura Lá</p>
-          <h4>
-            Nós testamos umas 4 ou 5 ferramentas antes de colocar a loja no ar. Nenhuma delas se encaixou tão bem com nosso negócio como a minestore. Adoramos a facilidade de cadastrar produtos, gerenciar pedidos e a possibilidade de personalizar nossa loja do nosso jeitinho.
-          </h4>
-        </div>
+
+        {% include slider.html slider_posts=site.categories.landing-home %}
+
         <div class="box-midias row">
             <div class="large-16 columns">
               <h5 class="text-center">E a mídia também anda falando sobre nós! </h5>
@@ -109,7 +85,6 @@ layout: default
       </div>
     </section>
   </div>
-</div>
   <section class="box-comunidade row">
     <header class="text-center">
       <h2>Somos uma comunidade de marcas independentes </h2>
@@ -150,12 +125,11 @@ layout: default
   </section>
 
   <!-- E-commerce no ar -->
-
   <section class="row expanded intro-course-callout">
     <div class="large-11 large-push-5 columns banner-info">
       <header>
         <h2>Vamos colocar o seu e-commerce no ar juntos!</h2>
-        <h3>Ter um e-commerce requer dedicação e estudo. Mas, fique tranquilo, 
+        <h3>Ter um e-commerce requer dedicação e estudo. Mas, fique tranquilo,
         porque nós vamos te oferecer a base necessária para que a sua loja seja um sucesso! </h3>
       </header>
       <div>
@@ -170,41 +144,40 @@ layout: default
   </section>
 
   <!--Funcionalidades-->
-
   <section class="box-funcionalidades">
     <header class="text-center">
       <h2>Todas as nossas funcionalidades são pensadas em você</h2>
-      <h3>Elas garantem que você dedique o seu tempo ao que realmente 
+      <h3>Elas garantem que você dedique o seu tempo ao que realmente
           importa: criar estratégias para vender.</h3>
     </header>
     <div class="row">
       <div class="large-4 columns">
         <h4>Gerenciamento sem complicações</h4>
-        <p>Você não precisa ser um especialista para usar a nossa plataforma. Ela foi criada para ser fácil de entender e simples de gerenciar.</p> 
+        <p>Você não precisa ser um especialista para usar a nossa plataforma. Ela foi criada para ser fácil de entender e simples de gerenciar.</p>
       </div>
       <div class="large-4 columns">
         <h4>Design diferenciado</h4>
-        <p>Acreditamos que o design é uma das chaves para um e-commerce de sucesso. Por isso, fazemos questão de caprichar!</p> 
+        <p>Acreditamos que o design é uma das chaves para um e-commerce de sucesso. Por isso, fazemos questão de caprichar!</p>
       </div>
       <div class="large-4 columns">
         <h4>Templates exclusivos e customizáveis</h4>
-        <p>Disponibilizamos uma variedade de recursos, para que sua loja seja como você sempre sonhou.</p> 
+        <p>Disponibilizamos uma variedade de recursos, para que sua loja seja como você sempre sonhou.</p>
       </div>
     </div>
     <div class="row">
       <div class="large-4 columns">
         <h4>Suporte amigável sempre que for preciso</h4>
-        <p>Alguma dúvida surgiu no meio do processo? Nossa equipe está sempre disponível para te ajudar no que for necessário.</p> 
-      </div>    
+        <p>Alguma dúvida surgiu no meio do processo? Nossa equipe está sempre disponível para te ajudar no que for necessário.</p>
+      </div>
       <div class="large-4 columns">
         <h4>Pageview ilimitado</h4>
-        <p>Pode divulgar a sua loja à vontade e fazer com que muita gente entre no seu site. Por aqui, não vamos cobrar os pageviews.</p> 
-      </div> 
+        <p>Pode divulgar a sua loja à vontade e fazer com que muita gente entre no seu site. Por aqui, não vamos cobrar os pageviews.</p>
+      </div>
       <div class="large-4 columns">
         <h4>Produto Ilimitado</h4>
-        <p>Você tem muita coisa pra vender? Então aproveite para colocar todos esses itens na internet sem se preocupar em pagar a mais por isso.</p> 
-      </div>  
+        <p>Você tem muita coisa pra vender? Então aproveite para colocar todos esses itens na internet sem se preocupar em pagar a mais por isso.</p>
+      </div>
     </div>
   </section>
 
-    {% include box-cta.html %}
+  {% include box-cta.html %}

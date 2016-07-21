@@ -1,0 +1,20 @@
+<div class="row">
+  <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
+    <ul class="orbit-container">
+      {% for post in include.slider_posts %}
+        {{ post.content }}
+      {% endfor %}
+    </ul>
+    <nav class="orbit-bullets">
+      {% assign position = 0 %}
+      {% for post in include.slider_posts %}
+        {% if position == 0 %}
+          <button class="is-active" data-slide="{{ position }}"></button>
+        {% else %}
+          <button data-slide="{{ position }}"></button>
+        {% endif %}
+        {% assign position = position | plus: 1 %}
+      {% endfor %}
+    </nav>
+  </div>
+</div>
