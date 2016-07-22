@@ -2,27 +2,7 @@
 layout: home
 ---
 
-<!--<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>-->
-
-<!-- HERO --> 
+<!-- HERO -->
 <section>
   <div class="row">
     <div class="hero-wrapper">
@@ -37,7 +17,6 @@ layout: home
     </div>
   </div>
 </section>
-
 
 <!-- STEPS -->
 <div class="position-relative">
@@ -102,13 +81,9 @@ layout: home
             <h3>Eles já testaram, aprovaram e querem compartilhar essa experiência com você.</h3>
           </header>
         </div>
-        <div class="row">
-          <img class="icon-product" src="{{ "/assets/img/avatar-carolina.png" | prepend: site.baseurl }}" alt="minestore loja virtual">
-          <span>Carolina, da Pendura Lá</span>
-          <h4>
-            Nós testamos umas 4 ou 5 ferramentas antes de colocar a loja no ar. Nenhuma delas se encaixou tão bem com nosso negócio como a minestore. Adoramos a facilidade de cadastrar produtos, gerenciar pedidos e a possibilidade de personalizar nossa loja do nosso jeitinho.
-          </h4>
-        </div>
+        
+        {% include slider.html slider_posts=site.categories.landing-home %}
+
         <div class="box-midias row">
             <div class="large-16 columns">
               <h5 class="text-center">E a mídia também anda falando sobre nós! </h5>
@@ -128,7 +103,6 @@ layout: home
       </div>
     </section>
   </div>
-</div>
   <section class="box-comunidade row">
     <header class="large-10 columns text-center  large-centered">
       <h2>Somos uma comunidade <br>de marcas independentes </h2>
@@ -211,27 +185,7 @@ layout: home
               </div>
             </div>
         </div>
-      </div>
-       <!-- <div class="row">
-          <div class="box-ecommerce large-8 columns">
-              <header>
-                <h2>Vamos colocar o seu e-commerce no ar juntos!</h2>
-                <h3>Ter um e-commerce requer dedicação e estudo. Mas, fique tranquilo, 
-                porque nós vamos te oferecer a base necessária para que a sua loja seja um sucesso! </h3>
-              </header>
-              <div>
-                <h4>Materiais sobre e-commerce</h4>
-                <p>Estudar o universo do e-commerce é importante para ter uma loja virtual de sucesso. Aqui na minestore nós produzimos artigos, ebooks e uma série de materiais para facilitar a sua vida. </p>
-              </div>
-              <div>
-                <h4>Conte conosco sempre que precisar</h4>
-                <p>Surgiu alguma dúvida no meio do processo? Relaxa, a nossa equipe está pronta para te ajudar no que for necessário para você ter uma loja sensacional! </p>
-              </div>
-            
-          </div>
-          <div class="bg-mockup large-4 large-push-4 columns"></div>
-        </div>
-    </div>-->
+      </div> 
   </section>
 
   <!--Funcionalidades-->
@@ -302,4 +256,4 @@ layout: home
     </div>
   </section>
 
-    {% include box-cta.html %}
+  {% include box-cta.html %}
