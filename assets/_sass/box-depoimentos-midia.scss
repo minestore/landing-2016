@@ -16,15 +16,42 @@
 	.box-depoimentos header {
 		margin: 8rem 0;
 	}
+	.box-depoimentos h4 {
+		font-weight: $extra-light;
+		font-style: italic;
+		padding-top: 2rem;
+		padding-left: 6rem;
+	}
+	.box-depoimentos h4:before, .box-depoimentos h4:after {
+		content: ' ';
+		background: url(../img/aspas.png) no-repeat top center; 
+		display: inline-block;
+		height: 50px;
+		width: 43px;
+	}
+	.box-depoimentos h4:after {
+		 -ms-transform: rotate(180deg); /* IE 9 */
+    	-webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+    	transform: rotate(180deg);
+	}
+	.box-depoimentos span {
+		font-size: 2rem;
+		padding:1rem;
+		color:#666;
+	}
 	
 /**
  * Box Midia
  */
 .box-midias {
-	padding:5rem;
+	border-top:1px solid #CCC;
+	margin-top: 10rem;
+	padding-bottom: 5rem;
 }
 	.box-midias h5 {
 		padding: 5rem;
+		color:$pink;
+		font-size: 2.5rem;
 	}
 	.img-midias {
 		list-style: none;

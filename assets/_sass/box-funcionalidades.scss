@@ -7,10 +7,18 @@
 	position: relative;
     z-index: 999999;
     margin-top: 40rem;
+    padding-bottom: 8rem;
  }
 	 .box-funcionalidades h2 {
 	 	color:$pink;
 	 }
 	 .bbox-funcionalidades h3 {
 	 	color:$grey;
+	 }
+	 .box-funcionalidades h4 {
+	 	font-size: 1rem;
+	 	font-weight: bold;
+	 }
+	 .box-funcionalidades header {
+	 	padding-bottom: 5rem;
 	 }

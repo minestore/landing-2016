@@ -27,29 +27,37 @@
 			margin-top: 3rem;
 			overflow: hidden;
 		}
-		.box-steps h4 {
-			font-size: 1rem;
-		}
-			.box-steps i {
+			.box-steps h4 {
+				font-size: 1rem;
+				padding-top: 1rem;
+			}
+			.box-steps span {
 				color:#ccc;
 				font-size:5rem;
 				float: left;
 				min-height: 15rem;
-				width: 20%;
+				font-weight: $medium;
+				padding: 3rem 0;
 			}		
-				.box-steps i:after {
+				/*.box-steps .border:after {
 					color:$grey-color-light;
 					content:' ';
 					border-left: 1px solid #ccc;
-					margin:0 20%;
-				}
+				}*/
 				.box-steps div {
 					background: $white;
 					margin:1rem;
 				    position: relative;
 				    z-index: 99999;
+				    padding: 1rem;
+				}
+				.box-steps p {
+					font-size: 0.75rem;
 				}
 				.icon-product {
 					height:82px;
 					width: 78px;
+				}
+				.box-steps .columns:last-child {
+					float: left;
 				}

@@ -1,9 +1,93 @@
 /**
  * Box Comunidade
  */
+
+ 
 .box-comunidade {
 	padding: 5rem 0;
 }
 	.box-comunidade h2 {
 		color:$pink;
+	}
+	.box-comunidade h3:after {
+		content: ' ';
+		display: block;
+		border-bottom: 1px solid #ccc;
+		width: 20%;
+		margin:0 auto;
+		padding: 1rem;
+	}
+	.box-comunidade h4 {
+		font-size: 1rem;
+		padding-top: 1rem;
+		padding-bottom: 3rem ;
+	}
+	.box-comunidade .tabs {
+		border-bottom: 1px solid #ccc;
+	}	
+.tabs, .tabs-content {
+	padding-bottom: 5rem;
+}
+		.tabs {
+			padding: 0 5rem;
+		}
+		.tabs-title > a {
+			text-align: center;
+			line-height: 18px;
+			font-size: 1rem;
+			padding: 2rem 0rem 2rem 6rem;
+			color:$grey-color
+		}
+		.tabs, .tabs-content {
+			border-bottom: inherit;
+			border-top:none;
+			border-right:none;
+			border-left:none;
+		}
+		.tabs-title > a:focus, .tabs-title > a[aria-selected='true'] {
+			background: inherit;
+			color:$pink
+		}
+		.tabs-panel.is-active {
+			overflow: hidden;
+			margin-top: 3rem;
+		}
+
+	.box-nichos picture {
+		margin-right: 3rem;
+		position: relative;
+		z-index: 9997;
+		padding-bottom: 5rem;
+	}		
+	.box-nichos picture:before {
+		content: ' ';
+	    display: block;
+	    height: 567px;
+	    width: 576px;
+	    position: relative;
+	    z-index: 9997;
+	    left: 80px;
+	    top: -69px;
+	    padding-bottom: 8px;
+	}
+		.box-nichos:nth-child(2) picture:before {
+			background: #fff2f8;
+		}
+	.box-nichos img {
+		position: absolute;
+	    z-index: 9999;
+	    top: 0;
+	    padding-top: 1rem;
+	}
+	.box-nichos h4 {
+		color:#ffcccc;
+		font-size: 3rem;
+		font-weight: $extra-light;
+		text-transform: uppercase;
+		padding-top:8rem;
+		padding-bottom: inherit;
+	}
+	.box-nichos p, .box-nichos h4 {
+		position: relative;
+		z-index: 9999;
 	}

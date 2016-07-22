@@ -2,7 +2,7 @@
  * Home
  */ 
 
- .btn-cta {
+ .btn-cta-small {
 	background: $pink;
 	border-radius: 3px;
 	display: block;
@@ -20,13 +20,40 @@
     border: solid 1px #fff;
  }
 
+.form-cta .input {
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-top-right-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-topright: 3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    padding: 1.8rem;
+    margin:0;
+    font-weight: $medium;
+    color:#b9b9b9;
+    height: 70px;
+}
+.form-cta .btn-cta {
+    width: 25rem;
+    font-weight: $medium;
+    font-size: 1.2rem;
+    background: $pink;
+    height:70px;
+    text-transform: capitalize;
+    -webkit-border-bottom-right-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -moz-border-radius-bottomright: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
  /**
  * Titulos
  */ 
 
  h1  { font-weight: $medium; }
- h2  { font-weight: $extra-light; }
+ h2, h5 { font-weight: $extra-light; }
  h3  { font-weight: $medium; font-size: 1rem; }
- h4  { font-weight: $medium }
- p   { font-weight:  }
+ h4  { font-weight: $medium; }
+ 
  
