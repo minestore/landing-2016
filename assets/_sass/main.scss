@@ -15,13 +15,15 @@ $brand-color:      #2a7ae2;
 
 // Font weights
 
-$light: 100;
+$extra-light: 200;
+$light: 300;
+$medium: 500;
 $regular: 400;
 $bold: 600;
 
 // Colors
 $grey-color:   	   #828282;
-$pink: 	   		   #ff3366;
+$pink: 	   		   #ee2778;
 $white:			   #fff;
 $grey:			   #333;
 $black:			   #000;
@@ -46,8 +48,6 @@ $on-laptop:        800px;
 @import 'settings';
 @import 'foundation';
 @import 'motion-ui';
-@import 'base';
-@import 'layout';
 
 @include foundation-global-styles;
 @include foundation-grid;
@@ -87,4 +87,15 @@ $on-laptop:        800px;
 
 @include motion-ui-transitions;
 @include motion-ui-animations;
+
+@import 'base';
+@import 'layout';
+@import 'header';
+@import 'box-steps';
+@import 'box-depoimentos-midia';
+@import 'box-comunidade';
+@import 'box-ecommerce';
+@import 'box-funcionalidades';
+@import 'box-cta';
+
 

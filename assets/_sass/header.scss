@@ -1,0 +1,49 @@
+/**
+ * Home
+ */
+
+
+.tp-header {
+    padding-top: 1rem;
+}
+.bg-home {
+	background: url(../img/banner-hero.jpg) no-repeat top center; 
+	font-style: normal;
+}
+.tp-header {
+
+}	
+	.logo-mine {
+		display: block;
+		height:52px;
+		width:181px;
+		margin-top:10px;
+	}
+	.navigation {
+		list-style: none;
+	}
+		.navigation > li {
+			display: table-cell;
+			vertical-align: middle;
+		}
+		.navigation li > a{
+			color: $white;
+			text-transform: capitalize;
+			padding: 1rem;
+			font-weight: $medium;
+		}
+
+/**
+ * Hero
+ */
+
+.hero-wrapper {
+	color:$white;
+	
+}		
+	.hero-wrapper h2 {
+		font-size:  1.5rem;
+	}
+	.title-hero {
+		margin: 15rem 0 11rem 0;
+	}

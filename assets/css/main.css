@@ -5,317 +5,6 @@
  * foundation.zurb.com
  * Licensed under MIT Open Source
  */
-/**
- * Reset some basic elements
- */
-body, h1, h2, h3, h4, h5, h6,
-p, blockquote, pre, hr,
-dl, dd, ol, ul, figure {
-  margin: 0;
-  padding: 0; }
-
-/**
- * Basic styling
- */
-body {
-  font: 400 16px/1.5 "Gotham SSm A", "Gotham SSm B", Arial, sans-serif;
-  color: #111;
-  background-color: #fdfdfd;
-  -webkit-text-size-adjust: 100%;
-  -o-font-feature-settings: "kern" 1;
-  font-feature-settings: "kern" 1;
-  font-kerning: normal; }
-
-/**
- * Set `margin-bottom` to maintain vertical rhythm
- */
-h1, h2, h3, h4, h5, h6,
-p, blockquote, pre,
-ul, ol, dl, figure {
-  margin-bottom: 15px; }
-
-/**
- * Images
- */
-img {
-  max-width: 100%;
-  vertical-align: middle; }
-
-/**
- * Figures
- */
-figure > img {
-  display: block; }
-
-figcaption {
-  font-size: 14px; }
-
-/**
- * Lists
- */
-ul, ol {
-  margin-left: 30px; }
-
-li > ul,
-li > ol {
-  margin-bottom: 0; }
-
-/**
- * Headings
- */
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 400; }
-
-/**
- * Links
- */
-a {
-  color: #2a7ae2;
-  text-decoration: none; }
-  a:visited {
-    color: #1756a9; }
-  a:hover {
-    color: #111;
-    text-decoration: underline; }
-
-/**
- * Blockquotes
- */
-blockquote {
-  color: #828282;
-  border-left: 4px solid #e8e8e8;
-  padding-left: 15px;
-  font-size: 18px;
-  letter-spacing: -1px;
-  font-style: italic; }
-  blockquote > :last-child {
-    margin-bottom: 0; }
-
-/**
- * Code formatting
- */
-pre,
-code {
-  font-size: 15px;
-  border: 1px solid #e8e8e8;
-  border-radius: 3px;
-  background-color: #eef; }
-
-code {
-  padding: 1px 5px; }
-
-pre {
-  padding: 8px 12px;
-  overflow-x: auto; }
-  pre > code {
-    border: 0;
-    padding-right: 0;
-    padding-left: 0; }
-
-/**
- * Wrapper
- */
-.wrapper {
-  max-width: calc(1100px - (30px * 2));
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: 30px;
-  padding-left: 30px; }
-  @media screen and (max-width: 800px) {
-    .wrapper {
-      max-width: calc(1100px - (30px));
-      padding-right: 15px;
-      padding-left: 15px; } }
-
-/**
- * Clearfix
- */
-.wrapper:after {
-  content: "";
-  display: table;
-  clear: both; }
-
-/**
- * Icons
- */
-.icon > svg {
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-  vertical-align: middle; }
-  .icon > svg path {
-    fill: #828282; }
-
-/**
- * Home
- */
-.bg-home {
-  background: url(../img/banner-hero.jpg) no-repeat top center;
-  font-style: normal;
-  font-weight: 400; }
-
-.logo-mine {
-  display: block;
-  height: 52px;
-  width: 181px;
-  margin-top: 10px; }
-
-.navigation {
-  list-style: none; }
-
-.navigation > li {
-  display: table-cell;
-  vertical-align: middle; }
-
-.navigation li > a {
-  color: #fff;
-  text-transform: capitalize;
-  padding: 1rem; }
-
-/**
- * Hero
- */
-.hero-wrapper {
-  color: #fff; }
-
-.title-hero {
-  margin: 15rem 0 13rem 0; }
-
-/**
- * Section steps
- */
-.position {
-  position: relative;
-  z-index: 9997; }
-
-.bg-women {
-  background: url(../img/woman-clothes.jpg) no-repeat right 24rem;
-  position: absolute;
-  z-index: 9997;
-  display: block;
-  width: 100%;
-  height: 100%;
-  right: 0; }
-
-.container-steps {
-  padding-top: 5%;
-  background: #f8f8f8; }
-
-.container-steps h2 {
-  color: #ff3366; }
-
-.box-steps {
-  margin-top: 3rem;
-  overflow: height; }
-
-.box-steps i {
-  font-size: 5rem;
-  float: left;
-  min-height: 15rem;
-  width: 20%; }
-
-.box-steps i:after {
-  content: ' ';
-  border-left: 1px solid #ccc;
-  margin: 0 20%; }
-
-.box-steps div {
-  background: #fff;
-  margin: 1rem;
-  position: relative;
-  z-index: 99999; }
-
-.icon-product {
-  height: 82px;
-  width: 78px; }
-
-/**
- * Box Depoimentos
- */
-.box-depoimentos {
-  background: #fff7f2; }
-
-.box-depoimentos h2 {
-  color: #ff3366; }
-
-.box-depoimentos header {
-  margin: 8rem 0; }
-
-/**
- * Box Midia
- */
-.box-midias {
-  padding: 5rem; }
-
-.box-midias h5 {
-  padding: 5rem; }
-
-.img-midias {
-  list-style: none; }
-
-.img-midias a {
-  display: block;
-  text-indent: -9999px;
-  height: 50px;
-  -webkit-transition: .5s ease-in-out;
-  -moz-transition: .5s ease-in-out;
-  -o-transition: .5s ease-in-out; }
-
-.img-midias a:hover {
-  -webkit-transition: .5s ease-in-out;
-  -moz-transition: .5s ease-in-out;
-  -o-transition: .5s ease-in-out; }
-
-.img-midias .techmundo a {
-  background: url(../img/logo-techmundo.png) no-repeat top center; }
-
-.img-midias .techmundo a:hover {
-  background: url(../img/logo-techmundo-hover.png) no-repeat top center; }
-
-.img-midias .gazeta a {
-  background: url(../img/logo-gazeta.png) no-repeat top center; }
-
-.img-midias .gazeta a:hover {
-  background: url(../img/logo-gazeta-hover.png) no-repeat top center; }
-
-.img-midias .ecommerce a {
-  background: url(../img/logo-ecommerce.png) no-repeat top center; }
-
-.img-midias .ecommerce a:hover {
-  background: url(../img/logo-ecommerce-hover.png) no-repeat top center; }
-
-/**
- * Box Comunidade
- */
-.box-comunidade {
-  padding: 5rem 0; }
-
-.box-comunidade h2 {
-  color: #ff3366; }
-
-/**
- * Box Funcionalidades
- */
-.box-funcionalidades h2 {
-  color: #ff3366; }
-
-.bbox-funcionalidades h3 {
-  color: #333; }
-
-/**
- * Box CTA
- */
-.box-cta {
-  background: url(../img/bg-cta.jpg) no-repeat top center;
-  background-size: cover;
-  color: #fff;
-  font-style: normal;
-  font-weight: 400;
-  height: 100%; }
-
-.box-cta h2 {
-  margin: 18rem 20rem 18rem 0; }
-
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 /**
    * 1. Set default font family to sans-serif.
@@ -4280,3 +3969,396 @@ table.hover tr:nth-of-type(even):hover {
 
 .long-delay {
   animation-delay: 700ms !important; }
+
+/**
+ * Reset some basic elements
+ */
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, ul, figure {
+  margin: 0;
+  padding: 0;
+  font-family: "Gotham SSm A", "Gotham SSm B", Arial, sans-serif; }
+
+/**
+ * Basic styling
+ */
+body {
+  font: 400 16px/1.5 "Gotham SSm A", "Gotham SSm B", Arial, sans-serif;
+  color: #111;
+  background-color: #fdfdfd;
+  -webkit-text-size-adjust: 100%;
+  -o-font-feature-settings: "kern" 1;
+  font-feature-settings: "kern" 1;
+  font-kerning: normal; }
+
+/**
+ * Set `margin-bottom` to maintain vertical rhythm
+ */
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+ul, ol, dl, figure {
+  margin-bottom: 15px; }
+
+/**
+ * Images
+ */
+img {
+  max-width: 100%;
+  vertical-align: middle; }
+
+/**
+ * Figures
+ */
+figure > img {
+  display: block; }
+
+figcaption {
+  font-size: 14px; }
+
+/**
+ * Lists
+ */
+ul, ol {
+  margin-left: 30px; }
+
+li > ul,
+li > ol {
+  margin-bottom: 0; }
+
+/**
+ * Headings
+ */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400; }
+
+/**
+ * Links
+ */
+a {
+  color: #2a7ae2;
+  text-decoration: none; }
+  a:visited {
+    color: #1756a9; }
+  a:hover {
+    color: #111;
+    text-decoration: underline; }
+
+/**
+ * Blockquotes
+ */
+blockquote {
+  color: #828282;
+  border-left: 4px solid #e8e8e8;
+  padding-left: 15px;
+  font-size: 18px;
+  letter-spacing: -1px;
+  font-style: italic; }
+  blockquote > :last-child {
+    margin-bottom: 0; }
+
+/**
+ * Code formatting
+ */
+pre,
+code {
+  font-size: 15px;
+  border: 1px solid #e8e8e8;
+  border-radius: 3px;
+  background-color: #eef; }
+
+code {
+  padding: 1px 5px; }
+
+pre {
+  padding: 8px 12px;
+  overflow-x: auto; }
+  pre > code {
+    border: 0;
+    padding-right: 0;
+    padding-left: 0; }
+
+/**
+ * Wrapper
+ */
+.wrapper {
+  max-width: calc(1100px - (30px * 2));
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 30px;
+  padding-left: 30px; }
+  @media screen and (max-width: 800px) {
+    .wrapper {
+      max-width: calc(1100px - (30px));
+      padding-right: 15px;
+      padding-left: 15px; } }
+
+/**
+ * Clearfix
+ */
+.wrapper:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+/**
+ * Icons
+ */
+.icon > svg {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  vertical-align: middle; }
+  .icon > svg path {
+    fill: #828282; }
+
+/**
+ * Home
+ */
+.btn-cta {
+  background: #ee2778;
+  border-radius: 3px;
+  display: block;
+  width: 239px;
+  height: 70px; }
+
+.btn-login {
+  display: block;
+  text-align: center;
+  line-height: 0;
+  width: 101px;
+  height: 35px;
+  border-radius: 3px;
+  border: solid 1px #fff; }
+
+/**
+ * Titulos
+ */
+h1 {
+  font-weight: 500; }
+
+h2 {
+  font-weight: 200; }
+
+h3 {
+  font-weight: 500;
+  font-size: 1rem; }
+
+h4 {
+  font-weight: 500; }
+
+/**
+ * Home
+ */
+.tp-header {
+  padding-top: 1rem; }
+
+.bg-home {
+  background: url(../img/banner-hero.jpg) no-repeat top center;
+  font-style: normal; }
+
+.logo-mine {
+  display: block;
+  height: 52px;
+  width: 181px;
+  margin-top: 10px; }
+
+.navigation {
+  list-style: none; }
+
+.navigation > li {
+  display: table-cell;
+  vertical-align: middle; }
+
+.navigation li > a {
+  color: #fff;
+  text-transform: capitalize;
+  padding: 1rem;
+  font-weight: 500; }
+
+/**
+ * Hero
+ */
+.hero-wrapper {
+  color: #fff; }
+
+.hero-wrapper h2 {
+  font-size: 1.5rem; }
+
+.title-hero {
+  margin: 15rem 0 11rem 0; }
+
+/**
+ * Section steps
+ */
+.position-relative {
+  position: relative;
+  z-index: 9997; }
+
+.bg-women {
+  background: url(../img/woman-clothes.jpg) no-repeat right 24rem;
+  position: absolute;
+  z-index: 9997;
+  display: block;
+  width: 100%;
+  height: 100%;
+  right: 0; }
+
+.container-steps {
+  padding-top: 5%;
+  background: #f8f8f8; }
+
+.container-steps h2 {
+  color: #ee2778; }
+
+.box-steps {
+  margin-top: 3rem;
+  overflow: hidden; }
+
+.box-steps i {
+  font-size: 5rem;
+  float: left;
+  min-height: 15rem;
+  width: 20%; }
+
+.box-steps i:after {
+  content: ' ';
+  border-left: 1px solid #ccc;
+  margin: 0 20%; }
+
+.box-steps div {
+  background: #fff;
+  margin: 1rem;
+  position: relative;
+  z-index: 99999; }
+
+.icon-product {
+  height: 82px;
+  width: 78px; }
+
+/**
+ * Box Depoimentos
+ */
+.box-depoimentos {
+  background: #fff7f2; }
+
+.box-depoimentos div {
+  position: relative;
+  z-index: 9999; }
+
+.box-depoimentos h2 {
+  color: #ee2778; }
+
+.box-depoimentos header {
+  margin: 8rem 0; }
+
+/**
+ * Box Midia
+ */
+.box-midias {
+  padding: 5rem; }
+
+.box-midias h5 {
+  padding: 5rem; }
+
+.img-midias {
+  list-style: none; }
+
+.img-midias a {
+  display: block;
+  text-indent: -9999px;
+  height: 50px;
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out; }
+
+.img-midias a:hover {
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out; }
+
+.img-midias .techmundo a {
+  background: url(../img/logo-techmundo.png) no-repeat top center; }
+
+.img-midias .techmundo a:hover {
+  background: url(../img/logo-techmundo-hover.png) no-repeat top center; }
+
+.img-midias .gazeta a {
+  background: url(../img/logo-gazeta.png) no-repeat top center; }
+
+.img-midias .gazeta a:hover {
+  background: url(../img/logo-gazeta-hover.png) no-repeat top center; }
+
+.img-midias .ecommerce a {
+  background: url(../img/logo-ecommerce.png) no-repeat top center; }
+
+.img-midias .ecommerce a:hover {
+  background: url(../img/logo-ecommerce-hover.png) no-repeat top center; }
+
+/**
+ * Box Comunidade
+ */
+.box-comunidade {
+  padding: 5rem 0; }
+
+.box-comunidade h2 {
+  color: #ee2778; }
+
+/**
+ * Box Ecommerce
+ */
+.box-ecommerce {
+  background: #f8f8f8;
+  overflow: hidden;
+  position: relative;
+  z-index: 9999;
+  margin-top: 15rem;
+  margin-left: 15rem;
+  padding: 5rem; }
+
+.bg-woman-bicycle {
+  background: url(../img/woman-bicycle.jpg) no-repeat left bottom;
+  position: absolute;
+  z-index: 9997;
+  display: block;
+  width: 100%;
+  height: 1418px;
+  right: 0; }
+
+.bg-mockup {
+  background: url(../img/mockup.png) no-repeat right bottom;
+  height: 726px;
+  width: 100%;
+  position: relative;
+  z-index: 9999; }
+
+.box-ecommerce h2 {
+  color: #ee2778; }
+
+/**
+ * Box Funcionalidades
+ */
+.box-funcionalidades {
+  margin-top: 15rem;
+  position: relative;
+  z-index: 999999;
+  margin-top: 40rem; }
+
+.box-funcionalidades h2 {
+  color: #ee2778; }
+
+.bbox-funcionalidades h3 {
+  color: #333; }
+
+/**
+ * Box CTA
+ */
+.box-cta {
+  background: url(../img/bg-cta.jpg) no-repeat top center;
+  background-size: cover;
+  color: #fff;
+  font-style: normal;
+  font-weight: 400; }
+
+.box-cta h2 {
+  margin: 18rem 20rem 18rem 0; }

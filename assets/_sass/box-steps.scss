@@ -1,0 +1,55 @@
+/**
+ * Section steps
+ */
+
+.position-relative {
+	position: relative;
+	z-index: 9997;
+}
+.bg-women {
+	background: url(../img/woman-clothes.jpg) no-repeat right 24rem; 
+    position: absolute;
+    z-index: 9997;
+    display: block;
+    width: 100%;
+    height: 100%;
+    right: 0;
+}
+
+.container-steps {
+	padding-top:5%;
+	background:#f8f8f8;
+}	
+	.container-steps h2 {
+		color:$pink;		
+	}
+		.box-steps {
+			margin-top: 3rem;
+			overflow: hidden;
+		}
+		.box-steps h4 {
+			font-size: 1rem;
+		}
+			.box-steps i {
+				color:#ccc;
+				font-size:5rem;
+				float: left;
+				min-height: 15rem;
+				width: 20%;
+			}		
+				.box-steps i:after {
+					color:$grey-color-light;
+					content:' ';
+					border-left: 1px solid #ccc;
+					margin:0 20%;
+				}
+				.box-steps div {
+					background: $white;
+					margin:1rem;
+				    position: relative;
+				    z-index: 99999;
+				}
+				.icon-product {
+					height:82px;
+					width: 78px;
+				}

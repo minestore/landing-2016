@@ -1,0 +1,13 @@
+/**
+ * Box CTA
+ */
+ .box-cta {
+	background: url(../img/bg-cta.jpg) no-repeat top center; 
+	background-size: cover; 
+	color:$white;
+	font-style: normal;
+	font-weight: 400;
+}
+	.box-cta h2 {
+		margin:18rem 20rem 18rem 0;
+	}

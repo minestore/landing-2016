@@ -1,0 +1,64 @@
+/**
+ * Box Depoimentos
+ */
+
+ .box-depoimentos {
+ 	background: #fff7f2;
+
+ }
+ 	.box-depoimentos div {
+		position: relative;
+		z-index: 9999;
+ 	}
+ 	.box-depoimentos h2 {
+ 		color:$pink;
+ 	}
+	.box-depoimentos header {
+		margin: 8rem 0;
+	}
+	
+/**
+ * Box Midia
+ */
+.box-midias {
+	padding:5rem;
+}
+	.box-midias h5 {
+		padding: 5rem;
+	}
+	.img-midias {
+		list-style: none;
+	}
+		.img-midias a {
+			display: block;
+			text-indent: -9999px;
+			height: 50px;
+	        -webkit-transition: .5s ease-in-out;
+	  		-moz-transition: .5s ease-in-out;
+	  		-o-transition: .5s ease-in-out;
+		}
+		.img-midias a:hover {
+	        -webkit-transition: .5s ease-in-out;
+	  		-moz-transition: .5s ease-in-out;
+	  		-o-transition: .5s ease-in-out;
+		}
+		.img-midias .techmundo a {
+			background: url(../img/logo-techmundo.png) no-repeat top center;
+		}
+		.img-midias .techmundo a:hover {
+			background: url(../img/logo-techmundo-hover.png) no-repeat top center;
+		}
+		.img-midias .gazeta a {
+			background: url(../img/logo-gazeta.png) no-repeat top center;
+		}
+		.img-midias .gazeta a:hover {
+			background: url(../img/logo-gazeta-hover.png) no-repeat top center;
+		}
+		.img-midias .ecommerce a {
+			background: url(../img/logo-ecommerce.png) no-repeat top center;
+		}
+		.img-midias .ecommerce a:hover {
+			background: url(../img/logo-ecommerce-hover.png) no-repeat top center;
+		}
+
+

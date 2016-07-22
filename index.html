@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: home
 ---
 
 <!--<div class="home">
@@ -31,7 +31,7 @@ layout: default
           <h1>Atual.Criativa.Original.
           Assim como sua marca.</h1>
           <h2>Crie seu e-commerce e faça parte da nossa comunidade</h2>
-          <button>Crie sua loja grátis</button>
+          <button class="btn-cta">Crie sua loja grátis</button>
         </header>
       </div>
     </div>
@@ -40,7 +40,7 @@ layout: default
 
 
 <!-- STEPS -->
-<div class="position">
+<div class="position-relative">
   <div class="bg-women"></div>
     <section class="container-steps">
       <div class="row">
@@ -51,25 +51,25 @@ layout: default
         <div class="box-steps">
           <div class="large-5 columns step-1">
             <i>1</i>
-            <img class="icon-product" src="{{ "/assets/img/icon-product.svg" | prepend: site.baseurl }}" alt="minestore loja virtual">
+            <img class="icon-product" src="{{ "/assets/img/icon-lamp-pink.svg" | prepend: site.baseurl }}" alt="minestore loja virtual">
             <h4>Escolha o seu produto</h4>
             <p>Sabe aquela ideia de produto que não sai da sua cabeça? Está na hora de ela virar realidade e ganhar o mundo!</p>
           </div>
           <div class="large-5 columns">
             <i>2</i>
-            <img class="icon-product" src="{{ "/assets/img/icon-register.svg" | prepend: site.baseurl }}" alt="minestore loja virtual">
+            <img class="icon-product" src="{{ "/assets/img/icon-pencil-pink.svg" | prepend: site.baseurl }}" alt="minestore loja virtual">
             <h4>Cadastre-se na Minestore</h4>
             <p>Fazer o seu cadastro na minestore é o primeiro passo para você entrar de vez no mundo do e-commerce.</p>
           </div>
           <div class="large-5 columns">
             <i>3</i>
-            <img class="icon-product" src="{{ "/assets/img/icon-pc.svg" | prepend: site.baseurl }}" alt="minestore loja virtual">
+            <img class="icon-product" src="{{ "/assets/img/icon-pc-pink.svg" | prepend: site.baseurl }}" alt="minestore loja virtual">
             <h4>Monte o design da sua loja</h4>
             <p>O seu e-commerce precisa chamar a atenção do consumidor. Para isso, capriche no design da sua loja (fique tranquilo que por aqui isso é facinho!).</p>
           </div>
           <div class="large-5 columns">
             <i>4</i>
-            <img class="icon-product" src="{{ "/assets/img/icon-market.svg" | prepend: site.baseurl }}" alt="minestore loja virtual">
+            <img class="icon-product" src="{{ "/assets/img/icon-market-pink.svg" | prepend: site.baseurl }}" alt="minestore loja virtual">
             <h4>Venda em poucos minutos</h4>
             <p>Pronto! Agora é só divulgar a sua loja e começar a vender!</p>
           </div>
@@ -80,7 +80,7 @@ layout: default
     <section class="box-depoimentos">
         <div class="row">
           <header class="large-8 columns text-left">
-            <h2>Ninguém melhor do que os</br>nossos lojistas para falar da minestore</h2>
+            <h2>Ninguém melhor do que os<br>nossos lojistas para falar da minestore</h2>
             <h3>Eles já testaram, aprovaram e querem compartilhar essa experiência com você.</h3>
           </header>
         </div>
@@ -127,21 +127,41 @@ layout: default
             <li class="tabs-title"><a href="#panel5">Marcas independentes</a></li>
           </ul>
         </div>
-        <div class="medium-9 columns">
+        <div class="large-16 columns">
           <div class="tabs-content" data-tabs-content="example-tabs">
             <div class="tabs-panel is-active" id="panel1">
+              <picture class="large-6 columns">
+                <img src="{{"/assets/img/moda.jpg" | prepend: site.baseurl }}"  alt="">
+              </picture>
+              <h4>Moda</h4>
               <p>Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus.</p>
             </div>
             <div class="tabs-panel" id="panel2">
+              <picture class="large-6 columns">
+                <img src="{{"/assets/img/design-arte.jpg" | prepend: site.baseurl }}"  alt="">
+              </picture>
+              <h4>Design & arte</h4>
               <p>pokemon dictum feugiat nisl ut dapibus.  Vivamus hendrerit arcu sed erat molestie vehicula. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor.  Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor.</p>
             </div>
             <div class="tabs-panel" id="panel3">
+              <picture class="large-6 columns">
+                <img src="{{"/assets/img/geek.jpg" | prepend: site.baseurl }}"  alt="">
+              </picture>
+              <h4>Geek</h4>
               <p>pikakakka dictum feugiat nisl ut dapibus.  Vivamus hendrerit arcu sed erat molestie vehicula. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor.  Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor.</p>
             </div>
             <div class="tabs-panel" id="panel4">
+              <picture class="large-6 columns">
+                <img src="{{"/assets/img/handmade.jpg" | prepend: site.baseurl }}"  alt="">
+              </picture>
+              <h4>Handmade</h4>
               <p>ogogogoo dictum feugiat nisl ut dapibus.  Vivamus hendrerit arcu sed erat molestie vehicula. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor.  Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor.</p>
             </div>
             <div class="tabs-panel" id="panel5">
+              <picture class="large-6 columns">
+                <img src="{{"/assets/img/marcas-independentes.jpg" | prepend: site.baseurl }}"  alt="">
+              </picture>
+              <h4>Marcas independentes</h4>
               <p>aeee dictum feugiat nisl ut dapibus.  Vivamus hendrerit arcu sed erat molestie vehicula. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor.  Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor.</p>
             </div>
           </div>
@@ -151,27 +171,52 @@ layout: default
 
   <!-- E-commerce no ar -->
 
-  <section class="row expanded intro-course-callout">
-    <div class="large-11 large-push-5 columns banner-info">
-      <header>
-        <h2>Vamos colocar o seu e-commerce no ar juntos!</h2>
-        <h3>Ter um e-commerce requer dedicação e estudo. Mas, fique tranquilo, 
-        porque nós vamos te oferecer a base necessária para que a sua loja seja um sucesso! </h3>
-      </header>
-      <div>
-        <h4>Materiais sobre e-commerce</h4>
-        <p>Estudar o universo do e-commerce é importante para ter uma loja virtual de sucesso. Aqui na minestore nós produzimos artigos, ebooks e uma série de materiais para facilitar a sua vida. </p>
+  <section class="position-relative expanded intro-course-callout">
+    <div class="bg-woman-bicycle"></div>
+      <div class="row">
+        <div class="bg-mockup large-push-5 columns">
+          <div class="box-ecommerce large-8 large-pull-7 columns">
+            <header>
+              <h2>Vamos colocar o seu e-commerce no ar juntos!</h2>
+              <h3>Ter um e-commerce requer dedicação e estudo. Mas, fique tranquilo, 
+              porque nós vamos te oferecer a base necessária para que a sua loja seja um sucesso! </h3>
+            </header>
+              <div>
+                <h4>Materiais sobre e-commerce</h4>
+                <p>Estudar o universo do e-commerce é importante para ter uma loja virtual de sucesso. Aqui na minestore nós produzimos artigos, ebooks e uma série de materiais para facilitar a sua vida. </p>
+              </div>
+              <div>
+                <h4>Conte conosco sempre que precisar</h4>
+                <p>Surgiu alguma dúvida no meio do processo? Relaxa, a nossa equipe está pronta para te ajudar no que for necessário para você ter uma loja sensacional! </p>
+              </div>
+            </div>
+        </div>
       </div>
-      <div>
-        <h4>Conte conosco sempre que precisar</h4>
-        <p>Surgiu alguma dúvida no meio do processo? Relaxa, a nossa equipe está pronta para te ajudar no que for necessário para você ter uma loja sensacional! </p>
-      </div>
-    </div>
+       <!-- <div class="row">
+          <div class="box-ecommerce large-8 columns">
+              <header>
+                <h2>Vamos colocar o seu e-commerce no ar juntos!</h2>
+                <h3>Ter um e-commerce requer dedicação e estudo. Mas, fique tranquilo, 
+                porque nós vamos te oferecer a base necessária para que a sua loja seja um sucesso! </h3>
+              </header>
+              <div>
+                <h4>Materiais sobre e-commerce</h4>
+                <p>Estudar o universo do e-commerce é importante para ter uma loja virtual de sucesso. Aqui na minestore nós produzimos artigos, ebooks e uma série de materiais para facilitar a sua vida. </p>
+              </div>
+              <div>
+                <h4>Conte conosco sempre que precisar</h4>
+                <p>Surgiu alguma dúvida no meio do processo? Relaxa, a nossa equipe está pronta para te ajudar no que for necessário para você ter uma loja sensacional! </p>
+              </div>
+            
+          </div>
+          <div class="bg-mockup large-4 large-push-4 columns"></div>
+        </div>
+    </div>-->
   </section>
 
   <!--Funcionalidades-->
 
-  <section class="box-funcionalidades">
+  <section class="row box-funcionalidades">
     <header class="text-center">
       <h2>Todas as nossas funcionalidades são pensadas em você</h2>
       <h3>Elas garantem que você dedique o seu tempo ao que realmente 
@@ -179,28 +224,34 @@ layout: default
     </header>
     <div class="row">
       <div class="large-4 columns">
+        <img class="icon-product" src="{{ "/assets/img/icon-market.svg" | prepend: site.baseurl }}" alt="">
         <h4>Gerenciamento sem complicações</h4>
         <p>Você não precisa ser um especialista para usar a nossa plataforma. Ela foi criada para ser fácil de entender e simples de gerenciar.</p> 
       </div>
       <div class="large-4 columns">
+        <img class="icon-product" src="{{ "/assets/img/icon-pc.svg" | prepend: site.baseurl }}" alt="">
         <h4>Design diferenciado</h4>
         <p>Acreditamos que o design é uma das chaves para um e-commerce de sucesso. Por isso, fazemos questão de caprichar!</p> 
       </div>
       <div class="large-4 columns">
+        <img class="icon-product" src="{{ "/assets/img/icon-templates.svg" | prepend: site.baseurl }}" alt="">
         <h4>Templates exclusivos e customizáveis</h4>
         <p>Disponibilizamos uma variedade de recursos, para que sua loja seja como você sempre sonhou.</p> 
       </div>
     </div>
     <div class="row">
       <div class="large-4 columns">
+        <img class="icon-product" src="{{ "/assets/img/icon-user.svg" | prepend: site.baseurl }}" alt="">
         <h4>Suporte amigável sempre que for preciso</h4>
         <p>Alguma dúvida surgiu no meio do processo? Nossa equipe está sempre disponível para te ajudar no que for necessário.</p> 
       </div>    
       <div class="large-4 columns">
+        <img class="icon-product" src="{{ "/assets/img/icon-page-view.svg" | prepend: site.baseurl }}" alt="">
         <h4>Pageview ilimitado</h4>
         <p>Pode divulgar a sua loja à vontade e fazer com que muita gente entre no seu site. Por aqui, não vamos cobrar os pageviews.</p> 
       </div> 
       <div class="large-4 columns">
+        <img class="icon-product" src="{{ "/assets/img/icon-product.svg" | prepend: site.baseurl }}" alt="">
         <h4>Produto Ilimitado</h4>
         <p>Você tem muita coisa pra vender? Então aproveite para colocar todos esses itens na internet sem se preocupar em pagar a mais por isso.</p> 
       </div>  
