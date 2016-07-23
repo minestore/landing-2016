@@ -26,11 +26,15 @@
 			display: table-cell;
 			vertical-align: middle;
 		}
-		.navigation li > a{
+		.navigation li > a {
 			color: $white;
 			text-transform: capitalize;
-			padding: 1rem;
+			padding: 1rem 1.5rem;
 			font-weight: $medium;
+		}
+		.navigation li:last-child > a {
+			padding: 1rem;
+			margin-left: 1.5rem;
 		}
 
 /**
@@ -45,5 +49,30 @@
 		font-size:  1.5rem;
 	}
 	.title-hero {
-		margin: 15rem 0 11rem 0;
+		margin: 10rem 0 16.4rem 0;
 	}
+
+
+/**
+ * Header page
+ */
+ .header-pg {
+ 	border-bottom: 1px solid #DDD; 	
+ }
+	 .header-pg a {
+	 	display: block;
+	 	padding-bottom: 1rem;
+	 }
+	 .header-pg .logo-mine {
+	 	margin-top: 0;
+	 }
+	 .header-pg .navigation li > a {
+	 	color:$black;
+	 }
+	.header-pg .btn-login {
+		border: 1px solid $pink;
+	}
+	.header-pg .navigation li:last-child > a {
+		color:$pink;
+	}
+

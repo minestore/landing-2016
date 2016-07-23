@@ -51,6 +51,12 @@
 				    z-index: 99999;
 				    padding: 1rem;
 				}
+				.box-steps .media-object:nth-child(2){
+					margin-top: 70px;
+				}
+				.box-steps .media-object:nth-child(3){
+					margin-top: -35px;
+				}
 				.box-steps p {
 					font-size: 0.75rem;
 				}

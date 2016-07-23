@@ -19,7 +19,6 @@
 	.box-depoimentos h4 {
 		font-weight: $extra-light;
 		font-style: italic;
-		padding-top: 2rem;
 		padding-left: 6rem;
 	}
 	.box-depoimentos h4:before, .box-depoimentos h4:after {
@@ -39,13 +38,36 @@
 		padding:1rem;
 		color:#666;
 	}
+
+/**
+ * Slider
+ */
+.box-depoimentos .orbit-slide {
+	padding:1rem;
+}
+.orbit-bullets{
+	margin:4rem 0;
+}
+	.orbit-bullets button.is-active {
+		background: $pink;
+		border: 3px solid $pink;
+	}
+	.orbit-bullets button {
+		border: 3px solid #ffc3dd;
+		background: none;
+		width: 0.9rem;
+    	height: 0.9rem;
+	}
+	.orbit-bullets button:hover {
+	    background-color: $pink;
+	}
 	
 /**
  * Box Midia
  */
 .box-midias {
-	border-top:1px solid #CCC;
-	margin-top: 10rem;
+	border-top:1px solid $grey-light;
+	margin-top: 3rem;
 	padding-bottom: 5rem;
 }
 	.box-midias h5 {

@@ -4,12 +4,13 @@ title: Parceiros
 permalink: /parceiros
 ---
 
-<section class="row">
-	<header class="row text-center">
+<section class="container-parceiros">
+	<header class="large-10 columns large-centered text-center">
     <h1>Junte-se ao nosso time de parceiros</h1>
-    <h2>Vamos trabalhar juntos para fazer com que as marcas independentes ganhem cada vez mais espaço no Brasil</h2>
+    <h2>Vamos trabalhar juntos para fazer com que as marcas independentes ganhem<br> cada vez mais espaço no Brasil</h2>
 	</header>
-
+ 
+<div class="box-parceiros">
 	<div class="row">
     <div class="large-7 columns">
       <h2>Programa de prestação de serviços</h2>
@@ -36,8 +37,9 @@ permalink: /parceiros
       </p>
     </div>
 	</div>
+</div>
 
-  <div class="row">
+  <div class="row box-itens-parceiros">
     <ul>
       <li class="large-3 columns">
         <h4>Comissão</h4>
@@ -66,32 +68,33 @@ permalink: /parceiros
     </ul>
   </div>
 
-  <div class="row">
+  <div class="row box-loja-virtual">
     <div class="large-8 large-centered columns text-center">
       <h2>Tem muita gente querendo que a sua loja virtual seja um sucesso</h2>
-      <h3>Nossos parceiros querem fazer parte da sua equipe e criar um e-commerce que seja referência.</h3>
+      <h3>Nossos parceiros querem fazer parte da sua equipe e criar <br>um e-commerce que seja referência.</h3>
       <p>
         A minestore conta com uma série de parceiros que têm tanta vontade de fazer a sua loja acontecer quanto você. Pensa em contratar um designer? Temos! Quer ajuda na divulgação dos seus produtos nas redes sociais? Temos também! Precisa escrever descrições para os seus itens? É só falar com um dos nossos parceiros:
       </p>
     </div>
   </div>
 
+ <div class="logo-parceiros">
   <div class="row">
     <ul>
       <li class="large-3 columns">
-        <img src="" alt="PSOMAS" />
+        <img src="{{ "/assets/img/logo-psomas.svg" | prepend: site.baseurl }}" />
         <a href="#">Visite o site -></a>
       </li>
       <li class="large-3 columns">
-        <img src="" alt="ECKO" />
+        <img src="{{ "/assets/img/logo.psomas.svg" | prepend: site.baseurl }}" alt="{{ img.title }}" />
         <a href="#">Visite o site -></a>
       </li>
       <li class="large-3 columns">
-        <img src="" alt="toledo interactive" />
+        <img src="{{ "/assets/img/logo.toledo.svg" | prepend: site.baseurl }}" alt="{{ img.title }}" />
         <a href="#">Visite o site -></a>
       </li>
       <li class="large-3 columns">
-        <img src="" alt="CONSULTORNET" />
+        <img src="{{ "/assets/img/logo.cn.svg" | prepend: site.baseurl }}" alt="{{ img.title }}" />
         <a href="#">Visite o site -></a>
       </li>
     </ul>
@@ -99,10 +102,13 @@ permalink: /parceiros
   <div class="row">
     <ul>
       <li class="large-3 columns">
-        <img src="" alt="Paula Maciel" />
+        <img src="{{ "/assets/img/logo.paula.svg" | prepend: site.baseurl }}" alt="{{ img.title }}" />
         <a href="#">Visite o site -></a>
       </li>
     </ul>
   </div>
-
+</div>
 </section>
+
+{% include box-cta.html %}
+

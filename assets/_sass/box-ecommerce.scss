@@ -2,15 +2,26 @@
 /**
  * Box Ecommerce
  */
-.box-ecommerce {
-	background: #f8f8f8;
+.bg-mockup {
+	background:  url(../img/mockup.png) no-repeat right bottom; 
 	overflow: hidden;
 	position: relative;
 	z-index: 9999;
 	margin-top: 8rem;
-    margin-left: 15rem;
 	padding: 5rem;
+	padding-right: 35rem;
+    
 }
+	.box-ecommerce {
+		background: #f8f8f8;
+		position: relative;
+		z-index: 9998;
+		overflow: hidden;
+	}
+	/*.bg-mockup {	
+		height: 726px;
+		width: 1176px;
+	}*/
 	 .bg-woman-bicycle {
 		background: url(../img/woman-bicycle.jpg) no-repeat left bottom; 
 	    position: absolute;
@@ -29,4 +40,15 @@
 	}*/
 	.box-ecommerce h2 {
 		color:$pink;
+	}
+	.box-ecommerce h3 {
+		padding-bottom: 1rem;
+	}
+	.box-ecommerce h4 {
+		font-size: 1rem;
+		margin-top: 3rem;
+	}
+	.bog-mockup .mockup {
+		height: 726px;
+		width: 560px;
 	}

@@ -9,10 +9,13 @@
 	.box-comunidade h2 {
 		color:$pink;
 	}
+	.box-comunidade h3{
+		font-weight: $extra-light;
+	}
 	.box-comunidade h3:after {
 		content: ' ';
 		display: block;
-		border-bottom: 1px solid #ccc;
+		border-bottom: 1px solid $grey-light;
 		width: 20%;
 		margin:0 auto;
 		padding: 1rem;
@@ -25,11 +28,23 @@
 	.box-comunidade .tabs {
 		border-bottom: 1px solid #ccc;
 	}	
+	.box-nichos .tabs-panel:nth-child(2) h4 {
+		color:#a4cfde;
+	}
+	.box-nichos .tabs-panel:nth-child(3) h4 {
+		color:#df9e9e;
+	}
+	.box-nichos .tabs-panel:nth-child(4) h4 {
+		color:#a9d3a7;
+	}
+	.box-nichos .tabs-panel:nth-child(5) h4 {
+		color:#c0aadf;
+	}
 .tabs, .tabs-content {
 	padding-bottom: 5rem;
 }
 		.tabs {
-			padding: 0 5rem;
+			padding: 0 8rem;
 		}
 		.tabs-title > a {
 			text-align: center;

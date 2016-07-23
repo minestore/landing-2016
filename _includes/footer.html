@@ -1,7 +1,8 @@
 <footer class="box-footer">
+<section class="box-links-ft">
   <div class="row">
     <nav class="large-3 columns">
-      <ul>
+      <ul class="teste">
         <li><h4><strong>Blog</strong></h4></li>
         <li><a href="#">Checklist de um dono de e-commerce</a></li>
         <li><a href="#">5 estratégias para divulgar sua loja virtual</a></li>
@@ -26,39 +27,57 @@
         <li><h4><strong>Suporte</strong></h4></li>
         <li><a href="#">Ajuda</a></li>
         <li><a href="#">E-book</a></li>
-        <li><h4><strong>Conheça nossa solução enterprise</strong></h4></li>
-        <li><a href="#">Saiba mais</a></li>
+        <li><h4 class="conheca"><strong>Conheça nossa solução enterprise</strong></h4></li>
+        <li><a class="saiba-mais" href="#">Saiba mais</a></li>
       </ul>
     </nav>
 
     <address class="large-4 columns">
-      <h4><strong>Endereço</strong></h4></br>
-      Av. Paraná, 202, Sala 403 CEP 80035-130, Curitiba, Paraná, Brasil</br>
-      <h4><strong>Telefone</strong></h4></br>
-      +55 (41) 3010-2275</br>
-      <h4><strong>Contato</strong></h4></br>
-      {{ site.email }}</br>
-      <h4><strong>Razão social</strong></h4></br>
-      ateliware software ltda CNPJ: 14650011000121</br>
+      <div class="box-endereco">
+        <h4><strong>Endereço</strong></h4>
+        Av. Paraná, 202, Sala 403 CEP 80035-130, Curitiba, Paraná, Brasil
+      </div>
+      <div class="box-endereco">
+        <h4><strong>Telefone</strong></h4>
+        +55 (41) 3010-2275
+      </div>
+      <div class="box-endereco">
+        <h4><strong>Contato</strong></h4>
+        {{ site.email }}
+      </div>
+      <div class="box-endereco">
+        <h4><strong>Razão social</strong></h4>
+        ateliware software ltda CNPJ: 14650011000121
+      </div>
     </address>
   </div>
-
-  <div class="row text-center">
-    <a href="#">Facebook</a>
-    <a href="#">Twitter</a>
-    <a href="#">YouTube</a>
+</section>
+<section class="box-redes">
+  <div class="row text-center  links-redes">
+    <ul class="text-redes large-6 columns large-centered">
+      <li class="text-center">
+        <a class="face" href="https://www.facebook.com/minestorebr/?fref=ts">Facebook</a>
+      </li>
+      <li class="text-center">
+        <a class="twitter" href="https://twitter.com/minestorebr">Twitter</a>
+      </li>
+      <li class="text-center">
+        <a class="youtube" href="https://www.youtube.com/channel/UCgIADTj5ORrUhYoUBRH-U7A">YouTube</a>
+      </li>
+    </ul>
   </div>
 
   <div class="row text-center">
-    <img src="" alt="Logo" />
+      <img class="logo-mine-pink" src="{{ "/assets/img/logo-mine.svg" | prepend: site.baseurl }}" alt="">
   </div>
 
   <div class="row text-center">
     <p>
-      Minestore © 2016</br>
-      <a href="#">Termos de uso</a> | <a href="#">Política de privacidade</a>
+      minestore © 2016</br>
+      <a href="#"><strong>Termos de uso</strong></a> | <a href="#"><strong>Política de privacidade</strong></a>
     </p>
   </div>
+</section>
 </footer>
 
 <script src="{{ "/assets/vendor/jquery/dist/jquery.min.js" | prepend: site.baseurl }}"></script>
