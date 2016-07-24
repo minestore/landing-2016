@@ -10,7 +10,7 @@ task :deploy do
   cd "_site" do
     system "git add --all"
 
-    message = "Site deplpyed at #{Time.now.utc}"
+    message = "Site deployed at #{Time.now.utc}"
     puts "## Commiting: #{message}"
     system "git commit -m \"#{message}\""
 
