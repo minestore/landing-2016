@@ -9,5 +9,6 @@ sass:
 
 # Build settings
 markdown: kramdown
+permalink: /:title
 exclude :
   - node_modules
