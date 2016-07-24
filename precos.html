@@ -4,14 +4,14 @@ title: Preços
 permalink: /precos
 ---
 
-<section class="row">
-	<header class="row">
-		<div class="large-9 large-centered columns text-center">
+<section class="box-precos">
+	<header>
+		<div class="large-6 large-centered columns text-center">
 			<h1>O empurrãozinho que faltava pra você vender pela internet!</h1>
 		</div>
 	</header>
 
-	<div class="row">
+	<div class="row box-title">
     <div class="large-12 columns text-center">
       <h2>Nós queremos ver os seus produtos ganhando o mundo!</h2>
       <p>
@@ -19,43 +19,45 @@ permalink: /precos
         Por aqui, você só paga <strong>2,99%</strong> + taxa do meio de pagamento por pedido aprovado.
       </p>
     </div>
+    <form class="large-16 columns box-form">
+      <div class="row">
+        <div class="large-3 large-push-3 columns">
+            <input class="input-txt" type="text" id="email" placeholder="E-mail">
+          </label>
+        </div>
+        <div class="large-4 large-pull-2 columns">
+            <button class="hvr-sweep-to-right btn-cta" type="button" id="create" value="Crie sua loja">Crie sua loja</button>
+          </label>
+        </div>
+      </div>
+    </form>
 	</div>
 
-  <form>
-    <div class="row">
-      <div class="large-4 large-push-2 columns">
-          <input type="text" id="email" placeholder="E-mail">
-        </label>
-      </div>
-      <div class="large-4 columns">
-          <input type="button" id="create" value="Crie sua loja">
-        </label>
-      </div>
-    </div>
-  </form>
 
-  <div class="row">
+
+  <div class="row box-itens">
     <ul>
-      <li class="large-3 columns">Instalação gratuita</li>
+      <li class="large-3 large-up-3 columns">Instalação gratuita</li>
       <li class="large-3 columns">Acessos ilimitados</li>
       <li class="large-3 columns">Suporte exclusivo</li>
       <li class="large-3 columns">Segurança e confidencialidade</li>
-		</ul>
-	</div>
-	<div class="row">
-		<ul>
       <li class="large-3 columns">Produtos ilimitados</li>
       <li class="large-3 columns">Temas gratuitos</li>
-      <li class="large-3 columns">pronto para mobile</li>
-      <li class="large-3 columns">Focada em vendas</li>
+      <li class="large-3 columns">Pronto para mobile</li>
+      <li class="large-3 columns">Focada para conversão de vendas</li>
     </ul>
   </div>
 
+  <section class="box-depoimentos">
   {% include slider.html slider_posts=site.categories.landing-home %}
+  </section>
 
-  <h2>Perguntas frequentes</h2>
 
+<div class="box-perguntas">
   <div class="row">
+    <div class="large-16 columns">
+      <h2>Perguntas frequentes</h2>
+    </div>
     <div class="large-6 columns">
       <h4>Existe alguma taxa de configuração?</h4>
       <p>
@@ -108,7 +110,9 @@ permalink: /precos
         Nesse link, você pode entender melhor essa questão.
       </p>
     </div>
-
   </div>
+</div>
 
 </section>
+
+{% include box-cta.html %}

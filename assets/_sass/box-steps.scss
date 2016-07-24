@@ -48,8 +48,11 @@
 					background: $white;
 					margin:1rem;
 				    position: relative;
-				    z-index: 99999;
+				    z-index: 9999;
 				    padding: 1rem;
+				}
+				.box-steps .media-object {
+					width: 35.5rem;
 				}
 				.box-steps .media-object:nth-child(2){
 					margin-top: 70px;
@@ -58,7 +61,7 @@
 					margin-top: -35px;
 				}
 				.box-steps p {
-					font-size: 0.75rem;
+					font-size: 0.90rem;
 				}
 				.icon-product {
 					height:82px;

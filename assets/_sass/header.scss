@@ -29,7 +29,7 @@
 		.navigation li > a {
 			color: $white;
 			text-transform: capitalize;
-			padding: 1rem 1.5rem;
+			margin: 0.5rem 1.5rem;
 			font-weight: $medium;
 		}
 		.navigation li:last-child > a {
@@ -49,7 +49,7 @@
 		font-size:  1.5rem;
 	}
 	.title-hero {
-		margin: 10rem 0 16.4rem 0;
+		margin: 10rem 0 15.4rem 0;
 	}
 
 
@@ -61,7 +61,7 @@
  }
 	 .header-pg a {
 	 	display: block;
-	 	padding-bottom: 1rem;
+	 	margin-bottom: 1rem;
 	 }
 	 .header-pg .logo-mine {
 	 	margin-top: 0;
@@ -75,4 +75,8 @@
 	.header-pg .navigation li:last-child > a {
 		color:$pink;
 	}
+	.header-pg .navigation li:last-child > a:hover {
+		color:$white;
+	}
+
 
