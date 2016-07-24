@@ -5,19 +5,24 @@
 .bg-mockup {
 	background:  url(../img/mockup.png) no-repeat right bottom; 
 	overflow: hidden;
-	position: relative;
-	z-index: 9999;
-	margin-top: 8rem;
-	padding: 5rem;
-	padding-right: 35rem;
+    position: relative;
+    z-index: 9999;
+    margin-top: 8rem;
+    padding: 5rem;
+    padding-right: 35rem;
+    top: 200px;
+    height: 726px;
     
 }
 	.box-ecommerce {
 		background: #f8f8f8;
-		position: relative;
-		z-index: 9998;
-		overflow: hidden;
-	}
+	    position: relative;
+	    z-index: 9998;
+	    overflow: hidden;
+	    top: -500px;
+	    padding: 5rem;
+	    width: 100%;	
+}
 	/*.bg-mockup {	
 		height: 726px;
 		width: 1176px;

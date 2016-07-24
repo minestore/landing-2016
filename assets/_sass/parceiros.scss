@@ -30,8 +30,10 @@
 .box-itens-parceiros li {
 	color:$pink;
 	background: #fff2f8;
-	padding: 3rem 2rem;
-	height: 291px;
+	padding: 3rem 1rem;
+    height: 291px;
+    margin-right: 1rem;
+    width: 18rem;
 }
 	.box-itens-parceiros li:last-child {
 		margin:0;
@@ -59,7 +61,7 @@
 	font-size: 2rem;
 	font-weight: $extra-light ;
 	color:$pink;
-	margin-top: 10rem;
+	margin-top: 2rem;
 }
 	.box-loja-virutal p:before {
 		content: ' ';

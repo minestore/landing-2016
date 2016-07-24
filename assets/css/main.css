@@ -4316,8 +4316,11 @@ h4 {
   background: #fff;
   margin: 1rem;
   position: relative;
-  z-index: 99999;
+  z-index: 9999;
   padding: 1rem; }
+
+.box-steps .media-object {
+  width: 35.5rem; }
 
 .box-steps .media-object:nth-child(2) {
   margin-top: 70px; }
@@ -4326,7 +4329,7 @@ h4 {
   margin-top: -35px; }
 
 .box-steps p {
-  font-size: 0.75rem; }
+  font-size: 0.90rem; }
 
 .icon-product {
   height: 82px;
@@ -4558,13 +4561,18 @@ h4 {
   z-index: 9999;
   margin-top: 8rem;
   padding: 5rem;
-  padding-right: 35rem; }
+  padding-right: 35rem;
+  top: 200px;
+  height: 726px; }
 
 .box-ecommerce {
   background: #f8f8f8;
   position: relative;
   z-index: 9998;
-  overflow: hidden; }
+  overflow: hidden;
+  top: -500px;
+  padding: 5rem;
+  width: 100%; }
 
 /*.bg-mockup {	
 		height: 726px;
@@ -4606,7 +4614,6 @@ h4 {
 .box-funcionalidades {
   position: relative;
   z-index: 999999;
-  margin-top: 30rem;
   padding-bottom: 8rem; }
 
 .box-funcionalidades h2 {
@@ -4743,8 +4750,10 @@ h4 {
 .box-itens-parceiros li {
   color: #ee2778;
   background: #fff2f8;
-  padding: 3rem 2rem;
-  height: 291px; }
+  padding: 3rem 1rem;
+  height: 291px;
+  margin-right: 1rem;
+  width: 18rem; }
 
 .box-itens-parceiros li:last-child {
   margin: 0; }
@@ -4772,7 +4781,7 @@ h4 {
   font-size: 2rem;
   font-weight: 200;
   color: #ee2778;
-  margin-top: 10rem; }
+  margin-top: 2rem; }
 
 .box-loja-virutal p:before {
   content: ' ';
