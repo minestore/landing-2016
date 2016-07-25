@@ -1,0 +1,42 @@
+---
+layout: default
+---
+<section class="row">
+	<header class="row">
+    <h1>{{ page.main_page_title }}</h1>
+    <div class="row text-center">
+      <div class="large-6 columns">
+        <img src="{{ "/assets/img/" | prepend: site.baseurl }}{{ page.main_page_image }}" alt="" />
+      </div>
+      <div class="large-4 large-pull-1 columns">
+        {% include cta-header.html %}
+      </div>
+    </div>
+	</header>
+
+	<div class="row">
+		<h2>{{ page.main_page_subtitle }}</h2>
+    {% for paragraph in page.main_page_paragraphs %}
+      <p>{{ paragraph }}</p>
+    {% endfor %}
+	</div>
+
+	<div class="row large-up-2">
+    <h3>Confira alguns conteúdos deste e-book:</h3>
+    {% assign position = 1 %}
+    {% for content in page.ebook_content %}
+      <div class="column">
+        <div class="media-object-section">
+          <span>{{ position }}</span>
+        </div>
+        <div class="media-object-section">
+          <h4>{{ content.title }}</h4>
+          <p>{{ content.text }}</p>
+        </div>
+      </div>
+      {% assign position = position | plus: 1 %}
+    {% endfor %}
+	</div>
+</section>
+
+{% include cta-footer.html %}
