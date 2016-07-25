@@ -4183,6 +4183,12 @@ pre {
   height: 2px !important; }
 
 /**
+ * Menu
+ */
+.off-canvas-content, .off-canvas-content {
+  background: inherit; }
+
+/**
  * Titulos
  */
 h1 {
@@ -4291,6 +4297,10 @@ h4 {
 .container-steps h2 {
   color: #ee2778; }
 
+.container-steps header {
+  position: relative;
+  z-index: 9999; }
+
 .box-steps {
   margin-top: 3rem;
   overflow: hidden; }
@@ -4349,7 +4359,8 @@ h4 {
   z-index: 9999; }
 
 .box-depoimentos h2 {
-  color: #ee2778; }
+  color: #ee2778;
+  font-size: 2rem; }
 
 .box-depoimentos header {
   margin: 8rem 0; }
@@ -4555,24 +4566,28 @@ h4 {
  * Box Ecommerce
  */
 .bg-mockup {
-  background: url(../img/mockup.png) no-repeat right bottom;
-  overflow: hidden;
+  background: url(../img/mockup.png) no-repeat top right;
   position: relative;
-  z-index: 9999;
-  margin-top: 8rem;
-  padding: 5rem;
-  padding-right: 35rem;
-  top: 200px;
-  height: 726px; }
+  z-index: 9998;
+  margin-top: -650px;
+  height: 726px;
+  margin-left: 64rem; }
 
 .box-ecommerce {
   background: #f8f8f8;
   position: relative;
-  z-index: 9998;
+  z-index: 9997;
   overflow: hidden;
-  top: -500px;
-  padding: 5rem;
-  width: 100%; }
+  padding: 5rem 3rem;
+  margin-left: 25rem;
+  top: 10rem; }
+
+.box-ecommerce .text-position {
+  position: relative;
+  z-index: 9999; }
+
+.position-ecommerce {
+  height: 85rem; }
 
 /*.bg-mockup {	
 		height: 726px;
@@ -4613,8 +4628,9 @@ h4 {
  */
 .box-funcionalidades {
   position: relative;
-  z-index: 999999;
-  padding-bottom: 8rem; }
+  z-index: 9999;
+  padding-bottom: 8rem;
+  top: 0; }
 
 .box-funcionalidades h2 {
   color: #ee2778; }
@@ -4800,7 +4816,9 @@ h4 {
   display: block;
   border: 1px solid #ddd;
   padding: 1rem;
-  margin-bottom: 3rem; }
+  margin-bottom: 3rem;
+  width: 16.5rem;
+  background: url(../img/arrow-links.svg) no-repeat 7rem 0.4rem; }
 
 /**
  * Lojistas
@@ -4819,6 +4837,9 @@ h4 {
 .box-lojistas h2 {
   color: #ffbad7;
   font-size: 3rem; }
+
+.box-lojistas a {
+  background: url(../img/arrow-links.svg) no-repeat 7rem 0.4rem; }
 
 .box-lojistas .fewer-styles a {
   color: #7d95ff; }

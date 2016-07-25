@@ -17,9 +17,13 @@
 	color:$pink-light;
 	font-size: 3rem;
 }
+	.box-lojistas a {
+		background: url(../img/arrow-links.svg) no-repeat 7rem 0.40rem; 
+	}
 	.box-lojistas .fewer-styles a {
 		color:$purple;
 	}
+	
 	.box-lojistas .row {
 		margin: 10rem 0;
 	}

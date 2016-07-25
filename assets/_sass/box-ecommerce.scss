@@ -3,26 +3,30 @@
  * Box Ecommerce
  */
 .bg-mockup {
-	background:  url(../img/mockup.png) no-repeat right bottom; 
-	overflow: hidden;
+	background:  url(../img/mockup.png) no-repeat top right; 
     position: relative;
-    z-index: 9999;
-    margin-top: 8rem;
-    padding: 5rem;
-    padding-right: 35rem;
-    top: 200px;
+    z-index: 9998;
+    margin-top: -650px;
     height: 726px;
+    margin-left: 64rem;
     
 }
 	.box-ecommerce {
 		background: #f8f8f8;
 	    position: relative;
-	    z-index: 9998;
+	    z-index: 9997;
 	    overflow: hidden;
-	    top: -500px;
-	    padding: 5rem;
-	    width: 100%;	
-}
+	    padding: 5rem 3rem;
+	    margin-left: 25rem;
+	    top:10rem;
+	}
+	.box-ecommerce .text-position {
+		position: relative;
+		z-index: 9999;
+	}
+	.position-ecommerce {
+		height: 85rem;
+	}
 	/*.bg-mockup {	
 		height: 726px;
 		width: 1176px;

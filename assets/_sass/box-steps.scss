@@ -23,6 +23,10 @@
 	.container-steps h2 {
 		color:$pink;		
 	}
+	.container-steps header {
+		position: relative;
+		z-index: 9999;
+	}
 		.box-steps {
 			margin-top: 3rem;
 			overflow: hidden;
