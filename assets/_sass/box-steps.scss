@@ -105,3 +105,14 @@
 				.box-steps .columns:last-child {
 					float: left;
 				}
+    @media screen and (max-device-width: 1280px) {
+		.box-steps .media-object {
+			width: 26.5rem;
+		}
+		.box-steps .media-object:nth-child(3):before {
+			left: 20rem;
+		}
+		.bg-women {
+			background: url(../img/woman-clothes-1.jpg) no-repeat right 30rem; 
+		}
+	}
