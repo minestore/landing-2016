@@ -11,4 +11,7 @@ sass:
 markdown: kramdown
 permalink: /:title
 exclude :
+  - bower.json
   - node_modules
+  - package.json
+  - Rakefile
