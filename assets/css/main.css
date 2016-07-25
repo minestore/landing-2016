@@ -4326,8 +4326,38 @@ h4 {
   background: #fff;
   margin: 1rem;
   position: relative;
+  z-index: 9997;
+  padding: 1rem;
+  top: -2rem; }
+
+.box-steps .media-object:before {
+  content: ' ';
+  background: url(../img/arrow-steps.png) no-repeat 0 0;
+  width: 143px;
+  height: 61px;
+  position: relative;
   z-index: 9999;
-  padding: 1rem; }
+  display: block; }
+
+.box-steps .media-object:nth-child(1):before {
+  background: none; }
+
+.box-steps .media-object:nth-child(2):before {
+  right: 6rem; }
+
+.box-steps .media-object:nth-child(3):before {
+  top: -2rem;
+  left: 30rem;
+  right: 0;
+  -ms-transform: scaleX(-1);
+      transform: scaleX(-1);
+  -webkit-filter: FlipH;
+          filter: FlipH;
+  -ms-filter: "FlipH"; }
+
+.box-steps .media-object:nth-child(4):before {
+  top: 2rem;
+  right: 6rem; }
 
 .box-steps .media-object {
   width: 35.5rem; }
@@ -4368,25 +4398,32 @@ h4 {
 .box-depoimentos h4 {
   font-weight: 200;
   font-style: italic;
-  padding-left: 6rem; }
+  /*padding-left: 6rem;*/ }
 
-.box-depoimentos h4:before, .box-depoimentos h4:after {
-  content: ' ';
-  background: url(../img/aspas.png) no-repeat top center;
-  display: inline-block;
-  height: 50px;
-  width: 43px; }
-
-.box-depoimentos h4:after {
-  -ms-transform: rotate(180deg);
-  /* IE 9 */
-  /* Chrome, Safari, Opera */
-  transform: rotate(180deg); }
-
+/*.box-arrow:before, .box-arrow:after {
+		content: ' ';
+		background: url(../img/aspas.png) no-repeat 0 0; 
+		display: block;
+		height: 50px;
+		margin-left: 3rem;
+	}
+	.box-arrow:after {
+		 -ms-transform: rotate(180deg); /* IE 
+    	-webkit-transform: rotate(180deg); 
+    	transform: rotate(180deg);
+	}*/
 .box-depoimentos span {
-  font-size: 2rem;
+  font-size: 1.5rem;
+  font-style: 500;
+  font-weight: bold;
   padding: 1rem;
   color: #666; }
+
+.box-depoimentos-item-quote {
+  border: none;
+  background: url(../img/aspas.png) no-repeat 0 0;
+  padding: 0 0 0 4rem;
+  margin-left: 5rem; }
 
 /**
  * Slider
@@ -4623,6 +4660,16 @@ h4 {
   height: 726px;
   width: 560px; }
 
+/*@media screen and (min-device-width: 1280px) {
+		.box-ecommerce {
+			margin-left: 0;
+		}
+		.bg-mockup {
+			margin-left:20rem;
+			background: url(../img/mockup-1.png) no-repeat left bottom; 
+
+		}
+	}*/
 /**
  * Box Funcionalidades
  */

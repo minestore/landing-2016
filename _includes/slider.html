@@ -1,6 +1,6 @@
 <div class="row">
-  <div class="" role="region" aria-label="Favorite Space Pictures" data-orbit>
-    <ul class="">
+  <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
+    <ul class="orbit-container">
       {% for post in include.slider_posts %}
         <li class="orbit-slide">
           <div class="row">
@@ -9,6 +9,7 @@
         </li>
       {% endfor %}
     </ul>
+    <nav class="orbit-bullets">
       {% assign position = 0 %}
       {% for post in include.slider_posts %}
         {% if position == 0 %}

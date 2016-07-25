@@ -15,7 +15,6 @@
     height: 100%;
     right: 0;
 }
-
 .container-steps {
 	padding-top:5%;
 	background:#f8f8f8;
@@ -51,10 +50,42 @@
 				.box-steps div {
 					background: $white;
 					margin:1rem;
-				    position: relative;
-				    z-index: 9999;
-				    padding: 1rem;
+    				position: relative;
+    				z-index: 9997;				    
+    				padding: 1rem;
+    				top: -2rem;
 				}
+				.box-steps .media-object:before {
+					content: ' ';
+					background: url(../img/arrow-steps.png) no-repeat 0 0; 
+					width: 143px;
+					height: 61px;
+					position: relative;
+					z-index: 9999;
+					display: block;
+				}
+				.box-steps .media-object:nth-child(1):before {
+					background: none;
+				}
+				.box-steps .media-object:nth-child(2):before {
+					right: 6rem;
+				}
+				.box-steps .media-object:nth-child(3):before {
+					top: -2rem;
+					left: 30rem;
+					right: 0;
+ 					-moz-transform: scaleX(-1);
+        			-o-transform: scaleX(-1);
+        			-webkit-transform: scaleX(-1);
+        			transform: scaleX(-1);
+        			filter: FlipH;
+        			-ms-filter: "FlipH";
+				}
+				.box-steps .media-object:nth-child(4):before {
+					top: 2rem;
+					right: 6rem;
+				}
+
 				.box-steps .media-object {
 					width: 35.5rem;
 				}
