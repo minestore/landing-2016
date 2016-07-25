@@ -61,14 +61,15 @@
 		height: 726px;
 		width: 560px;
 	}
-
-	/*@media screen and (min-device-width: 1280px) {
+	@media screen and (max-device-width: 1280px) {
 		.box-ecommerce {
-			margin-left: 0;
+			margin-left: 15rem;
 		}
 		.bg-mockup {
-			margin-left:20rem;
+			margin-left:35rem;
 			background: url(../img/mockup-1.png) no-repeat left bottom; 
-
+			margin-top:-850px;
+			height: 763px;
 		}
-	}*/
+
+	}

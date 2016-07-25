@@ -1,0 +1,36 @@
+/**
+ * Preco
+ */
+
+.box-ebooks header {
+	background: url(../img/bg-ebooks.jpg) no-repeat top center; 
+	margin-bottom: 5rem;
+}
+	.box-ebooks h1 {
+		color:$white;
+		font-size: 3rem;
+		font-weight: $extra-light;
+		padding: 6rem 0;
+	}
+	.box-ebooks h2 {
+		color: $grey;
+		font-weight: $medium;
+		font-size: 1.5rem;
+	}	
+.ebooks {
+	margin: 7rem 0;
+}
+	.ebooks h4 {
+		font-size: 1rem;
+		padding:1rem 2rem;
+    	margin: 0 1.5rem;
+	}
+	.ebooks .blue {
+		color:#4192af;
+		background: #e9f9ff;
+	}
+	.ebooks .pink {
+		color:$pink;
+		background: #fff2f8;
+	}
+

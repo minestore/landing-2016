@@ -4378,6 +4378,14 @@ h4 {
 .box-steps .columns:last-child {
   float: left; }
 
+@media screen and (max-device-width: 1280px) {
+  .box-steps .media-object {
+    width: 26.5rem; }
+  .box-steps .media-object:nth-child(3):before {
+    left: 20rem; }
+  .bg-women {
+    background: url(../img/woman-clothes-1.jpg) no-repeat right 30rem; } }
+
 /**
  * Box Depoimentos
  */
@@ -4578,9 +4586,6 @@ h4 {
   top: -69px;
   padding-bottom: 8px; }
 
-.box-nichos:nth-child(2) picture:before {
-  background: #fff2f8; }
-
 .box-nichos img {
   position: absolute;
   z-index: 9999;
@@ -4660,16 +4665,15 @@ h4 {
   height: 726px;
   width: 560px; }
 
-/*@media screen and (min-device-width: 1280px) {
-		.box-ecommerce {
-			margin-left: 0;
-		}
-		.bg-mockup {
-			margin-left:20rem;
-			background: url(../img/mockup-1.png) no-repeat left bottom; 
+@media screen and (max-device-width: 1280px) {
+  .box-ecommerce {
+    margin-left: 15rem; }
+  .bg-mockup {
+    margin-left: 35rem;
+    background: url(../img/mockup-1.png) no-repeat left bottom;
+    margin-top: -850px;
+    height: 763px; } }
 
-		}
-	}*/
 /**
  * Box Funcionalidades
  */
@@ -4859,13 +4863,14 @@ h4 {
   margin: 5rem 0; }
 
 .logo-parceiros a {
+  color: #7d95ff;
   text-align: center;
   display: block;
   border: 1px solid #ddd;
   padding: 1rem;
   margin-bottom: 3rem;
   width: 16.5rem;
-  background: url(../img/arrow-links.svg) no-repeat 7rem 0.4rem; }
+  background: url(../img/arrow-links.svg) no-repeat 12rem 1.4rem; }
 
 /**
  * Lojistas
@@ -4891,8 +4896,32 @@ h4 {
 .box-lojistas .fewer-styles a {
   color: #7d95ff; }
 
+.box-lojistas .row:first-child {
+  margin: 0 0; }
+
 .box-lojistas .row {
   margin: 10rem 0; }
+
+.box-lojistas .large-pull-6 {
+  top: 5rem; }
+
+.box-lojistas .large-pull-1 {
+  top: 5rem; }
+
+/**
+ * Colors Lojistas
+ */
+.box-lojistas .green-light {
+  color: #a9d3a7; }
+
+.box-lojistas .purple-light {
+  color: #c0aadf; }
+
+.box-lojistas .pink-light {
+  color: #ffbad7; }
+
+.box-lojistas .blue-light {
+  color: #a4cfde; }
 
 /**
  * Preco
@@ -4977,6 +5006,40 @@ h4 {
   border-radius: 3px;
   border: inherit;
   margin-left: -1rem; }
+
+/**
+ * Preco
+ */
+.box-ebooks header {
+  background: url(../img/bg-ebooks.jpg) no-repeat top center;
+  margin-bottom: 5rem; }
+
+.box-ebooks h1 {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 200;
+  padding: 6rem 0; }
+
+.box-ebooks h2 {
+  color: #333;
+  font-weight: 500;
+  font-size: 1.5rem; }
+
+.ebooks {
+  margin: 7rem 0; }
+
+.ebooks h4 {
+  font-size: 1rem;
+  padding: 1rem 2rem;
+  margin: 0 1.5rem; }
+
+.ebooks .blue {
+  color: #4192af;
+  background: #e9f9ff; }
+
+.ebooks .pink {
+  color: #ee2778;
+  background: #fff2f8; }
 
 /**
  * Footer
