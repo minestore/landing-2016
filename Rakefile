@@ -5,6 +5,7 @@ task :deploy do
   puts "## Deploying to Github Pages"
 
   puts "## Generating site"
+  system "gulp sass"
   system "jekyll build"
 
   cd "_site" do
