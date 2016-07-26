@@ -72,7 +72,7 @@
 				}
 				.box-steps .media-object:nth-child(3):before {
 					top: -2rem;
-					left: 30rem;
+					left: 25rem;
 					right: 0;
  					-moz-transform: scaleX(-1);
         			-o-transform: scaleX(-1);
@@ -84,10 +84,6 @@
 				.box-steps .media-object:nth-child(4):before {
 					top: 2rem;
 					right: 6rem;
-				}
-
-				.box-steps .media-object {
-					width: 35.5rem;
 				}
 				.box-steps .media-object:nth-child(2){
 					margin-top: 70px;
@@ -105,14 +101,25 @@
 				.box-steps .columns:last-child {
 					float: left;
 				}
-    @media screen and (max-device-width: 1280px) {
-		.box-steps .media-object {
-			width: 26.5rem;
+	@media only screen and (max-width: 40em) { 	
+		.container-steps {
+			padding-top: 10%;
+		}	
+		.bg-women, .box-steps .media-object:before {
+			background: none; 
 		}
-		.box-steps .media-object:nth-child(3):before {
-			left: 20rem;
+		.box-steps .media-object:nth-child(2) {
+			margin-top: 0;
 		}
-		.bg-women {
-			background: url(../img/woman-clothes-1.jpg) no-repeat right 30rem; 
+		.box-steps .media-object:nth-child(3) {
+			margin-top:0;
 		}
 	}
+    
+    /*$small-range: (0em, 40em); /* 0, 640px /
+	$medium-range: (40.063em, 64em); / 641px, 1024px /
+	$large-range: (64.063em, 90em); / 1025px, 1440px /
+	$xlarge-range: (90.063em, 120em); / 1441px, 1920px /
+	$xxlarge-range: (120.063em); / 1921px */
+	
+

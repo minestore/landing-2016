@@ -29,14 +29,15 @@
 		.navigation li > a {
 			color: $white;
 			text-transform: capitalize;
-			margin: 0.5rem 1.5rem;
 			font-weight: $medium;
 		}
 		.navigation li:last-child > a {
 			padding: 1rem;
 			margin-left: 1.5rem;
 		}
-
+		.menu > li > a {
+			line-height: inherit;
+		}
 /**
  * Hero
  */
@@ -78,5 +79,11 @@
 	.header-pg .navigation li:last-child > a:hover {
 		color:$white;
 	}
-
-
+/**
+ * Mobile header
+ */
+@media only screen and (max-width: 40em) {
+	.title-hero {
+		margin:10rem 0 8.5rem 0;
+	}
+}

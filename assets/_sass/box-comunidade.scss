@@ -103,3 +103,24 @@
 		position: relative;
 		z-index: 9999;
 	}
+
+/**
+ * Mobile comunidade
+ */
+@media only screen and (max-width: 40em) {
+	.tabs {
+		padding:0;
+	}
+	.tabs-title > a {
+		padding: 0 1rem;
+	}
+	.box-nichos picture {
+		padding-bottom: 0;
+	}
+	.box-nichos picture:before {
+		height: 450px;
+	}
+	.box-comunidade {
+		padding-bottom: 0;
+	}
+}

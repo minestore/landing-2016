@@ -4158,7 +4158,6 @@ pre {
   height: 70px; }
 
 .form-cta .btn-cta {
-  width: 25rem;
   font-weight: 500;
   font-size: 1.2rem;
   background: #ee2778;
@@ -4230,12 +4229,14 @@ h4 {
 .navigation li > a {
   color: #fff;
   text-transform: capitalize;
-  margin: 0.5rem 1.5rem;
   font-weight: 500; }
 
 .navigation li:last-child > a {
   padding: 1rem;
   margin-left: 1.5rem; }
+
+.menu > li > a {
+  line-height: inherit; }
 
 /**
  * Hero
@@ -4273,6 +4274,13 @@ h4 {
 
 .header-pg .navigation li:last-child > a:hover {
   color: #fff; }
+
+/**
+ * Mobile header
+ */
+@media only screen and (max-width: 40em) {
+  .title-hero {
+    margin: 10rem 0 8.5rem 0; } }
 
 /**
  * Section steps
@@ -4347,7 +4355,7 @@ h4 {
 
 .box-steps .media-object:nth-child(3):before {
   top: -2rem;
-  left: 30rem;
+  left: 25rem;
   right: 0;
   -ms-transform: scaleX(-1);
       transform: scaleX(-1);
@@ -4358,9 +4366,6 @@ h4 {
 .box-steps .media-object:nth-child(4):before {
   top: 2rem;
   right: 6rem; }
-
-.box-steps .media-object {
-  width: 35.5rem; }
 
 .box-steps .media-object:nth-child(2) {
   margin-top: 70px; }
@@ -4378,14 +4383,21 @@ h4 {
 .box-steps .columns:last-child {
   float: left; }
 
-@media screen and (max-device-width: 1280px) {
-  .box-steps .media-object {
-    width: 26.5rem; }
-  .box-steps .media-object:nth-child(3):before {
-    left: 20rem; }
-  .bg-women {
-    background: url(../img/woman-clothes-1.jpg) no-repeat right 30rem; } }
+@media only screen and (max-width: 40em) {
+  .container-steps {
+    padding-top: 10%; }
+  .bg-women, .box-steps .media-object:before {
+    background: none; }
+  .box-steps .media-object:nth-child(2) {
+    margin-top: 0; }
+  .box-steps .media-object:nth-child(3) {
+    margin-top: 0; } }
 
+/*$small-range: (0em, 40em); /* 0, 640px /
+	$medium-range: (40.063em, 64em); / 641px, 1024px /
+	$large-range: (64.063em, 90em); / 1025px, 1440px /
+	$xlarge-range: (90.063em, 120em); / 1441px, 1920px /
+	$xxlarge-range: (120.063em); / 1921px */
 /**
  * Box Depoimentos
  */
@@ -4422,7 +4434,6 @@ h4 {
 	}*/
 .box-depoimentos span {
   font-size: 1.5rem;
-  font-style: 500;
   font-weight: bold;
   padding: 1rem;
   color: #666; }
@@ -4501,6 +4512,36 @@ h4 {
 
 .img-midias .ecommerce a:hover {
   background: url(../img/logo-ecommerce-hover.png) no-repeat top center; }
+
+/**
+ * Mobile depoimentos
+ */
+@media only screen and (max-width: 40em) {
+  .box-depoimentos header {
+    margin-top: 2rem;
+    margin-bottom: 2rem; }
+  .box-depoimentos span {
+    font-size: 1rem; }
+  .box-depoimentos-item-quote {
+    margin-left: 0;
+    margin-top: 2rem; }
+  .orbit-bullets {
+    margin: 0; } }
+
+/**
+ * Mobile midia
+ */
+@media only screen and (max-width: 40em) {
+  .box-midias {
+    padding-bottom: 0; }
+  .box-midias h5 {
+    padding: 5rem 0 0 0;
+    font-size: 1.5rem; }
+  .img-midias {
+    margin-top: 3rem;
+    overflow: hidden; }
+  .img-midias li {
+    margin-bottom: 3rem; } }
 
 /**
  * Box Comunidade
@@ -4605,6 +4646,21 @@ h4 {
   z-index: 9999; }
 
 /**
+ * Mobile comunidade
+ */
+@media only screen and (max-width: 40em) {
+  .tabs {
+    padding: 0; }
+  .tabs-title > a {
+    padding: 0 1rem; }
+  .box-nichos picture {
+    padding-bottom: 0; }
+  .box-nichos picture:before {
+    height: 450px; }
+  .box-comunidade {
+    padding-bottom: 0; } }
+
+/**
  * Box Ecommerce
  */
 .bg-mockup {
@@ -4678,6 +4734,24 @@ h4 {
     height: 763px; } }
 
 /**
+ * Mobile comunidade
+ */
+@media only screen and (max-width: 40em) {
+  .bg-woman-bicycle {
+    background: 0;
+    height: inherit; }
+  .bg-mockup {
+    height: inherit;
+    margin-top: 0; }
+  .position-ecommerce {
+    height: 60rem;
+    overflow: hidden; }
+  .box-ecommerce {
+    margin-left: 0;
+    top: 0;
+    padding: 2rem 0 2rem 0; } }
+
+/**
  * Box Funcionalidades
  */
 .box-funcionalidades {
@@ -4704,6 +4778,17 @@ h4 {
   width: 59px; }
 
 /**
+	 * Mobile funcionalidades
+	 */
+@media only screen and (max-width: 40em) {
+  .box-funcionalidades {
+    padding-bottom: 1rem;
+    padding-top: 4rem; }
+  .box-funcionalidades .stack-for-small {
+    padding: 2rem;
+    border-bottom: 1px solid #f4ebe6; } }
+
+/**
  * Box CTA
  */
 .box-cta {
@@ -4717,8 +4802,7 @@ h4 {
 .box-cta h2 {
   margin: 18rem 20rem 18rem 0;
   font-weight: 500;
-  font-size: 3rem;
-  margin: 18rem 3rem; }
+  font-size: 3rem; }
 
 .box-cta h2:last-child {
   border-right: 1px solid #6c535f;
@@ -4736,6 +4820,21 @@ h4 {
   font-weight: 300;
   font-size: 1rem;
   padding-bottom: 4rem; }
+
+/**
+ * Mobile CTA
+ */
+@media only screen and (max-width: 40em) {
+  .box-cta h2:last-child {
+    height: inherit;
+    margin-right: 0; }
+  .box-cta h2 {
+    margin: 0; }
+  .box-cta h2:last-child {
+    padding-right: 0;
+    padding-top: 2rem; }
+  .box-form-cta {
+    margin: 3rem 0 0 0; } }
 
 /**
  * Recursos
@@ -4999,7 +5098,6 @@ h4 {
   border-radius: 3px; }
 
 .box-form .btn-cta {
-  width: 15rem;
   color: #fff;
   font-weight: 500;
   font-size: 1rem;
@@ -5220,6 +5318,16 @@ h4 {
   height: 51px;
   width: 178px;
   margin: 1rem 0; }
+
+/**
+ * Mobile footer
+ */
+@media only screen and (max-width: 40em) {
+  .box-redes .text-redes {
+    padding: 0;
+    margin: 2rem 0; }
+  .box-redes .links-redes li {
+    margin-left: 3rem; } }
 
 /*!
  * Hover.css (http://ianlunn.github.io/Hover/)

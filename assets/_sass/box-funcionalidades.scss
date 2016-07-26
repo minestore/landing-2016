@@ -25,3 +25,16 @@
 	 	height: 40px;
 	 	width: 59px;
 	 }
+	/**
+	 * Mobile funcionalidades
+	 */
+	@media only screen and (max-width: 40em) {
+		.box-funcionalidades {
+			padding-bottom: 1rem;
+			padding-top: 4rem;
+		}
+		.box-funcionalidades .stack-for-small {
+			padding:2rem;
+			border-bottom:1px solid $grey-light;
+		}
+	}
