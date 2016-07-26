@@ -1,17 +1,15 @@
 ---
 layout: default
 ---
-<section class="row">
-	<header class="row">
-    <h1>{{ page.main_page_title }}</h1>
-    <div class="row text-center">
+<section class="single-ebook {{page.bg_ebook}}">
+	<header class="row text-center">
       <div class="large-6 columns">
         <img src="{{ "/assets/img/" | prepend: site.baseurl }}{{ page.main_page_image }}" alt="" />
       </div>
-      <div class="large-4 large-pull-1 columns">
+      <div class="form-ebook large-4 large-pull-1 columns">
+        <h1>{{ page.main_page_title }}</h1>
         {% include cta-header.html %}
       </div>
-    </div>
 	</header>
 
 	<div class="row">

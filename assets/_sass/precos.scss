@@ -20,10 +20,6 @@
 	.box-precos .box-title {
 		margin-bottom: 2rem;
 	}
-	.box-precos .box-form {
-		margin: 3rem 0;
-		clear: both;
-	}
 	.box-precos .box-depoimentos {
 		background: inherit;
 		margin: 5rem 0;
@@ -66,12 +62,18 @@
 	.box-perguntas .row {
 		margin-bottom: 3rem;
 	}
-.box-precos .input-txt {
+	
+.box-form {
+	margin: 3rem 0;
+	clear: both;
+}
+
+.box-form .input-txt {
 	height: 59px;
 	text-indent: 20px;
 	border-radius:3px;
 }
-.box-precos .box-form .btn-cta {
+.box-form .btn-cta {
 	width: 15rem;
 	color:$white;
     font-weight: 500;
