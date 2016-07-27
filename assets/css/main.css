@@ -5131,6 +5131,9 @@ h4 {
   padding: 1.5rem 0;
   text-indent: 20px; }
 
+.success-cta-header {
+  display: none; }
+
 .ebooks {
   margin: 7rem 0; }
 
@@ -5247,6 +5250,9 @@ h4 {
   font-weight: 500;
   color: #fff;
   margin-bottom: 2rem; }
+
+.cta-footer .success-cta-footer {
+  display: none; }
 
 /**
  * Footer

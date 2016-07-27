@@ -3,7 +3,7 @@
  */
 
 .box-ebooks header {
-	background: url(../img/bg-ebooks.jpg) no-repeat top center; 
+	background: url(../img/bg-ebooks.jpg) no-repeat top center;
 	margin-bottom: 5rem;
 }
 	.box-ebooks h1 {
@@ -16,14 +16,17 @@
 		color: $grey;
 		font-weight: $medium;
 		font-size: 1.5rem;
-	}	
+	}
 .cta-header input {
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
 	padding:1.5rem 0;
 	text-indent: 20px;
-}	
+}
+.success-cta-header {
+	display:none;
+}
 .ebooks {
 	margin: 7rem 0;
 }
@@ -41,11 +44,11 @@
 		background: #fff2f8;
 	}
 .single-ebook-facebook {
-	background: url(../img/bg-ebook-facebook.jpg) no-repeat top center; 
-}	
+	background: url(../img/bg-ebook-facebook.jpg) no-repeat top center;
+}
 .single-ebook-virtual {
-	background: url(../img/bg-ebook-virtual.jpg) no-repeat top center; 
-}	
+	background: url(../img/bg-ebook-virtual.jpg) no-repeat top center;
+}
 .single-ebook h1 {
 	color:$pink;
 	font-size: 2rem;
@@ -142,8 +145,9 @@
 	.cta-footer h4 {
 		font-size:2rem;
 		font-weight: $medium;
-		color:$white; 
+		color:$white;
 		margin-bottom: 2rem;
 	}
-
-
+	.cta-footer .success-cta-footer {
+		display:none;
+	}
