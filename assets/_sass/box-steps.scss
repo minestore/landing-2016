@@ -101,6 +101,26 @@
 				.box-steps .columns:last-child {
 					float: left;
 				}
+
+
+/**
+* Large 1280
+*/
+	@media only screen and (max-width: 80em) {
+		.bg-women {
+			background: url(../img/woman-clothes-1.jpg) no-repeat right 30rem;
+		}
+		.box-steps .media-object {
+			width: 25rem;
+		}
+		.box-steps .media-object:nth-child(3):before {
+			left: 20rem;
+		}
+	}		
+
+/**
+* Mobile header
+*/		
 	@media only screen and (max-width: 40em) { 	
 		.container-steps {
 			padding-top: 10%;

@@ -25,6 +25,9 @@
 	 	height: 40px;
 	 	width: 59px;
 	 }
+	 .small-pull-5 {
+		left: 0;		
+	 }
 	/**
 	 * Mobile funcionalidades
 	 */
@@ -37,4 +40,8 @@
 			padding:2rem;
 			border-bottom:1px solid $grey-light;
 		}
+		.small-pull-5 {
+			left: -41.66667%;		
+	 	}
+
 	}

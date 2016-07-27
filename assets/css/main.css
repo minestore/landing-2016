@@ -4211,13 +4211,15 @@ h4 {
 
 .bg-home {
   background: url(../img/banner-hero.jpg) no-repeat top center;
-  font-style: normal; }
+  font-style: normal;
+  background-size: cover;
+  position: relative;
+  top: 0; }
 
 .logo-mine {
   display: block;
   height: 52px;
-  width: 181px;
-  margin-top: 10px; }
+  width: 181px; }
 
 .navigation {
   list-style: none; }
@@ -4229,26 +4231,35 @@ h4 {
 .navigation li > a {
   color: #fff;
   text-transform: capitalize;
-  font-weight: 500; }
+  font-weight: 500;
+  display: inline-block; }
 
 .navigation li:last-child > a {
-  padding: 1rem;
   margin-left: 1.5rem; }
 
 .menu > li > a {
-  line-height: inherit; }
+  line-height: 10px; }
+
+.menu-home li {
+  padding: 0;
+  margin: 0; }
+
+.menu-home li > a {
+  padding: 0;
+  margin: 0; }
+
+.header-pg .logo-mine {
+  margin-top: -10px !important; }
 
 /**
  * Hero
  */
 .hero-wrapper {
-  color: #fff; }
+  color: #fff;
+  padding: 10rem 0; }
 
 .hero-wrapper h2 {
   font-size: 1.5rem; }
-
-.title-hero {
-  margin: 10rem 0 11rem 0; }
 
 /**
  * Header page
@@ -4275,12 +4286,37 @@ h4 {
 .header-pg .navigation li:last-child > a:hover {
   color: #fff; }
 
+.top-bar, .top-bar ul {
+  background-color: inherit !important; }
+
 /**
- * Mobile header
- */
+* Large 1280
+*/
+@media only screen and (max-width: 80em) {
+  .hero-wrapper {
+    padding: 6rem 0; } }
+
+/**
+* Mobile header
+*/
 @media only screen and (max-width: 40em) {
-  .title-hero {
-    margin: 10rem 0 8.5rem 0; } }
+  .top-bar, .top-bar ul {
+    width: 100%;
+    position: absolute;
+    background: #5a404b !important;
+    height: 100%;
+    z-index: 9996;
+    top: 0;
+    text-align: center; }
+  .top-bar .top-bar-left, .top-bar .top-bar-right {
+    height: 100%; }
+  .title-bar {
+    background: inherit; }
+  .logo-mobile .logo-mine {
+    height: 40px;
+    width: 150px; }
+  .hero-wrapper {
+    padding: 5rem 2rem; } }
 
 /**
  * Section steps
@@ -4383,6 +4419,20 @@ h4 {
 .box-steps .columns:last-child {
   float: left; }
 
+/**
+* Large 1280
+*/
+@media only screen and (max-width: 80em) {
+  .bg-women {
+    background: url(../img/woman-clothes-1.jpg) no-repeat right 30rem; }
+  .box-steps .media-object {
+    width: 25rem; }
+  .box-steps .media-object:nth-child(3):before {
+    left: 20rem; } }
+
+/**
+* Mobile header
+*/
 @media only screen and (max-width: 40em) {
   .container-steps {
     padding-top: 10%; }
@@ -4541,7 +4591,9 @@ h4 {
     margin-top: 3rem;
     overflow: hidden; }
   .img-midias li {
-    margin-bottom: 3rem; } }
+    margin-bottom: 3rem; }
+  .orbit-bullets {
+    margin: 2rem 0; } }
 
 /**
  * Box Comunidade
@@ -4593,7 +4645,6 @@ h4 {
   text-align: center;
   line-height: 18px;
   font-size: 1rem;
-  padding: 2rem 0rem 2rem 6rem;
   color: #828282; }
 
 .tabs, .tabs-content {
@@ -4777,6 +4828,9 @@ h4 {
   height: 40px;
   width: 59px; }
 
+.small-pull-5 {
+  left: 0; }
+
 /**
 	 * Mobile funcionalidades
 	 */
@@ -4786,7 +4840,9 @@ h4 {
     padding-top: 4rem; }
   .box-funcionalidades .stack-for-small {
     padding: 2rem;
-    border-bottom: 1px solid #f4ebe6; } }
+    border-bottom: 1px solid #f4ebe6; }
+  .small-pull-5 {
+    left: -41.66667%; } }
 
 /**
  * Box CTA
@@ -4797,7 +4853,8 @@ h4 {
   font-style: normal;
   font-weight: 400;
   height: 800px;
-  overflow: hidden; }
+  overflow: hidden;
+  background-size: cover; }
 
 .box-cta h2 {
   margin: 18rem 20rem 18rem 0;
@@ -4975,6 +5032,13 @@ h4 {
   background: url(../img/arrow-links.svg) no-repeat 12rem 1.4rem; }
 
 /**
+* Mobile header
+*/
+@media only screen and (max-width: 40em) {
+  .container-parceiros .column:last-child:not(:first-child), .container-parceiros .columns:last-child:not(:first-child), .container-parceiros .columns:last-child:not(:first-child) {
+    float: left; } }
+
+/**
  * Lojistas
  */
 .container-lojistas header {
@@ -5105,8 +5169,7 @@ h4 {
   height: 59px;
   text-transform: capitalize;
   border-radius: 3px;
-  border: inherit;
-  margin-left: -1rem; }
+  border: inherit; }
 
 /**
  * Preco

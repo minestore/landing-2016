@@ -1,15 +1,20 @@
 <header class="tp-header header-pg">
   <div class="row">
     <div class="title-bar" data-toggle="main-menu-page" data-responsive-toggle="main-menu-page" data-hide-for="large">
+      <div class="top-bar-left">
+        <a href="{{ '/' | prepend: site.baseurl }}">
+          <img class="logo-mine" src="{{ "/assets/img/logo-minestore.svg" | prepend: site.baseurl }}" alt="minestore loja virtual">
+        </a>
+      </div>
       <div class="title-bar-right">
-        <button class="menu-icon" type="button">Show Menu</button>
+        <button class="menu-icon" type="button">Menu</button>
       </div>
     </div>
 
     <!-- style="width: 100%; position: absolute;" -->
     <nav class="top-bar" id="main-menu-page" data-toggler data-animate="fade-in fade-out">
       <div class="top-bar-left show-for-large">
-        <ul class="dropdown menu" data-dropdown-menu>
+        <ul class="menu-home single-home dropdown menu" data-dropdown-menu>
           <li class="menu-text">
             <a href="{{ '/' | prepend: site.baseurl }}">
               <img class="logo-mine" src="{{ "/assets/img/logo-mine.svg" | prepend: site.baseurl }}" alt="minestore loja virtual">
@@ -20,7 +25,7 @@
       <div class="top-bar-right" data-topbar role="navigation" data-options="is_hover: false">
         <ul class="menu navigation" data-responsive-menu="drilldown large-dropdown">
           <li><a class="hvr-underline-from-center" href="{{ '/recursos' | prepend: site.baseurl }}">Recursos</a></li>
-          <li><a class="hvr-underline-from-center" href="{{ '/lojistas' | prepend: site.baseurl }}">Lojistas</a></li>
+          <li><a class="hvr-underline-from-center" href="{{ '/comunidade' | prepend: site.baseurl }}">Comunidade</a></li>
           <li><a class="hvr-underline-from-center" href="{{ '/e-books' | prepend: site.baseurl }}">E-books</a></li>
           <li><a class="hvr-underline-from-center" href="{{ '/parceiros' | prepend: site.baseurl }}">Parceiros</a></li>
           <li><a class="hvr-underline-from-center" href="#">Blog</a></li>
