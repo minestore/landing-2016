@@ -7,8 +7,11 @@
     padding-top: 1rem;
 }
 .bg-home {
-	background: url(../img/banner-hero.jpg) no-repeat top center; 
+	background: url(../img/banner-hero.jpg) no-repeat top center;
 	font-style: normal;
+	background-size: cover;
+	position: relative;
+	top:0;
 }
 .tp-header {
 
@@ -17,7 +20,6 @@
 		display: block;
 		height:52px;
 		width:181px;
-		margin-top:10px;
 	}
 	.navigation {
 		list-style: none;
@@ -30,33 +32,43 @@
 			color: $white;
 			text-transform: capitalize;
 			font-weight: $medium;
+			display: inline-block;
 		}
 		.navigation li:last-child > a {
-			padding: 1rem;
 			margin-left: 1.5rem;
 		}
 		.menu > li > a {
-			line-height: inherit;
+			line-height: 10px;
 		}
+		.menu-home li {
+			padding:0;
+			margin:0;
+		}
+			.menu-home li > a {
+				padding: 0;
+				margin: 0;
+			}
+		.header-pg .logo-mine {
+			margin-top: -10px!important;
+		}	
 /**
  * Hero
  */
 
 .hero-wrapper {
 	color:$white;
-	
+	padding: 10rem 0;
+
 }		
 	.hero-wrapper h2 {
 		font-size:  1.5rem;
-	}
-	.title-hero {
-		margin: 10rem 0 11rem 0;
 	}
 
 
 /**
  * Header page
  */
+
  .header-pg {
  	border-bottom: 1px solid #DDD; 	
  }
@@ -79,11 +91,42 @@
 	.header-pg .navigation li:last-child > a:hover {
 		color:$white;
 	}
-/**
- * Mobile header
- */
-@media only screen and (max-width: 40em) {
-	.title-hero {
-		margin:10rem 0 8.5rem 0;
+	.top-bar, .top-bar ul {
+		background-color: inherit!important;
 	}
+/**
+* Large 1280
+*/
+	@media only screen and (max-width: 80em) {
+		.hero-wrapper {
+			padding:6rem 0;
+		}
+}
+/**
+* Mobile header
+*/
+@media only screen and (max-width: 40em) {
+	.top-bar, .top-bar ul {
+		width: 100%; 
+		position: absolute;
+		background: #5a404b!important;
+	    height: 100%;
+	    z-index: 9996;
+	    top:0;
+	    text-align: center;
+	}
+	.top-bar .top-bar-left, .top-bar .top-bar-right {
+		height: 100%;
+	}
+	.title-bar {
+		background: inherit;
+	}
+	.logo-mobile .logo-mine {
+		height: 40px;
+		width:150px;
+	}
+	.hero-wrapper {
+		padding:5rem 2rem;
+	}
+
 }
