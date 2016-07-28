@@ -124,6 +124,10 @@
 	.tabs {
 		padding:0;
 	}
+	.tabs .tabs-title {
+		width: 100%;
+		padding: 0.7rem;
+	}
 	.tabs-title > a {
 		padding: 0 1rem;
 	}
@@ -135,5 +139,8 @@
 	}
 	.box-comunidade {
 		padding-bottom: 0;
+	}
+	.box-comunidade h2 {
+		font-size: 2rem!important;
 	}
 }
