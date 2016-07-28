@@ -17,7 +17,7 @@
 	color:$pink-light;
 	font-size: 3rem;
 }
-	.box-comunidade a {
+	.container-comunidade .box-comunidade a {
 		background: url(../img/arrow-links.svg) no-repeat 7rem 0.40rem;
 	}
 	.box-comunidade .fewer-styles a {
@@ -27,7 +27,7 @@
 		margin: 0 0;
 	}
 	.box-comunidade .row {
-		margin: 10rem 0;
+		margin: 0;
 	}
 	.box-comunidade .large-pull-6 {
 		top:5rem;
