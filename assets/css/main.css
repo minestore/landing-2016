@@ -8404,3 +8404,13 @@ h4 {
 .hvr-curl-bottom-left:active:before, .hvr-curl-bottom-left:focus:before, .hvr-curl-bottom-left:hover:before {
   width: 25px;
   height: 25px; }
+
+/**
+ * Termos
+ */
+.container-termos header {
+  padding: 4rem 0; }
+
+.container-termos h1 {
+  color: #ee2778;
+  font-weight: 200; }
