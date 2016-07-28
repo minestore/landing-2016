@@ -5273,6 +5273,9 @@ h4 {
   padding: 1.5rem 0;
   text-indent: 20px; }
 
+.success-cta-header {
+  display: none; }
+
 .ebooks {
   margin: 7rem 0; }
 
@@ -5390,6 +5393,9 @@ h4 {
   color: #fff;
   margin-bottom: 2rem; }
 
+.cta-footer .success-cta-footer {
+  display: none; }
+
 /**
  * Footer
  */
@@ -5440,8 +5446,9 @@ h4 {
   /* For IE8 and earlier */ }
 
 .box-redes .text-redes {
-  padding: 2rem 10rem;
-  overflow: hidden; }
+  padding: 2rem 0;
+  display: table;
+  margin: 0 auto; }
 
 .box-redes .links-redes li {
   float: left;
@@ -5466,7 +5473,7 @@ h4 {
  */
 @media only screen and (max-width: 90em) and (orientation: portrait) {
   .box-redes .text-redes {
-    padding: 2rem 16rem; } }
+    padding: 2rem 0; } }
 
 /**
  * Mobile footer

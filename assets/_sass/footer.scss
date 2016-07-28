@@ -47,8 +47,9 @@
     	filter: alpha(opacity=50); /* For IE8 and earlier */
 	}
 	.box-redes .text-redes {
-		padding: 2rem 10rem;
-		overflow: hidden;
+		padding: 2rem 0;
+	    display: table;
+    	margin: 0 auto;
 	}
 	.box-redes .links-redes li {
 		float: left;
@@ -74,7 +75,7 @@
  */
 	@media only screen and (max-width: 90em) and (orientation : portrait) { 
 		.box-redes .text-redes {
-			padding: 2rem 16rem;
+			padding: 2rem 0;
 		}
 	}
 /**
