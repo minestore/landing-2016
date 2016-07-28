@@ -5,39 +5,37 @@ permalink: /recursos
 
 cta_text: Aqui não se<br> cadastrou?<br> Aproveite!
 
-imgs_first_roll:
+images:
  - title: Frame Black
    archive: frame-black.jpg
- - title: Frame Color
-   archive: frame-color.jpg
- - title: Sapphire White
-   archive: sapphire-white.jpg
- - title: Sapphire
-   archive: sapphire.jpg
- - title: Opala Flowers
-   archive: opala-flowers.jpg
- - title: Onyx Light
-   archive: onyx-light.jpg
- - title: Leaf
-   archive: leaf.jpg
- - title: City
-   archive: city.jpg
-
-imgs_second_roll:
  - title: Frame Light
    archive: frame-light.jpg
+ - title: Frame Color
+   archive: frame-color.jpg
  - title: Topaz
    archive: topaz.jpg
+ - title: Sapphire White
+   archive: sapphire-white.jpg
  - title: Sapphire Black
    archive: sapphire-black.jpg
+ - title: Sapphire
+   archive: sapphire.jpg
  - title: Opala Light
    archive: opala-light.jpg
+ - title: Opala Flowers
+   archive: opala-flowers.jpg
  - title: Opala Black
    archive: opala-black.jpg
+ - title: Onyx Light
+   archive: onyx-light.jpg
  - title: Onyx
    archive: onyx.jpg
+ - title: Leaf
+   archive: leaf.jpg
  - title: Crystal
    archive: crystal.jpg
+ - title: City
+   archive: city.jpg
 
 ---
 
@@ -71,20 +69,13 @@ imgs_second_roll:
 			<div class="sections">
 				<section id="temas" data-magellan-target="temas">
 					<h2>Temas (templates)</h2>
-					<div class="row">
-						<div class="large-6 columns">
-							{% for img in page.imgs_first_roll %}
-								<h3>{{ img.title }}</h3>
-								<img src="{{ "/assets/img/" | prepend: site.baseurl }}{{ img.archive }}" alt="{{ img.title }}" />
-							{% endfor %}
-						</div>
-
-						<div class="large-6 columns">
-							{% for img in page.imgs_second_roll %}
-								<h3>{{ img.title }}</h3>
-								<img src="{{ "/assets/img/" | prepend: site.baseurl }}{{ img.archive }}" alt="{{ img.title }}" />
-							{% endfor %}
-						</div>
+					<div class="row large-up-2">
+            {% for img in page.images %}
+  						<div class="column">
+  								<h3>{{ img.title }}</h3>
+  								<img src="{{ "/assets/img/" | prepend: site.baseurl }}{{ img.archive }}" alt="{{ img.title }}" />
+  						</div>
+            {% endfor %}
 					</div>
 				</section>
 
