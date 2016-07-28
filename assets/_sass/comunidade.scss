@@ -1,0 +1,53 @@
+/**
+ * Lojistas
+ */
+.container-comunidade header {
+	padding:5rem 0;
+}
+	 .container-comunidade h1{
+		color:$pink;
+		font-weight: $extra-light;
+	 }
+	 .container-comunidade h2 {
+		font-size: 1rem;
+		padding-bottom: 1rem;
+	 }
+
+.box-comunidade h2 {
+	color:$pink-light;
+	font-size: 3rem;
+}
+	.box-comunidade a {
+		background: url(../img/arrow-links.svg) no-repeat 7rem 0.40rem;
+	}
+	.box-comunidade .fewer-styles a {
+		color:$purple;
+	}
+	.box-comunidade .row:first-child {
+		margin: 0 0;
+	}
+	.box-comunidade .row {
+		margin: 10rem 0;
+	}
+	.box-comunidade .large-pull-6 {
+		top:5rem;
+	}
+	.box-comunidade .large-pull-1 {
+		top:5rem;
+	}
+/**
+ * Colors Lojistas
+ */
+
+	.box-comunidade .green-light {
+		color:#a9d3a7;
+	}
+	.box-comunidade .purple-light {
+		color:#c0aadf;
+	}
+	.box-comunidade .pink-light {
+		color:#ffbad7;
+	}
+	.box-comunidade .blue-light {
+		color:#a4cfde;
+	}
