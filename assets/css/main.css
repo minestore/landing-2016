@@ -8427,3 +8427,16 @@ h4 {
 .container-termos h1 {
   color: #ee2778;
   font-weight: 200; }
+
+/**
+ * Privacidade
+ */
+.container-politica header {
+  padding: 4rem 0; }
+
+.container-politica h1 {
+  color: #ee2778;
+  font-weight: 200; }
+
+.container-politica a {
+  display: inline; }
