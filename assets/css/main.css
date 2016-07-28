@@ -4232,19 +4232,15 @@ h4 {
   color: #fff;
   text-transform: capitalize;
   font-weight: 500;
-  display: inline-block; }
+  display: inline-block;
+  line-height: 30px;
+  margin: 0.7rem 1rem;
+  padding: 0 0 0.2rem 0; }
 
 .navigation li:last-child > a {
   margin-left: 1.5rem; }
 
-.menu > li > a {
-  line-height: 10px; }
-
 .menu-home li {
-  padding: 0;
-  margin: 0; }
-
-.menu-home li > a {
   padding: 0;
   margin: 0; }
 
@@ -4294,14 +4290,14 @@ h4 {
 */
 @media only screen and (max-width: 80em) {
   .hero-wrapper {
-    padding: 6rem 0; } }
+    padding: 6rem 0;
+    padding-left: 2rem; } }
 
 /**
 * Mobile header
 */
 @media only screen and (max-width: 40em) {
   .top-bar, .top-bar ul {
-    width: 100%;
     position: absolute;
     background: #5a404b !important;
     height: 100%;
@@ -4316,7 +4312,9 @@ h4 {
     height: 40px;
     width: 150px; }
   .hero-wrapper {
-    padding: 5rem 2rem; } }
+    padding: 8rem 2rem; }
+  .bg-home {
+    background-size: inherit; } }
 
 /**
  * Section steps
@@ -4431,9 +4429,22 @@ h4 {
     left: 20rem; } }
 
 /**
+ * Ipad comunidade
+ */
+@media only screen and (max-width: 90em) {
+  .container-steps h2 {
+    font-size: 2rem; } }
+
+@media only screen and (max-width: 90em) and (max-width: 90em) and (orientation: portrait) {
+  .box-steps .media-object {
+    width: 22rem; } }
+
+@media only screen and (max-width: 90em) {
+  /**
 * Mobile header
-*/
-@media only screen and (max-width: 40em) {
+*/ }
+
+@media only screen and (max-width: 90em) and (max-width: 40em) {
   .container-steps {
     padding-top: 10%; }
   .bg-women, .box-steps .media-object:before {
@@ -4441,8 +4452,19 @@ h4 {
   .box-steps .media-object:nth-child(2) {
     margin-top: 0; }
   .box-steps .media-object:nth-child(3) {
-    margin-top: 0; } }
+    margin-top: 0; }
+  .box-steps .media-object {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 2rem; } }
 
+@media only screen and (max-width: 90em) {
+  /*@media only screen (max-width: 40em) and(orientation : portrait) {
+		.box-steps .media-object {
+			background: #f00;
+		}*/ }
+
+/* STYLES GO HERE */
 /*$small-range: (0em, 40em); /* 0, 640px /
 	$medium-range: (40.063em, 64em); / 641px, 1024px /
 	$large-range: (64.063em, 90em); / 1025px, 1440px /
@@ -4621,7 +4643,9 @@ h4 {
   padding-bottom: 3rem; }
 
 .box-comunidade .tabs {
-  border-bottom: 1px solid #ccc; }
+  border-bottom: 1px solid #ccc;
+  display: table;
+  margin: 0 auto; }
 
 .box-nichos .tabs-panel:nth-child(2) h4 {
   color: #a4cfde; }
@@ -4695,6 +4719,16 @@ h4 {
 .box-nichos p, .box-nichos h4 {
   position: relative;
   z-index: 9999; }
+
+/**
+ * Ipad comunidade
+ */
+@media only screen and (max-width: 90em) and (orientation: portrait) {
+  .tabs {
+    padding: 0; }
+  .box-nichos picture {
+    padding-bottom: 13rem;
+    padding-left: 0; } }
 
 /**
  * Mobile comunidade
@@ -4783,6 +4817,19 @@ h4 {
     background: url(../img/mockup-1.png) no-repeat left bottom;
     margin-top: -850px;
     height: 763px; } }
+
+/**
+ * Ipad comunidade
+ */
+@media only screen and (max-width: 90em) {
+  .box-ecommerce {
+    margin-left: 5rem; }
+  .bg-mockup {
+    background: url(../img/mockup-1.png) no-repeat -10rem 5rem; } }
+
+@media only screen and (max-width: 90em) and (orientation: portrait) {
+  .bg-mockup {
+    background: inherit; } }
 
 /**
  * Mobile comunidade
@@ -4879,19 +4926,42 @@ h4 {
   padding-bottom: 4rem; }
 
 /**
+ * Ipad comunidade
+ */
+@media only screen and (max-width: 90em) and (orientation: portrait) {
+  .box-cta h2 {
+    margin: 0; }
+  .box-cta h2:last-child {
+    margin-right: 0;
+    padding-right: 0;
+    padding-top: 6rem;
+    text-align: center;
+    height: 17rem; }
+  .box-form-cta {
+    margin: 0; }
+  .box-form-cta h3 {
+    font-size: 2rem;
+    padding: 0 1rem; }
+  .form-cta {
+    padding-top: 3rem;
+    margin: 1rem 5rem; } }
+
+/**
  * Mobile CTA
  */
 @media only screen and (max-width: 40em) {
   .box-cta h2:last-child {
     height: inherit;
     margin-right: 0; }
+  .box-form-cta {
+    margin: 3rem 0 0 0;
+    padding: 1rem; }
   .box-cta h2 {
-    margin: 0; }
+    margin: 0;
+    font-size: 2rem; }
   .box-cta h2:last-child {
     padding-right: 0;
-    padding-top: 2rem; }
-  .box-form-cta {
-    margin: 3rem 0 0 0; } }
+    padding-top: 2rem; } }
 
 /**
  * Recursos
@@ -5172,6 +5242,15 @@ h4 {
   border: inherit; }
 
 /**
+* Mobile header
+*/
+@media only screen and (max-width: 40em) {
+  .box-form .btn-cta {
+    display: table-cell;
+    margin: 0 auto;
+    width: 93%; } }
+
+/**
  * Preco
  */
 .box-ebooks header {
@@ -5383,6 +5462,13 @@ h4 {
   margin: 1rem 0; }
 
 /**
+ * Ipad comunidade
+ */
+@media only screen and (max-width: 90em) and (orientation: portrait) {
+  .box-redes .text-redes {
+    padding: 2rem 16rem; } }
+
+/**
  * Mobile footer
  */
 @media only screen and (max-width: 40em) {
@@ -5390,7 +5476,7 @@ h4 {
     padding: 0;
     margin: 2rem 0; }
   .box-redes .links-redes li {
-    margin-left: 3rem; } }
+    margin-left: 2rem; } }
 
 /*!
  * Hover.css (http://ianlunn.github.io/Hover/)

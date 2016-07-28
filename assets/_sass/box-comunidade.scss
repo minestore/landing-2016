@@ -27,6 +27,9 @@
 	}
 	.box-comunidade .tabs {
 		border-bottom: 1px solid #ccc;
+		display: table;
+    	margin: 0 auto;
+
 	}	
 	.box-nichos .tabs-panel:nth-child(2) h4 {
 		color:#a4cfde;
@@ -102,7 +105,18 @@
 		position: relative;
 		z-index: 9999;
 	}
-
+ /**
+ * Ipad comunidade
+ */
+	@media only screen and (max-width: 90em) and (orientation : portrait) { 
+		.tabs {
+			padding: 0;
+		}
+		.box-nichos picture {
+			padding-bottom: 13rem;
+			padding-left: 0;
+		}
+	}
 /**
  * Mobile comunidade
  */

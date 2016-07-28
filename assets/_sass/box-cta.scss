@@ -34,22 +34,50 @@
 		padding-bottom: 4rem;
 	}
 /**
+ * Ipad comunidade
+ */
+	@media only screen and (max-width: 90em) and (orientation : portrait) { 
+		.box-cta h2 {
+			margin: 0;
+		}
+		.box-cta h2:last-child {
+			margin-right: 0;
+			padding-right: 0;
+			padding-top: 6rem;
+			text-align: center;
+			height: 17rem;
+		}
+		.box-form-cta {
+			margin:0;
+		}
+		.box-form-cta h3 {
+			font-size: 2rem;
+			padding: 0 1rem;
+		}
+		.form-cta {
+			padding-top: 3rem;
+		    margin: 1rem 5rem;
+		}	
+	}
+/**
  * Mobile CTA
  */
  @media only screen and (max-width: 40em) {
 	.box-cta h2:last-child {
 		height: inherit;
 		margin-right: 0;
-
+	}
+	.box-form-cta {
+		margin:3rem 0 0 0;
+		padding: 1rem;
 	}
 	.box-cta h2 {
 		margin:0;
+		font-size: 2rem;
 	}
 	.box-cta h2:last-child {
 		padding-right: 0;
 		padding-top: 2rem;
 	}
-	.box-form-cta {
-		margin:3rem 0 0 0;
-	}
+
 }

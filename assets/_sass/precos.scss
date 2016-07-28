@@ -83,3 +83,15 @@
 	border-radius:3px;    
 	border:inherit;
 }
+
+/**
+* Mobile header
+*/
+@media only screen and (max-width: 40em) {
+	.box-form .btn-cta {
+		display: table-cell;
+    	margin: 0 auto;
+    	width: 93%;
+	}
+}
+

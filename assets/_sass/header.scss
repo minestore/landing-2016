@@ -33,21 +33,17 @@
 			text-transform: capitalize;
 			font-weight: $medium;
 			display: inline-block;
+			line-height: 30px;
+			margin: 0.7rem 1rem;
+    		padding: 0 0 0.2rem 0;
 		}
 		.navigation li:last-child > a {
 			margin-left: 1.5rem;
-		}
-		.menu > li > a {
-			line-height: 10px;
 		}
 		.menu-home li {
 			padding:0;
 			margin:0;
 		}
-			.menu-home li > a {
-				padding: 0;
-				margin: 0;
-			}
 		.header-pg .logo-mine {
 			margin-top: -10px!important;
 		}	
@@ -100,6 +96,7 @@
 	@media only screen and (max-width: 80em) {
 		.hero-wrapper {
 			padding:6rem 0;
+			padding-left: 2rem;
 		}
 }
 /**
@@ -107,7 +104,6 @@
 */
 @media only screen and (max-width: 40em) {
 	.top-bar, .top-bar ul {
-		width: 100%; 
 		position: absolute;
 		background: #5a404b!important;
 	    height: 100%;
@@ -126,7 +122,10 @@
 		width:150px;
 	}
 	.hero-wrapper {
-		padding:5rem 2rem;
+		padding:8rem 2rem;
+	}
+	.bg-home {
+		background-size: inherit;
 	}
 
 }

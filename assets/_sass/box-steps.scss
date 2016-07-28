@@ -117,7 +117,18 @@
 			left: 20rem;
 		}
 	}		
-
+ /**
+ * Ipad comunidade
+ */
+	@media only screen and (max-width: 90em) {
+		.container-steps h2 {
+			font-size: 2rem;
+		}
+	@media only screen and (max-width: 90em) and (orientation : portrait) { 
+		.box-steps .media-object {
+			width: 22rem;
+		}
+	}
 /**
 * Mobile header
 */		
@@ -134,8 +145,20 @@
 		.box-steps .media-object:nth-child(3) {
 			margin-top:0;
 		}
+		.box-steps .media-object {
+			width: 100%;
+			margin: 0;
+			margin-bottom: 2rem;
+		}
 	}
-    
+
+	/*@media only screen (max-width: 40em) and(orientation : portrait) {
+		.box-steps .media-object {
+			background: #f00;
+		}*/
+	}
+
+	/* STYLES GO HERE */ 
     /*$small-range: (0em, 40em); /* 0, 640px /
 	$medium-range: (40.063em, 64em); / 641px, 1024px /
 	$large-range: (64.063em, 90em); / 1025px, 1440px /
