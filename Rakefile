@@ -9,6 +9,9 @@ task :deploy do
   system "jekyll build"
 
   cd "_site" do
+    puts "## Pulling for new commits"
+    system "git pull"
+
     system "git add --all"
 
     message = "Site deplyed at #{Time.now.utc}"
