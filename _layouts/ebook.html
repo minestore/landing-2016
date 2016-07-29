@@ -2,7 +2,8 @@
 layout: default
 ---
 <section class="single-ebook {{page.bg_ebook}}">
-	<header class="row text-center">
+	<header class="text-center">
+    <div class="row">
       <div class="large-6 columns">
         <img src="{{ "/assets/img/" | prepend: site.baseurl }}{{ page.main_page_image }}" alt="" />
       </div>
@@ -10,6 +11,7 @@ layout: default
         <h1>{{ page.main_page_title }}</h1>
         {% include cta-header.html %}
       </div>
+    </div>
 	</header>
 
 	<div class="row">
