@@ -78,13 +78,16 @@
 	.box-comunidade .row {
 		padding: 1rem 0;	
 	}
-  .pg-comunidade { 
-    padding-bottom: 3rem; 
-  } 
-  .pg-comunidade .box-comunidade .columns{ 
-    padding-top: 3rem; 
-  } 
-  .pg-comunidade .box-comunidade .row { 
-    padding: 0; 
-  } 
+	  .pg-comunidade { 
+	    padding-bottom: 3rem; 
+	  } 
+	  .pg-comunidade .box-comunidade .columns{ 
+	    padding-top: 3rem; 
+	  } 
+	  .pg-comunidade .box-comunidade .row { 
+	    padding: 0; 
+	  } 
+	  .box-comunidade picture {
+	  	height: inherit;
+	  }
 }   

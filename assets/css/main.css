@@ -5205,7 +5205,9 @@ h4 {
   .pg-comunidade .box-comunidade .columns {
     padding-top: 3rem; }
   .pg-comunidade .box-comunidade .row {
-    padding: 0; } }
+    padding: 0; }
+  .box-comunidade picture {
+    height: inherit; } }
 
 /**
  * Preco
@@ -5303,7 +5305,8 @@ h4 {
  */
 .box-ebooks header {
   background: url(../img/bg-ebooks.jpg) no-repeat top center;
-  margin-bottom: 5rem; }
+  margin-bottom: 5rem;
+  background-size: cover; }
 
 .box-ebooks h1 {
   color: #fff;
@@ -5340,11 +5343,13 @@ h4 {
   color: #ee2778;
   background: #fff2f8; }
 
-.single-ebook-facebook {
-  background: url(../img/bg-ebook-facebook.jpg) no-repeat top center; }
+.single-ebook-facebook header {
+  background: url(../img/bg-ebook-facebook.jpg) no-repeat top center;
+  background-size: cover; }
 
-.single-ebook-virtual {
-  background: url(../img/bg-ebook-virtual.jpg) no-repeat top center; }
+.single-ebook-virtual header {
+  background: url(../img/bg-ebook-virtual.jpg) no-repeat top center;
+  background-size: cover; }
 
 .single-ebook h1 {
   color: #ee2778;
@@ -5443,6 +5448,32 @@ h4 {
 
 .cta-footer .success-cta-footer {
   display: none; }
+
+.success-cta-header {
+  color: #17CCAE;
+  background: #f4fefc !important;
+  border: 2px solid #17CCAE; }
+
+/** 
+ * Ipad comunidade 
+ */
+@media only screen and (max-width: 90em) {
+  .single-ebook .text-redes li {
+    margin-left: -0.1rem !important; } }
+
+/** 
+* Mobile ebook 
+*/
+@media only screen and (max-width: 40em) {
+  .box-ebooks h1 {
+    font-size: 1.5rem;
+    padding: 3rem 0; }
+  .ebooks {
+    margin: 2rem 0; }
+  .single-ebook-virtual header, .single-ebook-facebook header {
+    background: #f7dfe6; }
+  .form-ebook {
+    margin-top: 0; } }
 
 /**
  * Footer
