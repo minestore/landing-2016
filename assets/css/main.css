@@ -4827,20 +4827,20 @@ h4 {
     height: 763px; } }
 
 /**
- * Ipad comunidade
+ * Ipad ecommerce
  */
 @media only screen and (max-width: 90em) {
   .box-ecommerce {
     margin-left: 5rem; }
   .bg-mockup {
-    background: url(../img/mockup-1.png) no-repeat -10rem 5rem; } }
+    background: url(../img/mockup-1.png) no-repeat 0 5rem; } }
 
 @media only screen and (max-width: 90em) and (orientation: portrait) {
   .bg-mockup {
     background: inherit; } }
 
 /**
- * Mobile comunidade
+ * Mobile ecommerce
  */
 @media only screen and (max-width: 40em) {
   .bg-woman-bicycle {
