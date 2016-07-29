@@ -33,6 +33,10 @@
 		font-size: 1rem;
 		padding-bottom: 4rem;
 	}
+
+
+
+
 /**
  * Ipad comunidade
  */
@@ -59,9 +63,24 @@
 		    margin: 1rem 5rem;
 		}	
 	}
+
+/** 
+ * Ipad comunidade 
+ */ 
+   @media only screen and (max-width: 90em) and (orientation : landscape) { 
+     .box-cta h2:last-child  { 
+       padding-left: 5rem; 
+     } 
+     .box-cta .box-form-cta { 
+       float: right!important; 
+     } 
+   } 
+
+   
 /**
  * Mobile CTA
  */
+
  @media only screen and (max-width: 40em) {
 	.box-cta h2:last-child {
 		height: inherit;
