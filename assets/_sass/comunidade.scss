@@ -75,6 +75,9 @@
 /* Mobile header 
 */ 
 @media only screen and (max-width: 40em) { 
+	.box-comunidade .row {
+		padding: 1rem 0;	
+	}
   .pg-comunidade { 
     padding-bottom: 3rem; 
   } 
