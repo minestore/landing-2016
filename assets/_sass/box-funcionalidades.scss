@@ -11,7 +11,7 @@
 	 .box-funcionalidades h2 {
 	 	color:$pink;
 	 }
-	 .bbox-funcionalidades h3 {
+	 .box-funcionalidades h3 {
 	 	color:$grey;
 	 }
 	 .box-funcionalidades h4 {
@@ -28,9 +28,11 @@
 	 .small-pull-5 {
 		left: 0;		
 	 }
-	/**
-	 * Mobile funcionalidades
-	 */
+
+
+/**
+ * Mobile funcionalidades
+ */
 	@media only screen and (max-width: 40em) {
 		.box-funcionalidades {
 			padding-bottom: 1rem;

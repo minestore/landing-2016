@@ -4869,7 +4869,7 @@ h4 {
 .box-funcionalidades h2 {
   color: #ee2778; }
 
-.bbox-funcionalidades h3 {
+.box-funcionalidades h3 {
   color: #333; }
 
 .box-funcionalidades h4 {
@@ -4887,8 +4887,8 @@ h4 {
   left: 0; }
 
 /**
-	 * Mobile funcionalidades
-	 */
+ * Mobile funcionalidades
+ */
 @media only screen and (max-width: 40em) {
   .box-funcionalidades {
     padding-bottom: 1rem;
@@ -5180,6 +5180,30 @@ h4 {
 
 .box-comunidade .blue-light {
   color: #a4cfde; }
+
+/** 
+ * Ipad comunidade 
+ */
+@media only screen and (max-width: 90em) {
+  .box-comunidade .row {
+    padding: 5rem 0; }
+  .box-comunidade .columns {
+    padding: 1rem 2rem; }
+  .box-comunidade .large-pull-6, .box-comunidade .large-pull-1 {
+    top: 0;
+    float: right !important; }
+  .box-comunidade picture {
+    height: 45rem; } }
+
+/* Mobile header 
+*/
+@media only screen and (max-width: 40em) {
+  .pg-comunidade {
+    padding-bottom: 3rem; }
+  .pg-comunidade .box-comunidade .columns {
+    padding-top: 3rem; }
+  .pg-comunidade .box-comunidade .row {
+    padding: 0; } }
 
 /**
  * Preco

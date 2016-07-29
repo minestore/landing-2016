@@ -51,3 +51,37 @@
 	.box-comunidade .blue-light {
 		color:#a4cfde;
 	}
+
+/** 
+ * Ipad comunidade 
+ */ 
+  @media only screen and (max-width: 90em) { 
+    .box-comunidade .row  { 
+      padding:5rem 0; 
+    } 
+      .box-comunidade .columns { 
+        padding: 1rem 2rem; 
+      } 
+      .box-comunidade .large-pull-6, .box-comunidade .large-pull-1 { 
+        top:0; 
+        float: right!important; 
+      } 
+      .box-comunidade picture { 
+        height: 45rem; 
+      } 
+  } 
+ 
+ 
+/* Mobile header 
+*/ 
+@media only screen and (max-width: 40em) { 
+  .pg-comunidade { 
+    padding-bottom: 3rem; 
+  } 
+  .pg-comunidade .box-comunidade .columns{ 
+    padding-top: 3rem; 
+  } 
+  .pg-comunidade .box-comunidade .row { 
+    padding: 0; 
+  } 
+}   
