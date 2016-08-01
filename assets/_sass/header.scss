@@ -162,7 +162,10 @@
 		left: inherit;
 		padding-top: inherit;
 	}
-	.header-pg .tab-bar .menu-icon[aria-expanded="true"] span::after{
+	.top-bar[aria-expanded="true"] {
+		background: #f00;
+	}
+	.header-pg .tab-bar .menu-icon span::after{
 		box-shadow: 0 0 0 1px #fff, 0 7px 0 1px #fff, 0 14px 0 1px #fff;
 	    -webkit-box-shadow: 0 0 0 1px #fff, 0 7px 0 1px #fff, 0 14px 0 1px #fff;
 	}

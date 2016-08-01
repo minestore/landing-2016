@@ -4349,7 +4349,9 @@ h4 {
     position: inherit;
     left: inherit;
     padding-top: inherit; }
-  .header-pg .tab-bar .menu-icon[aria-expanded="true"] span::after {
+  .top-bar[aria-expanded="true"] {
+    background: #f00; }
+  .header-pg .tab-bar .menu-icon span::after {
     box-shadow: 0 0 0 1px #fff, 0 7px 0 1px #fff, 0 14px 0 1px #fff;
     -webkit-box-shadow: 0 0 0 1px #fff, 0 7px 0 1px #fff, 0 14px 0 1px #fff; } }
 
@@ -4703,6 +4705,9 @@ h4 {
   border-bottom: 1px solid #ccc;
   display: table;
   margin: 0 auto; }
+
+.box-comunidade .columns {
+  padding: 3rem 0; }
 
 .box-nichos .tabs-panel:nth-child(2) h4 {
   color: #a4cfde; }
@@ -5206,6 +5211,9 @@ h4 {
   padding: 1rem;
   margin-bottom: 3rem;
   background: url(../img/arrow-links.svg) no-repeat 12rem 1.4rem; }
+
+.logo-parceiros a:hover {
+  background: #fff2f8 url(../img/arrow-links.svg) no-repeat 12rem 1.4rem; }
 
 /** 
  * Ipad ecommerce 
