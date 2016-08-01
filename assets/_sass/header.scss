@@ -87,6 +87,8 @@
 	.header-pg .navigation li:last-child > a:hover {
 		color:$white;
 	}
+
+/* Menu mobile */
 	.top-bar, .top-bar ul {
 		background-color: inherit;
 		position: absolute;
@@ -98,6 +100,7 @@
 	}
 	.is-drilldown {
 		overflow: inherit;
+		position: inherit;
 	}
 	.title-bar {
 		background: inherit;
@@ -139,6 +142,7 @@
 		background: inherit;
 	}
   }
+
 /**
 * Large 1280
 */
@@ -147,27 +151,12 @@
 			padding:6rem 0;
 			padding-left: 2rem;
 		}
-}
+	}
 
 /**
 * Mobile header
 */
 @media only screen and (max-width: 40em) {
-
-	/*.top-bar, .top-bar ul {
-		position: absolute;
-		background: #5a404b!important;
-	    height: 100%;
-	    z-index: 9996;
-	    top:0;
-	    text-align: center;
-	}
-	.top-bar .top-bar-left, .top-bar .top-bar-right {
-		height: 100%;
-	}
-	.title-bar {
-		background: inherit;
-	}*/
 	.logo-mobile .logo-mine {
 		height: 40px;
 		width:150px;

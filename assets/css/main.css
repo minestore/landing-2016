@@ -4288,6 +4288,7 @@ h4 {
 .header-pg .navigation li:last-child > a:hover {
   color: #fff; }
 
+/* Menu mobile */
 .top-bar, .top-bar ul {
   background-color: inherit;
   position: absolute;
@@ -4298,7 +4299,8 @@ h4 {
   z-index: 9999; }
 
 .is-drilldown {
-  overflow: inherit; }
+  overflow: inherit;
+  position: inherit; }
 
 .title-bar {
   background: inherit; }
@@ -4351,20 +4353,6 @@ h4 {
 * Mobile header
 */
 @media only screen and (max-width: 40em) {
-  /*.top-bar, .top-bar ul {
-		position: absolute;
-		background: #5a404b!important;
-	    height: 100%;
-	    z-index: 9996;
-	    top:0;
-	    text-align: center;
-	}
-	.top-bar .top-bar-left, .top-bar .top-bar-right {
-		height: 100%;
-	}
-	.title-bar {
-		background: inherit;
-	}*/
   .logo-mobile .logo-mine {
     height: 40px;
     width: 150px; }
