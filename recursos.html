@@ -28,10 +28,10 @@ cta_text: Aqui não se<br> cadastrou?<br> Aproveite!
 			<div class="sections">
 				{% for post in site.categories.recursos %}
 					<section id="{{ post.link }}" data-magellan-target="{{ post.link }}">
+						<h2>{{ post.title }}</h2>
 						{{ post.content }}
 					</section>
 				{% endfor %}
-
 			</div>
 		</div>
 	</div>
@@ -39,7 +39,7 @@ cta_text: Aqui não se<br> cadastrou?<br> Aproveite!
 	<div class="row hide-for-large">
 		<ul class="accordion" data-accordion data-accordion data-multi-expand="true" data-allow-all-closed="true">
 			{% for post in site.categories.recursos %}
-				<li class="accordion-item is-active" data-accordion-item>
+				<li class="accordion-item" data-accordion-item>
 					<a href="#" class="accordion-title">{{ post.title }}</a>
 					<div class="accordion-content" data-tab-content>
 						{{ post.content }}

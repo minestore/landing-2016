@@ -5013,6 +5013,25 @@ h4 {
   color: #ee2778;
   text-decoration: none; }
 
+.accordion li a {
+  font-weight: 500;
+  font-size: 1rem;
+  color: #ee2778;
+  padding: 1.5rem; }
+
+.accordion li a:hover {
+  background: #f6f6f6;
+  text-decoration: none; }
+
+.accordion h3 {
+  font-weight: bold; }
+
+.accordion p {
+  margin-bottom: 1.6rem; }
+
+.accordion-title::before {
+  color: #828282; }
+
 .text-aside h2 {
   color: #ee2778;
   margin: 3rem 0;
