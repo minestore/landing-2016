@@ -5,6 +5,8 @@
 .box-precos header {
 	background: url(../img/pc-people.jpg) no-repeat top center; 
 	margin-bottom: 5rem;
+	background-size: cover;
+	height: 323px;
 }
 	.box-precos h1 {
 		color:$white;
@@ -17,6 +19,10 @@
 		font-weight: $medium;
 		font-size: 1.5rem;
 	}
+	  .box-precos .cta-preco { 
+    text-align: center; 
+  } 
+
 	.box-precos .box-title {
 		margin-bottom: 2rem;
 	}
@@ -24,36 +30,38 @@
 		background: inherit;
 		margin: 5rem 0;
 	}
-	.box-precos .box-itens li:nth-child(1), .box-precos .box-itens li:nth-child(5) {
-		margin-left: 1.5rem;
-	}
-	.box-precos .box-itens li {
+	.box-precos .box-itens .column {
 		background: #fff2f8;
 		font-weight: bold;
-		height: 91px;
 		padding: 1.5rem;
 		text-align: center;
 	    margin-right: 1rem;
 	    margin-bottom: 1rem;
 		color: $pink;
+		min-height: 91px;
+		font-size: 1.5rem;
 		width: 23%;
-		line-height: 45px;
 	}
-	.box-precos .box-itens li:nth-child(2), .box-precos .box-itens li:nth-child(6) {
+		.box-precos .box-itens h4 {
+			font-size: 1rem;
+			padding: 0;
+			margin:0;
+			text-align: center;
+		}
+	.box-precos .box-itens .column:nth-child(2), .box-precos .box-itens .column:nth-child(6) {
 		background: #e9f9ff;
 		color: #4192af;
 	}
-	.box-precos .box-itens li:nth-child(3), .box-precos .box-itens li:nth-child(7) {
+	.box-precos .box-itens .column:nth-child(3), .box-precos .box-itens .column:nth-child(7) {
 		background: #eaffe9;
 		color: #77b075;
 	}
-	.box-precos .box-itens li:nth-child(4), .box-precos .box-itens li:nth-child(8) {
+	.box-precos .box-itens .column:nth-child(4), .box-precos .box-itens .column:nth-child(8) {
 		background: #f8f3ff;
 		color: #9e84c3;
 		line-height: inherit;
 		text-align: left;
 		padding-left: 3rem;
-		float: left;
 	}
 .box-perguntas h4 {
 	font-size: 1rem;
@@ -62,28 +70,36 @@
 	.box-perguntas .row {
 		margin-bottom: 3rem;
 	}
-	
+
 .box-form {
 	margin: 3rem 0;
 	clear: both;
 }
 
-.box-form .input-txt {
-	height: 59px;
-	text-indent: 20px;
-	border-radius:3px;
-}
-.box-form .btn-cta {
-	color:$white;
-    font-weight: 500;
-    font-size: 1rem;
-    background: #ee2778;
-    height: 59px;
-    text-transform: capitalize;
-	border-radius:3px;    
-	border:inherit;
-}
-
+	.box-form .input-txt {
+		height: 59px;
+		text-indent: 20px;
+		border-radius:3px;
+	}
+	.box-form .btn-cta {
+		color:$white;
+	    font-weight: 500;
+	    font-size: 1rem;
+	    background: #ee2778;
+	    height: 59px;
+	    text-transform: capitalize;
+		border-radius:3px;    
+		border:inherit;
+	}
+/**
+ * Ipad ecommerce 
+ */ 
+  @media only screen and (max-width: 90em) {
+  	.box-precos .box-itens .column { 
+  		width: 45%;
+  		margin-left: 1rem;
+  	}
+  }
 /**
 * Mobile header
 */
@@ -92,6 +108,12 @@
 		display: table-cell;
     	margin: 0 auto;
     	width: 93%;
+	}
+	.box-precos h1 {
+		font-size: 2rem;
+	}
+	.box-precos .box-itens .column, .box-precos .box-itens .columns {
+		width: 100%;
 	}
 }
 

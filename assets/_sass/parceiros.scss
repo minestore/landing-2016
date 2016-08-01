@@ -15,6 +15,7 @@
 	}
 .box-parceiros {
 	background: url(../img/bg-parceiros.jpg) no-repeat top center; 
+	background-size: cover;
 	padding: 10rem 0;
 }
 	.box-parceiros h2 {
@@ -75,6 +76,9 @@
 .logo-parceiros {
 	margin: 5rem 0;
 }
+	.logo-parceiros img  {
+		width: 100%;
+	}
 	.logo-parceiros a {
 		color:$purple;
 		text-align: center;
@@ -82,14 +86,26 @@
 		border: 1px solid #ddd;
 		padding: 1rem;
 		margin-bottom: 3rem;
-		width: 16.5rem;
 		background: url(../img/arrow-links.svg) no-repeat 12rem 1.4rem; 
-	}	
-/**
-* Mobile header
-*/
-@media only screen and (max-width: 40em) {
-	.container-parceiros .column:last-child:not(:first-child), .container-parceiros  .columns:last-child:not(:first-child) {
-		float:left;
 	}
-}
+
+/** 
+ * Ipad ecommerce 
+ */ 
+  @media only screen and (max-width: 90em) { 
+    .box-itens-parceiros  { 
+      display: table; 
+    } 
+    .box-itens-parceiros li { 
+      width: 100%; 
+    } 
+    .box-itens-parceiros li:last-child { 
+      margin-right: 15px; 
+    } 
+    .logo-parceiros ul li { 
+      width: 30%; 
+    } 
+  }
+
+
+
