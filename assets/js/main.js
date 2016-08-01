@@ -1,11 +1,6 @@
 $( document ).ready(function() {
   $(document).foundation();
 
-  var accordion = $('.accordion');
-  if (accordion.length > 0) {
-    accordion.foundation('up', $('.accordion-content'));
-  }
-
   $('#create-store').on("click", function(event){
     event.preventDefault();
 

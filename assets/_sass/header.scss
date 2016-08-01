@@ -91,11 +91,6 @@
 		background: inherit;
 	}
 
-
-/**
- * Ipad ecommerce 
- */ 
-
 /**
  * Ipad comunidade
  */
@@ -151,6 +146,13 @@
 	    -webkit-box-shadow: 0 0 0 1px #FFFFFF, 0 7px 0 1px #FFFFFF, 0 14px 0 1px #FFFFFF;
 	    width: 1.5rem;
 	}
+	.header-pg .tab-bar .menu-icon span::after {
+	    box-shadow: 0 0 0 1px #666, 0 7px 0 1px #666, 0 14px 0 1px #666;
+	    -webkit-box-shadow: 0 0 0 1px #666, 0 7px 0 1px #666, 0 14px 0 1px #666;
+	}
+	.header-pg .navigation li > a {
+		color: #fff;
+	}
   }
 
 @media only screen and (max-width: 90em) and (orientation : landscape) { 
@@ -159,6 +161,10 @@
 		position: inherit;
 		left: inherit;
 		padding-top: inherit;
+	}
+	.header-pg .tab-bar .menu-icon[aria-expanded="true"] span::after{
+		box-shadow: 0 0 0 1px #fff, 0 7px 0 1px #fff, 0 14px 0 1px #fff;
+	    -webkit-box-shadow: 0 0 0 1px #fff, 0 7px 0 1px #fff, 0 14px 0 1px #fff;
 	}
 } 
 /**
