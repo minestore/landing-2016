@@ -87,7 +87,18 @@
 	.header-pg .navigation li:last-child > a:hover {
 		color:$white;
 	}
+	.top-bar, .top-bar ul {
+		background: inherit;
+	}
 
+
+/**
+ * Ipad ecommerce 
+ */ 
+  @media only screen and (max-width: 90em) {
+	.title-bar {
+		background: inherit;
+	}
 /* Menu mobile */
 	.top-bar, .top-bar ul {
 		background-color: inherit;
@@ -133,13 +144,6 @@
 	    box-shadow: 0 0 0 1px #FFFFFF, 0 7px 0 1px #FFFFFF, 0 14px 0 1px #FFFFFF;
 	    -webkit-box-shadow: 0 0 0 1px #FFFFFF, 0 7px 0 1px #FFFFFF, 0 14px 0 1px #FFFFFF;
 	    width: 1.5rem;
-	}
-/**
- * Ipad ecommerce 
- */ 
-  @media only screen and (max-width: 90em) {
-	.title-bar {
-		background: inherit;
 	}
   }
 
