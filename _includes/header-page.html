@@ -3,12 +3,14 @@
     <div class="title-bar" data-toggle="main-menu-page" data-responsive-toggle="main-menu-page" data-hide-for="large">
       <div class="top-bar-left">
         <a href="{{ '/' | prepend: site.baseurl }}">
-          <img class="logo-mine" src="{{ "/assets/img/logo-minestore.svg" | prepend: site.baseurl }}" alt="minestore loja virtual">
+          <img class="logo-mine" src="{{ "/assets/img/logo-mine.svg" | prepend: site.baseurl }}" alt="minestore loja virtual">
         </a>
       </div>
-      <div class="title-bar-right">
-        <button class="menu-icon" type="button">Menu</button>
-      </div>
+        <div class="tab-bar title-bar-right">
+          <section class="right-small">
+            <a class="right-off-canvas-toggle menu-icon"><span></span></a>
+          </section>
+        </div>
     </div>
 
     <!-- style="width: 100%; position: absolute;" -->

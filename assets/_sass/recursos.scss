@@ -9,6 +9,7 @@
 		background: url(../img/man-phone.jpg) no-repeat top center;
 		height: 403px;
 		margin-bottom: 3rem;
+		background-size: cover;
 	}
 	.box-recursos .page-title h1 {
 		color:$white;
@@ -70,3 +71,12 @@
 	.sections p {
 		margin-bottom: 4rem;
 	}
+
+/** 
+* Mobile recursos 
+*/ 
+@media only screen and (max-width: 40em) { 
+  .box-recursos .page-title h1 { 
+    font-size: 2rem; 
+  } 
+}
