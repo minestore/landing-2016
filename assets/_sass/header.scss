@@ -99,6 +99,15 @@
 	.is-drilldown {
 		overflow: inherit;
 	}
+	.title-bar {
+		background: inherit;
+	}
+	.top-bar, .top-bar ul {
+		background: #5a424c;
+		top: 0;
+		text-align: center;
+		padding-top: 2rem;
+	}
 	.tab-bar .menu-icon {
 	    color: #FFFFFF;
 	    display: block;
@@ -108,6 +117,7 @@
 	    text-indent: 1.94444rem;
 	    transform: translate3d(0, 0, 0);
 	    width: 2.5rem;
+	    z-index: 99999;
 	}
 	.tab-bar .menu-icon span::after {
 	    content: "";
@@ -143,13 +153,7 @@
 * Mobile header
 */
 @media only screen and (max-width: 40em) {
-	.title-bar {
-		background: inherit;
-	}
-	.top-bar, .top-bar ul {
-		background: #5a424c;
-		text-align: center;
-	}
+
 	/*.top-bar, .top-bar ul {
 		position: absolute;
 		background: #5a404b!important;
