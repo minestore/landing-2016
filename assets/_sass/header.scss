@@ -88,8 +88,38 @@
 		color:$white;
 	}
 	.top-bar, .top-bar ul {
-		background-color: inherit!important;
+		background-color: inherit;
 	}
+	.tab-bar .menu-icon {
+	    color: #FFFFFF;
+	    display: block;
+	    height: 2.5rem;
+	    padding: 0;
+	    position: relative;
+	    text-indent: 1.94444rem;
+	    transform: translate3d(0, 0, 0);
+	    width: 2.5rem;
+	}
+	.tab-bar .menu-icon span::after {
+	    content: "";
+	    display: block;
+	    height: 0;
+	    position: absolute;
+	    top: 50%;
+	    margin-top: -0.44444rem;
+	    left: 0.80556rem;
+	    box-shadow: 0 0 0 1px #FFFFFF, 0 7px 0 1px #FFFFFF, 0 14px 0 1px #FFFFFF;
+	    -webkit-box-shadow: 0 0 0 1px #FFFFFF, 0 7px 0 1px #FFFFFF, 0 14px 0 1px #FFFFFF;
+	    width: 1.5rem;
+	}
+/**
+ * Ipad ecommerce 
+ */ 
+  @media only screen and (max-width: 90em) {
+	.title-bar {
+		background: inherit;
+	}
+  }
 /**
 * Large 1280
 */
@@ -99,11 +129,19 @@
 			padding-left: 2rem;
 		}
 }
+
 /**
 * Mobile header
 */
 @media only screen and (max-width: 40em) {
+	.title-bar {
+		background: inherit;
+	}
 	.top-bar, .top-bar ul {
+		background: #f00;
+		text-align: center;
+	}
+	/*.top-bar, .top-bar ul {
 		position: absolute;
 		background: #5a404b!important;
 	    height: 100%;
@@ -116,7 +154,7 @@
 	}
 	.title-bar {
 		background: inherit;
-	}
+	}*/
 	.logo-mobile .logo-mine {
 		height: 40px;
 		width:150px;

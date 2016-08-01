@@ -4125,6 +4125,9 @@ pre {
 main {
   overflow: hidden; }
 
+*, *:before, *:after {
+  box-sizing: border-box; }
+
 .btn-cta-small {
   background: #ee2778;
   border-radius: 3px;
@@ -4286,7 +4289,36 @@ h4 {
   color: #fff; }
 
 .top-bar, .top-bar ul {
-  background-color: inherit !important; }
+  background-color: inherit; }
+
+.tab-bar .menu-icon {
+  color: #FFFFFF;
+  display: block;
+  height: 2.5rem;
+  padding: 0;
+  position: relative;
+  text-indent: 1.94444rem;
+  transform: translate3d(0, 0, 0);
+  width: 2.5rem; }
+
+.tab-bar .menu-icon span::after {
+  content: "";
+  display: block;
+  height: 0;
+  position: absolute;
+  top: 50%;
+  margin-top: -0.44444rem;
+  left: 0.80556rem;
+  box-shadow: 0 0 0 1px #FFFFFF, 0 7px 0 1px #FFFFFF, 0 14px 0 1px #FFFFFF;
+  -webkit-box-shadow: 0 0 0 1px #FFFFFF, 0 7px 0 1px #FFFFFF, 0 14px 0 1px #FFFFFF;
+  width: 1.5rem; }
+
+/**
+ * Ipad ecommerce 
+ */
+@media only screen and (max-width: 90em) {
+  .title-bar {
+    background: inherit; } }
 
 /**
 * Large 1280
@@ -4300,17 +4332,25 @@ h4 {
 * Mobile header
 */
 @media only screen and (max-width: 40em) {
-  .top-bar, .top-bar ul {
-    position: absolute;
-    background: #5a404b !important;
-    height: 100%;
-    z-index: 9996;
-    top: 0;
-    text-align: center; }
-  .top-bar .top-bar-left, .top-bar .top-bar-right {
-    height: 100%; }
   .title-bar {
     background: inherit; }
+  .top-bar, .top-bar ul {
+    background: #f00;
+    text-align: center; }
+  /*.top-bar, .top-bar ul {
+		position: absolute;
+		background: #5a404b!important;
+	    height: 100%;
+	    z-index: 9996;
+	    top:0;
+	    text-align: center;
+	}
+	.top-bar .top-bar-left, .top-bar .top-bar-right {
+		height: 100%;
+	}
+	.title-bar {
+		background: inherit;
+	}*/
   .logo-mobile .logo-mine {
     height: 40px;
     width: 150px; }
@@ -4440,7 +4480,7 @@ h4 {
 
 @media only screen and (max-width: 90em) and (max-width: 90em) and (orientation: portrait) {
   .box-steps .media-object {
-    width: 22rem; } }
+    width: 20rem; } }
 
 @media only screen and (max-width: 90em) {
   /**
@@ -4994,7 +5034,8 @@ h4 {
 .box-recursos header {
   background: url(../img/man-phone.jpg) no-repeat top center;
   height: 403px;
-  margin-bottom: 3rem; }
+  margin-bottom: 3rem;
+  background-size: cover; }
 
 .box-recursos .page-title h1 {
   color: #fff;
@@ -5036,6 +5077,13 @@ h4 {
 
 .sections p {
   margin-bottom: 4rem; }
+
+/** 
+* Mobile recursos 
+*/
+@media only screen and (max-width: 40em) {
+  .box-recursos .page-title h1 {
+    font-size: 2rem; } }
 
 /**
  * Parceiros
@@ -5319,6 +5367,8 @@ h4 {
 * Mobile header
 */
 @media only screen and (max-width: 40em) {
+  .box-precos .box-itens .column, .box-precos .box-itens .columns {
+    margin-left: 0; }
   .box-form .btn-cta {
     display: table-cell;
     margin: 0 auto;
