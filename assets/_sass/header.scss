@@ -95,10 +95,16 @@
 /**
  * Ipad ecommerce 
  */ 
+
+/**
+ * Ipad comunidade
+ */
+
   @media only screen and (max-width: 90em) {
 	.title-bar {
 		background: inherit;
 	}
+
 /* Menu mobile */
 	.top-bar, .top-bar ul {
 		background-color: inherit;
@@ -147,6 +153,14 @@
 	}
   }
 
+@media only screen and (max-width: 90em) and (orientation : landscape) { 
+	.top-bar, .top-bar ul {
+		background: inherit;
+		position: inherit;
+		left: inherit;
+		padding-top: inherit;
+	}
+} 
 /**
 * Large 1280
 */

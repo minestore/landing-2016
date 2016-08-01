@@ -4294,6 +4294,9 @@ h4 {
 /**
  * Ipad ecommerce 
  */
+/**
+ * Ipad comunidade
+ */
 @media only screen and (max-width: 90em) {
   .title-bar {
     background: inherit; }
@@ -4337,6 +4340,13 @@ h4 {
     box-shadow: 0 0 0 1px #FFFFFF, 0 7px 0 1px #FFFFFF, 0 14px 0 1px #FFFFFF;
     -webkit-box-shadow: 0 0 0 1px #FFFFFF, 0 7px 0 1px #FFFFFF, 0 14px 0 1px #FFFFFF;
     width: 1.5rem; } }
+
+@media only screen and (max-width: 90em) and (orientation: landscape) {
+  .top-bar, .top-bar ul {
+    background: inherit;
+    position: inherit;
+    left: inherit;
+    padding-top: inherit; } }
 
 /**
 * Large 1280
