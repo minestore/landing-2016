@@ -1,6 +1,10 @@
 $( document ).ready(function() {
   $(document).foundation();
 
+document.querySelector( "#nav-toggle" ).addEventListener( "click", function() {
+  this.classList.toggle( "active" );
+});
+
   $('#create-store').on("click", function(event){
     event.preventDefault();
 

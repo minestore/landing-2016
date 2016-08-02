@@ -1,8 +1,6 @@
 /**
  * Home
  */
-
-
 .tp-header {
     padding-top: 1rem;
 }
@@ -103,7 +101,7 @@
 /* Menu mobile */
 	.top-bar, .top-bar ul {
 		background-color: inherit;
-		position: absolute;
+		position: fixed;
 		left:0;
 		top:5rem;
 		width: 100%;
@@ -128,7 +126,9 @@
 	    display: block;
 	    height: 2.5rem;
 	    padding: 0;
-	    position: relative;
+	    position: fixed;
+	    top:0.9rem;
+	    right:0.9rem;
 	    text-indent: 1.94444rem;
 	    transform: translate3d(0, 0, 0);
 	    width: 2.5rem;
@@ -150,6 +150,10 @@
 	    box-shadow: 0 0 0 1px #666, 0 7px 0 1px #666, 0 14px 0 1px #666;
 	    -webkit-box-shadow: 0 0 0 1px #666, 0 7px 0 1px #666, 0 14px 0 1px #666;
 	}
+	#nav-toggle.active span::after {
+	   box-shadow: 0 0 0 1px #fff, 0 7px 0 1px #fff, 0 14px 0 1px #fff;
+		-webkit-box-shadow: 0 0 0 1px #fff, 0 7px 0 1px #fff, 0 14px 0 1px #fff;
+	}	
 	.header-pg .navigation li > a {
 		color: #fff;
 	}
@@ -162,7 +166,10 @@
 		left: inherit;
 		padding-top: inherit;
 	}
-	.header-pg .tab-bar .menu-icon[aria-expanded="true"] span::after{
+	.top-bar[aria-expanded="true"] {
+		background: #f00;
+	}
+	.header-pg .tab-bar .menu-icon span::after{
 		box-shadow: 0 0 0 1px #fff, 0 7px 0 1px #fff, 0 14px 0 1px #fff;
 	    -webkit-box-shadow: 0 0 0 1px #fff, 0 7px 0 1px #fff, 0 14px 0 1px #fff;
 	}
