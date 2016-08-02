@@ -1,12 +1,9 @@
 $( document ).ready(function() {
   $(document).foundation();
-  
-  
-  $(".f-dropdown > li").click(function(){
 
-      $(this).closest("ul").removeClass("open").removeAttr("style");
-
-  });
+document.querySelector( "#nav-toggle" ).addEventListener( "click", function() {
+  this.classList.toggle( "active" );
+});
 
   $('#create-store').on("click", function(event){
     event.preventDefault();

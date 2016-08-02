@@ -1,8 +1,6 @@
 /**
  * Home
  */
-
-
 .tp-header {
     padding-top: 1rem;
 }
@@ -150,6 +148,10 @@
 	    box-shadow: 0 0 0 1px #666, 0 7px 0 1px #666, 0 14px 0 1px #666;
 	    -webkit-box-shadow: 0 0 0 1px #666, 0 7px 0 1px #666, 0 14px 0 1px #666;
 	}
+	#nav-toggle.active span::after {
+	   box-shadow: 0 0 0 1px #fff, 0 7px 0 1px #fff, 0 14px 0 1px #fff;
+		-webkit-box-shadow: 0 0 0 1px #fff, 0 7px 0 1px #fff, 0 14px 0 1px #fff;
+	}	
 	.header-pg .navigation li > a {
 		color: #fff;
 	}
