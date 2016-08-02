@@ -4344,9 +4344,7 @@ h4 {
     -webkit-box-shadow: 0 0 0 1px #666, 0 7px 0 1px #666, 0 14px 0 1px #666; }
   #nav-toggle.active span::after {
     box-shadow: 0 0 0 1px #fff, 0 7px 0 1px #fff, 0 14px 0 1px #fff;
-    -webkit-box-shadow: 0 0 0 1px #fff, 0 7px 0 1px #fff, 0 14px 0 1px #fff; }
-  .header-pg .navigation li > a {
-    color: #fff; } }
+    -webkit-box-shadow: 0 0 0 1px #fff, 0 7px 0 1px #fff, 0 14px 0 1px #fff; } }
 
 @media only screen and (max-width: 90em) and (orientation: landscape) {
   .top-bar, .top-bar ul {
@@ -4376,7 +4374,9 @@ h4 {
   .hero-wrapper {
     padding: 8rem 1rem; }
   .bg-home {
-    background-size: inherit; } }
+    background-size: inherit; }
+  .header-pg .navigation li > a {
+    color: #fff; } }
 
 /**
  * Section steps
@@ -4847,7 +4847,7 @@ h4 {
 		width: 1176px;
 	}*/
 .bg-woman-bicycle {
-  background: url(../img/woman-bicycle.jpg) no-repeat left bottom;
+  background: url(../img/woman-bicycle.jpg) no-repeat left top;
   position: absolute;
   z-index: 9997;
   display: block;
@@ -4872,13 +4872,13 @@ h4 {
   font-size: 1rem;
   margin-top: 3rem; }
 
-.bog-mockup .mockup {
+.bg-mockup .mockup {
   height: 726px;
   width: 560px; }
 
 @media screen and (max-device-width: 1280px) {
   .box-ecommerce {
-    margin-left: 15rem; }
+    margin-left: 10rem !important; }
   .text-position h2 {
     width: 35rem !important;
     padding-bottom: 2rem !important; }

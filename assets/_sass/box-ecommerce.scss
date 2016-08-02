@@ -32,7 +32,7 @@
 		width: 1176px;
 	}*/
 	 .bg-woman-bicycle {
-		background: url(../img/woman-bicycle.jpg) no-repeat left bottom; 
+		background: url(../img/woman-bicycle.jpg) no-repeat left top; 
 	    position: absolute;
 	    z-index: 9997;
 	    display: block;
@@ -57,13 +57,13 @@
 		font-size: 1rem;
 		margin-top: 3rem;
 	}
-	.bog-mockup .mockup {
+	.bg-mockup .mockup {
 		height: 726px;
 		width: 560px;
 	}
 	@media screen and (max-device-width: 1280px) {
 		.box-ecommerce {
-			margin-left: 15rem;
+			margin-left: 10rem!important;
 		}
 		.text-position h2 {
 			width: 35rem!important;

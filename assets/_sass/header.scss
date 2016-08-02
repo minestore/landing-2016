@@ -151,9 +151,7 @@
 	   box-shadow: 0 0 0 1px #fff, 0 7px 0 1px #fff, 0 14px 0 1px #fff;
 		-webkit-box-shadow: 0 0 0 1px #fff, 0 7px 0 1px #fff, 0 14px 0 1px #fff;
 	}	
-	.header-pg .navigation li > a {
-		color: #fff;
-	}
+
   }
 
 @media only screen and (max-width: 90em) and (orientation : landscape) { 
@@ -192,5 +190,7 @@
 	.bg-home {
 		background-size: inherit;
 	}
-
+	.header-pg .navigation li > a {
+		color: #fff;
+	}
 }
