@@ -10,9 +10,6 @@
 	background-size: cover;
 	position: relative;
 	top:0;
-}
-.tp-header {
-
 }	
 	.logo-mine {
 		display: block;
@@ -165,9 +162,6 @@
 		position: inherit;
 		left: inherit;
 		padding-top: inherit;
-	}
-	.top-bar[aria-expanded="true"] {
-		background: #f00;
 	}
 	.header-pg .tab-bar .menu-icon span::after{
 		box-shadow: 0 0 0 1px #fff, 0 7px 0 1px #fff, 0 14px 0 1px #fff;
