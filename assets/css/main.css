@@ -4300,7 +4300,7 @@ h4 {
   /* Menu mobile */
   .top-bar, .top-bar ul {
     background-color: inherit;
-    position: absolute;
+    position: fixed;
     left: 0;
     top: 5rem;
     width: 100%;
@@ -4321,7 +4321,9 @@ h4 {
     display: block;
     height: 2.5rem;
     padding: 0;
-    position: relative;
+    position: fixed;
+    top: 0.9rem;
+    right: 0.9rem;
     text-indent: 1.94444rem;
     transform: translate3d(0, 0, 0);
     width: 2.5rem;
