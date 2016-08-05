@@ -6,10 +6,18 @@ permalink: /ajuda
 cta_text: Ainda não se<br> cadastrou?<br> Aproveite!
 ---
 
-<section class="box-recursos">
+<section class="box-recursos box-ajuda">
 	<header class="page-title">
 		<div class="large-centered columns text-center">
-			<h1>Tire todas as suas dúvidas<br> sobre a minestore</h1>
+			<h1>Tire todas as suas dúvidas <br>sobre a minestore</h1>
+				<form class="box-form" action="">
+					<div class="row">
+						<div class="large-5 medium-6 small-12 columns">
+							<input class="input-txt" type="text" placeholder="Procure por uma palavra ou termo específico" type="text">
+						</div>
+						<button class="hvr-sweep-to-right btn-cta large button">buscar</button>
+					</div>
+				</form>
 		</div>
 	</header>
 
@@ -26,13 +34,21 @@ cta_text: Ainda não se<br> cadastrou?<br> Aproveite!
 
 		<div class="text-aside large-9 columns" id="magellan-content">
 			<div class="sections">
-				{% for post in site.categories.ajuda %}
-					<section id="{{ post.link }}" data-magellan-target="{{ post.link }}">
-						<h2>{{ post.title }}</h2>
-						{{ post.content }}
-					</section>
-				{% endfor %}
-			</div>
+{% for post in site.categories.ajuda %}
+<section id="{{ post.link }}" data-magellan-target="{{ post.link }}">
+	<h2>{{ post.title }}</h2>
+	{{ post.title }}
+</section>
+{% endfor %}
+
+
+<!-- {% for post in site.categories.ajuda %}
+<section id="{{ post.link }}" data-magellan-target="{{ post.link }}">
+	<h2>{{ post.title }}</h2>
+	{{ post.title }}
+</section>
+{% endfor %}
+ -->			</div>
 		</div>
 	</div>
 

@@ -4375,7 +4375,7 @@ h4 {
     padding: 8rem 1rem; }
   .bg-home {
     background-size: inherit; }
-  .header-pg .navigation li > a {
+  .navigation li > a {
     color: #fff; } }
 
 /**
@@ -5596,6 +5596,12 @@ h4 {
     background: #f7dfe6; }
   .form-ebook {
     margin-top: 0; } }
+
+/**
+ * Ajuda
+ */
+.box-ajuda .page-title h1 {
+  padding: 0; }
 
 /**
  * Footer
