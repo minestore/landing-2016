@@ -1,4 +1,7 @@
-var gulp = require('gulp');
+var gulp = require('gulp'),
+    imagemin = require('gulp-imagemin'),
+    sass = require('gulp-ruby-sass');
+
 var $    = require('gulp-load-plugins')();
 
 var sassPaths = [
@@ -9,15 +12,38 @@ var sassPaths = [
 gulp.task('sass', function() {
   return gulp.src('assets/_sass/main.scss')
     .pipe($.sass({
+      style: 'compressed',
       includePaths: sassPaths
     })
-      .on('error', $.sass.logError))
+    .on('error', $.sass.logError))
     .pipe($.autoprefixer({
       browsers: ['last 2 versions', 'ie >= 9']
-    }))
+    }))    
     .pipe(gulp.dest('assets/css'));
 });
 
+
+// Watch Task
+// Watch css
 gulp.task('default', ['sass'], function() {
   gulp.watch(['assets/_sass/**/*.scss'], ['sass']);
+  // gulp.watch('assets/scss/**/*.scss', ['styles']);
+});
+
+// Styles Task
+// Compress
+// gulp.task('styles', function() {
+//     gulp.src('assets/css/*.css')
+//         .pipe(sass({
+//           style: 'compressed'
+//         }))
+//         .pipe(gulp.dest('assets/_sass/scss/'));
+// });
+
+// Image Task
+// Compress
+gulp.task('image', function() {
+    gulp.src('assets/img/*')
+        .pipe(imagemin())
+        .pipe(gulp.dest('assets/img'));
 });
