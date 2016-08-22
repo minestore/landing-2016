@@ -34,7 +34,7 @@
 			text-transform: capitalize;
 			font-weight: $medium;
 			display: inline-block;
-			line-height: 30px;
+			line-height: 32px;
 			margin: 0.7rem 1rem;
     		padding: 0 0 0.2rem 0;
 		}
@@ -81,7 +81,6 @@
 	}
 	.header-pg .navigation li:last-child > a {
 		color:$pink;
-		line-height: 32px;
 	}
 	.header-pg .navigation li:last-child > a:hover {
 		color:$white;

@@ -47,7 +47,11 @@
 			padding: 0;
 			margin:0;
 			text-align: center;
+			line-height: 45px;
 		}
+	.box-precos .box-itens .column:nth-child(7) h4, .box-precos .box-itens .column:nth-child(8) h4{
+		line-height: inherit;	
+	}
 	.box-precos .box-itens .column:nth-child(2), .box-precos .box-itens .column:nth-child(6) {
 		background: #e9f9ff;
 		color: #4192af;

@@ -4245,7 +4245,7 @@ h4 {
   text-transform: capitalize;
   font-weight: 500;
   display: inline-block;
-  line-height: 30px;
+  line-height: 32px;
   margin: 0.7rem 1rem;
   padding: 0 0 0.2rem 0; }
 
@@ -4286,8 +4286,7 @@ h4 {
   border: 1px solid #ee2778; }
 
 .header-pg .navigation li:last-child > a {
-  color: #ee2778;
-  line-height: 32px; }
+  color: #ee2778; }
 
 .header-pg .navigation li:last-child > a:hover {
   color: #fff; }
@@ -5371,7 +5370,11 @@ h4 {
   font-size: 1rem;
   padding: 0;
   margin: 0;
-  text-align: center; }
+  text-align: center;
+  line-height: 45px; }
+
+.box-precos .box-itens .column:nth-child(7) h4, .box-precos .box-itens .columns:nth-child(7) h4, .box-precos .box-itens .column:nth-child(8) h4, .box-precos .box-itens .columns:nth-child(8) h4 {
+  line-height: inherit; }
 
 .box-precos .box-itens .column:nth-child(2), .box-precos .box-itens .columns:nth-child(2), .box-precos .box-itens .column:nth-child(6), .box-precos .box-itens .columns:nth-child(6) {
   background: #e9f9ff;
