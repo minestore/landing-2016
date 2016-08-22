@@ -84,3 +84,33 @@
 <script src="{{ "/assets/vendor/what-input/what-input.min.js" | prepend: site.baseurl }}"></script>
 <script src="{{ "/assets/vendor/foundation-sites/dist/foundation.min.js" | prepend: site.baseurl }}"></script>
 <script src="{{ "/assets/js/main.js" | prepend: site.baseurl }}"></script>
+
+<script>
+  jQuery(function () {
+    jQuery('#create-store').click(function() {
+      email = jQuery('input[type="email"]').first().val();
+      if (email == '') {
+        email = jQuery('input[type="email"]').last().val()
+      }
+
+      jQuery.ajax({
+        url: "https://app.minestore.com.br/leads.json",
+        type: "POST",
+        data: {
+          email: email,
+          type: 'lead'
+        }
+      }).done(function(data) {
+        window.location.href = "https://app.minestore.com.br/criar-loja?email=" + data.email;
+      }).fail(function(data) {
+        mixpanel.track('Fail to capture Lead');
+        jQuery('.cta-form').addClass('shake');
+        jQuery('input[type="email"]').attr('placeholder', 'pode digitar o email de novo?').val('');
+        setTimeout(function() {
+          jQuery('.cta-form').removeClass('shake');
+        }, 500);
+      });
+
+    });
+  });
+</script>

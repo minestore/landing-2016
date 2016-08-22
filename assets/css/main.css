@@ -4213,7 +4213,13 @@ h4 {
  * Home
  */
 .tp-header {
-  padding-top: 1rem; }
+  padding-top: 1.5rem; }
+
+.top-bar {
+  padding: 0; }
+
+.tp-header .logo-mine {
+  margin-top: -10px; }
 
 .bg-home {
   background: url(../img/banner-hero.jpg) no-repeat top center;
@@ -4250,9 +4256,6 @@ h4 {
   padding: 0;
   margin: 0; }
 
-.header-pg .logo-mine {
-  margin-top: -10px !important; }
-
 /**
  * Hero
  */
@@ -4269,12 +4272,12 @@ h4 {
 .header-pg {
   border-bottom: 1px solid #DDD; }
 
-.header-pg a {
-  display: block;
-  margin-bottom: 1rem; }
-
 .header-pg .logo-mine {
   margin-top: 0; }
+
+.header-pg a {
+  display: block;
+  margin-bottom: 1.5rem; }
 
 .header-pg .navigation li > a {
   color: #666; }
@@ -4283,13 +4286,17 @@ h4 {
   border: 1px solid #ee2778; }
 
 .header-pg .navigation li:last-child > a {
-  color: #ee2778; }
+  color: #ee2778;
+  line-height: 32px; }
 
 .header-pg .navigation li:last-child > a:hover {
   color: #fff; }
 
 .top-bar, .top-bar ul {
   background: inherit; }
+
+.header-pg .menu > li > a {
+  padding: 0 1rem; }
 
 /**
  * Ipad comunidade
@@ -4802,10 +4809,10 @@ h4 {
   .tabs {
     padding: 0; }
   .tabs .tabs-title {
-    width: 100%;
     padding: 0.7rem; }
   .tabs-title > a {
-    padding: 0 1rem; }
+    padding: 0 1rem;
+    font-size: 1rem; }
   .box-nichos picture {
     padding-bottom: 0; }
   .box-nichos picture:before {
@@ -4969,12 +4976,11 @@ h4 {
   color: #fff;
   font-style: normal;
   font-weight: 400;
-  height: 800px;
   overflow: hidden;
   background-size: cover; }
 
 .box-cta h2 {
-  margin: 18rem 20rem 18rem 0;
+  margin: 10rem 20rem 10rem 0;
   font-weight: 500;
   font-size: 3rem; }
 
@@ -4987,7 +4993,7 @@ h4 {
   padding-top: 4rem; }
 
 .box-form-cta {
-  margin: 15rem 10rem;
+  margin: 10rem 10rem;
   padding: 1rem 0; }
 
 .box-form-cta h3 {

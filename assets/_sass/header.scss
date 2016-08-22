@@ -2,8 +2,14 @@
  * Home
  */
 .tp-header {
-    padding-top: 1rem;
+    padding-top: 1.5rem;
 }
+	.top-bar {
+		padding: 0;
+	}
+	.tp-header .logo-mine {
+		margin-top: -10px;
+	}
 .bg-home {
 	background: url(../img/banner-hero.jpg) no-repeat top center;
 	font-style: normal;
@@ -39,9 +45,6 @@
 			padding:0;
 			margin:0;
 		}
-		.header-pg .logo-mine {
-			margin-top: -10px!important;
-		}	
 /**
  * Hero
  */
@@ -63,14 +66,14 @@
  .header-pg {
  	border-bottom: 1px solid #DDD; 	
  }
+ 	.header-pg .logo-mine {
+ 		margin-top: 0;
+ 	}
 	 .header-pg a {
 	 	display: block;
-	 	margin-bottom: 1rem;
+	 	margin-bottom: 1.5rem;
 	 }
-	 .header-pg .logo-mine {
-	 	margin-top: 0;
-	 }
-	 .header-pg .navigation li > a {
+	.header-pg .navigation li > a {
 	 	color:$black;
 	 }
 	.header-pg .btn-login {
@@ -78,12 +81,16 @@
 	}
 	.header-pg .navigation li:last-child > a {
 		color:$pink;
+		line-height: 32px;
 	}
 	.header-pg .navigation li:last-child > a:hover {
 		color:$white;
 	}
 	.top-bar, .top-bar ul {
 		background: inherit;
+	}
+	.header-pg .menu > li > a {
+		padding: 0 1rem;
 	}
 
 /**

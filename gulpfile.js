@@ -1,6 +1,5 @@
 var gulp = require('gulp'),
-    imagemin = require('gulp-imagemin'),
-    sass = require('gulp-ruby-sass');
+    imagemin = require('gulp-imagemin');
 
 var $    = require('gulp-load-plugins')();
 
@@ -12,7 +11,6 @@ var sassPaths = [
 gulp.task('sass', function() {
   return gulp.src('assets/_sass/main.scss')
     .pipe($.sass({
-      style: 'compressed',
       includePaths: sassPaths
     })
     .on('error', $.sass.logError))
@@ -21,7 +19,6 @@ gulp.task('sass', function() {
     }))    
     .pipe(gulp.dest('assets/css'));
 });
-
 
 // Watch Task
 // Watch css
