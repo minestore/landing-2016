@@ -4878,10 +4878,10 @@ h4 {
 
 @media screen and (max-device-width: 1280px) {
   .box-ecommerce {
-    margin-left: 10rem !important; }
+    margin-left: 10rem; }
   .text-position h2 {
-    width: 35rem !important;
-    padding-bottom: 2rem !important; }
+    width: 35rem;
+    padding-bottom: 2rem; }
   .bg-mockup {
     margin-left: 35rem;
     background: url(../img/mockup-1.png) no-repeat left bottom;
@@ -5230,6 +5230,15 @@ h4 {
     margin-right: 15px; }
   .logo-parceiros ul li {
     width: 30%; } }
+
+/** 
+ * Mobile
+ */
+@media only screen and (max-width: 40em) {
+  .box-itens-parceiros li {
+    width: 100%; }
+  .box-itens-parceiros li:last-child {
+    margin-right: 0; } }
 
 /**
  * Lojistas

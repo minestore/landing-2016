@@ -111,5 +111,15 @@
     } 
   }
 
-
+/** 
+ * Mobile
+ */ 
+  @media only screen and (max-width: 40em) { 
+	.box-itens-parceiros li {
+		width: 100%;
+	}
+	.box-itens-parceiros li:last-child {
+		margin-right: 0;
+	}
+}
 
