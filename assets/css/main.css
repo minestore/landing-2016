@@ -3970,9 +3970,6 @@ table.hover tr:nth-of-type(even):hover {
 .long-delay {
   animation-delay: 700ms !important; }
 
-.top-bar, .top-bar ul {
-  background: inherit !important; }
-
 /**
  * Reset some basic elements
  */
@@ -3982,6 +3979,9 @@ dl, dd, ol, ul, figure {
   margin: 0;
   padding: 0;
   font-family: "Gotham SSm A", "Gotham SSm B", Arial, sans-serif; }
+
+.title-bar {
+  background: inherit !important; }
 
 /**
  * Basic styling
@@ -4386,7 +4386,11 @@ h4 {
   .bg-home {
     background-size: inherit; }
   .navigation li > a {
-    color: #fff; } }
+    color: #fff; }
+  .header-pg .logo-mine {
+    margin-top: -15px; }
+  .header-pg a {
+    margin-bottom: 0.5rem; } }
 
 /**
  * Section steps
