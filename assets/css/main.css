@@ -4222,7 +4222,10 @@ h4 {
   padding: 0; }
 
 .tp-header .logo-mine {
-  margin-top: -10px; }
+  margin-top: -10px;
+  display: block;
+  height: 52px;
+  width: 181px; }
 
 .bg-home {
   background: url(../img/banner-hero.jpg) no-repeat top center;
@@ -4230,11 +4233,6 @@ h4 {
   background-size: cover;
   position: relative;
   top: 0; }
-
-.logo-mine {
-  display: block;
-  height: 52px;
-  width: 181px; }
 
 .navigation {
   list-style: none; }
@@ -4299,7 +4297,10 @@ h4 {
   background: inherit; }
 
 .header-pg .menu > li > a {
-  padding: 0 1rem; }
+  padding: 0; }
+
+.header-pg .menu > li > a > img {
+  padding: 0; }
 
 /**
  * Ipad comunidade
@@ -4388,8 +4389,6 @@ h4 {
     background-size: inherit; }
   .header-pg .navigation li > a {
     color: #fff; }
-  .header-pg .logo-mine {
-    margin-top: -15px; }
   .header-pg a {
     margin-bottom: 0.5rem; } }
 
@@ -4692,7 +4691,9 @@ h4 {
   .img-midias li {
     margin-bottom: 3rem; }
   .orbit-bullets {
-    margin: 2rem 0; } }
+    margin: 2rem 0; }
+  .box-depoimentos span {
+    padding: 0; } }
 
 /**
  * Box Comunidade

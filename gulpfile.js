@@ -24,18 +24,8 @@ gulp.task('sass', function() {
 // Watch css
 gulp.task('default', ['sass'], function() {
   gulp.watch(['assets/_sass/**/*.scss'], ['sass']);
-  // gulp.watch('assets/scss/**/*.scss', ['styles']);
-});
 
-// Styles Task
-// Compress
-// gulp.task('styles', function() {
-//     gulp.src('assets/css/*.css')
-//         .pipe(sass({
-//           style: 'compressed'
-//         }))
-//         .pipe(gulp.dest('assets/_sass/scss/'));
-// });
+});
 
 // Image Task
 // Compress
