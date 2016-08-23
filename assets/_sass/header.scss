@@ -190,10 +190,10 @@
 * Mobile header
 */
 @media only screen and (max-width: 40em) {
-	.logo-mobile .logo-mine {
+	.tp-header .logo-mine {
 		height: 40px;
 		width:150px;
-		float: left;
+		margin-top:-15px;
 	}
 	.hero-wrapper {
 		padding:8rem 1rem;
