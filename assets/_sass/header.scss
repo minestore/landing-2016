@@ -191,6 +191,7 @@
 	.logo-mobile .logo-mine {
 		height: 40px;
 		width:150px;
+		float: left;
 	}
 	.hero-wrapper {
 		padding:8rem 1rem;
@@ -198,7 +199,7 @@
 	.bg-home {
 		background-size: inherit;
 	}
-	.navigation li > a {
+	.header-pg .navigation li > a{
 		color: #fff;
 	}
 	.header-pg .logo-mine {
