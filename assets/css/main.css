@@ -5259,7 +5259,7 @@ h4 {
  * Lojistas
  */
 .container-comunidade header {
-  padding: 5rem 0; }
+  padding-top: 5rem; }
 
 .container-comunidade h1 {
   color: #ee2778;
@@ -5432,7 +5432,7 @@ h4 {
  */
 @media only screen and (max-width: 90em) {
   .box-precos .box-itens .column, .box-precos .box-itens .columns {
-    width: 45%;
+    width: 22%;
     margin-left: 1rem; } }
 
 /**
