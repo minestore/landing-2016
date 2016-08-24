@@ -4819,7 +4819,11 @@ h4 {
     padding: 0; }
   .box-nichos picture {
     padding-bottom: 13rem;
-    padding-left: 0; } }
+    padding-left: 0; }
+  .box-nichos h4 {
+    margin-top: 1rem; }
+  .box-nichos picture {
+    margin-bottom: 5rem; } }
 
 /**
  * Mobile comunidade
@@ -4921,7 +4925,13 @@ h4 {
   .box-ecommerce {
     margin-left: 5rem; }
   .bg-mockup {
-    background: url(../img/mockup-1.png) no-repeat 0 5rem; } }
+    background: url(../img/mockup-1.png) no-repeat 0 5rem; }
+  .box-comunidade.box-comunidade-home .tabs, .tabs-content {
+    padding-bottom: 0; }
+  .box-comunidade.box-comunidade-home {
+    padding-bottom: 0; }
+  .box-comunidade.box-comunidade-home .row {
+    padding: 0; } }
 
 @media only screen and (max-width: 90em) and (orientation: portrait) {
   .bg-mockup {
@@ -5733,7 +5743,9 @@ h4 {
     padding: 0;
     margin: 2rem 0; }
   .box-redes .links-redes li {
-    margin-left: 2rem; } }
+    margin-left: 2rem; }
+  .box-links-ft .columns {
+    padding-top: 1rem; } }
 
 /*!
  * Hover.css (http://ianlunn.github.io/Hover/)

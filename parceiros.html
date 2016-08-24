@@ -124,36 +124,4 @@ permalink: /parceiros
       </div>
     </div>
   </section>
-<script>
-  jQuery(function () {
-    jQuery('#create-store').click(function() {
-      email = jQuery('input[type="email"]').first().val();
-      
-      if (email == '') {
-        email = jQuery('input[type="email"]').last().val();
-      }
 
-      jQuery.ajax({
-        url: "https://app.minestore.com.br/leads.json",
-        type: "POST",
-        data: {
-          email: email,
-          type: 'parceiro'
-        }
-      })
-      .done(function(data) {
-        window.location.href = "https://minestore.typeform.com/to/DGbgoS";
-      })
-      .fail(function(data) {
-        mixpanel.track('Fail to capture Lead');
-        jQuery('.cta-form').addClass('shake');
-        jQuery('input[type="email"]').attr('placeholder', 'pode digitar o email de novo?').val('');
-        setTimeout(function() {
-          jQuery('.cta-form').removeClass('shake');
-        }, 500);
-      });
-
-    });
-
-  });
-</script>
