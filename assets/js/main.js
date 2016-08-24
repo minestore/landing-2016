@@ -2,7 +2,7 @@ $( document ).ready(function() {
   $(document).foundation();
 
 /* JS menu burguer paginas internas */
-document.getElementById( "#nav-toggle" ).addEventListener( "click", function() {
+document.getElementById( "nav-toggle" ).addEventListener( "click", function() {
   this.classList.toggle( "active" );
 });
 
