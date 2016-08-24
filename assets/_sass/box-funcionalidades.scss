@@ -29,7 +29,14 @@
 		left: 0;		
 	 }
 
-
+/**
+ * Ipad ecommerce
+ */
+	@media only screen and (max-width: 90em) {
+		.box-funcionalidades .row {
+			padding:2rem;
+		}
+	}
 /**
  * Mobile funcionalidades
  */

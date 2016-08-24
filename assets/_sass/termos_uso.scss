@@ -9,3 +9,12 @@
 	    color: #ee2778;
 	    font-weight: 200;
 	}
+
+/** 
+ * Ipad termos de uso
+ */ 
+  @media only screen and (max-width: 90em) {  
+    .box-termos {
+    	padding: 1rem;
+    }
+  }

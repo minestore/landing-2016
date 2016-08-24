@@ -162,12 +162,15 @@
   		} 
 
 /** 
- * Ipad comunidade 
+ * Ipad ebooks 
  */ 
   @media only screen and (max-width: 90em) {  
     .single-ebook .text-redes li { 
       margin-left: -0.1rem!important; 
     } 
+    .ebooks {
+    	margin:2rem 0;
+    }
   }
 
 /** 

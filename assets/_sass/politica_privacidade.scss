@@ -12,3 +12,11 @@
 	.container-politica a {
 	    display: inline;
 	}
+/** 
+ * Ipad termos de uso
+ */ 
+  @media only screen and (max-width: 90em) {  
+    .box-politica {
+    	padding: 1rem;
+    }
+  }

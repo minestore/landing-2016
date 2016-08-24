@@ -4985,6 +4985,13 @@ h4 {
   left: 0; }
 
 /**
+ * Ipad ecommerce
+ */
+@media only screen and (max-width: 90em) {
+  .box-funcionalidades .row {
+    padding: 2rem; } }
+
+/**
  * Mobile funcionalidades
  */
 @media only screen and (max-width: 40em) {
@@ -5626,11 +5633,13 @@ h4 {
   border: 2px solid #17CCAE; }
 
 /** 
- * Ipad comunidade 
+ * Ipad ebooks 
  */
 @media only screen and (max-width: 90em) {
   .single-ebook .text-redes li {
-    margin-left: -0.1rem !important; } }
+    margin-left: -0.1rem !important; }
+  .ebooks {
+    margin: 2rem 0; } }
 
 /** 
 * Mobile ebook 
@@ -8785,6 +8794,13 @@ h4 {
   color: #ee2778;
   font-weight: 200; }
 
+/** 
+ * Ipad termos de uso
+ */
+@media only screen and (max-width: 90em) {
+  .box-termos {
+    padding: 1rem; } }
+
 /**
  * Privacidade
  */
@@ -8797,3 +8813,10 @@ h4 {
 
 .container-politica a {
   display: inline; }
+
+/** 
+ * Ipad termos de uso
+ */
+@media only screen and (max-width: 90em) {
+  .box-politica {
+    padding: 1rem; } }
