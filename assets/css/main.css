@@ -4906,6 +4906,16 @@ h4 {
   height: 726px;
   width: 560px; }
 
+/**
+ * laptop ecommerce
+ */
+@media screen and (max-device-width: 1366px) {
+  .bg-mockup {
+    margin-left: 40rem; } }
+
+/**
+ * mac ecommerce
+ */
 @media screen and (max-device-width: 1280px) {
   .box-ecommerce {
     margin-left: 10rem; }
@@ -5746,11 +5756,13 @@ h4 {
   margin: 1rem 0; }
 
 /**
- * Ipad comunidade
+ * Ipad footer
  */
 @media only screen and (max-width: 90em) and (orientation: portrait) {
   .box-redes .text-redes {
-    padding: 2rem 0; } }
+    padding: 2rem 0; }
+  .box-links-ft .columns {
+    padding-top: 1rem; } }
 
 /**
  * Mobile footer
@@ -5760,9 +5772,7 @@ h4 {
     padding: 0;
     margin: 2rem 0; }
   .box-redes .links-redes li {
-    margin-left: 2rem; }
-  .box-links-ft .columns {
-    padding-top: 1rem; } }
+    margin-left: 2rem; } }
 
 /*!
  * Hover.css (http://ianlunn.github.io/Hover/)

@@ -71,12 +71,15 @@
 
 	}
 /**
- * Ipad comunidade
+ * Ipad footer
  */
 	@media only screen and (max-width: 90em) and (orientation : portrait) { 
 		.box-redes .text-redes {
 			padding: 2rem 0;
 		}
+		.box-links-ft .columns {
+ 			padding-top: 1rem;
+ 		}
 	}
 /**
  * Mobile footer
@@ -88,8 +91,5 @@
  	}
  	.box-redes .links-redes li {
  		margin-left: 2rem;
- 	}
- 	.box-links-ft .columns {
- 		padding-top: 1rem;
  	}
  }

@@ -61,6 +61,17 @@
 		height: 726px;
 		width: 560px;
 	}
+/**
+ * laptop ecommerce
+ */
+	@media screen and (max-device-width: 1366px) {
+		.bg-mockup {
+			margin-left: 40rem;
+		}
+	}
+/**
+ * mac ecommerce
+ */
 	@media screen and (max-device-width: 1280px) {
 		.box-ecommerce {
 			margin-left: 10rem;
