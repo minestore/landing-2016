@@ -101,7 +101,7 @@
       display: table; 
     } 
     .box-itens-parceiros li { 
-      width: 23.6%; 
+      width: 23.4%; 
     } 
     .box-itens-parceiros li:last-child { 
       margin-right: 15px; 
@@ -110,7 +110,14 @@
       width: 30%; 
     } 
   }
-
+/**
+ * Ipad comunidade
+ */
+	@media only screen and (max-width: 90em) and (orientation : portrait) { 
+		.box-itens-parceiros li { 
+	      width: 47.9%; 
+	    } 
+	}
 /** 
  * Mobile
  */ 
