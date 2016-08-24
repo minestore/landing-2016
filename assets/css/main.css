@@ -4054,7 +4054,7 @@ h1, h2, h3, h4, h5, h6 {
 a {
   color: #2a7ae2;
   text-decoration: none;
-  display: block; }
+  /*display: block;*/ }
   a:visited {
     color: #1756a9; }
   a:hover {
@@ -4736,7 +4736,7 @@ h4 {
   margin: 0 auto; }
 
 .comunidade-single .columns {
-  padding: 3rem 0; }
+  padding: 3rem 1rem; }
 
 .box-nichos .tabs-panel:nth-child(2) h4 {
   color: #a4cfde; }
