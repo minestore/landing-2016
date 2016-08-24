@@ -49,6 +49,7 @@
 			padding-top: 3rem;
 			text-align: center;
 			height: 17rem;
+			border-right: none;
 		}
 		.box-form-cta {
 			margin:0;
@@ -84,6 +85,9 @@
 	.box-cta h2:last-child {
 		height: inherit;
 		margin-right: 0;
+		border-right: none;
+		padding-right: 0;
+		padding-top: 2rem;
 	}
 	.box-form-cta {
 		margin:3rem 0 0 0;
@@ -100,9 +104,4 @@
 		margin:0;
 		font-size: 2rem;
 	}
-	.box-cta h2:last-child {
-		padding-right: 0;
-		padding-top: 2rem;
-	}
-
 }
