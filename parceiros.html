@@ -99,7 +99,7 @@ permalink: /parceiros
         </div> 
         <div class="column"> 
           <img src="{{ "/assets/img/paula.jpg" | prepend: site.baseurl }}" alt="" /> 
-          <a target="_blank" href="https://paulaboutala.myportfolio.com">Visite o site</a>
+          <a target="_blank" href="https://www.behance.net/paulamaciel/">Visite o site</a>
         </div> 
         <div class="column"> 
           <img src="{{ "/assets/img/one-hop.jpg" | prepend: site.baseurl }}" alt="" /> 
@@ -117,11 +117,43 @@ permalink: /parceiros
       </div>
       <div class="box-form-cta large-4 columns">
         <h3>Aproveite e faça parte dos nossos<br> parceiros, são muitas vantagens que<br> disponibilizamos para que o seu retorno seja garantido!</h3>
-        <form action="" class="form-cta">
-          <input class="input" name="email" type="email" id="email-box" placeholder="Digite seu e-mail">
-          <button class="btn-cta hvr-sweep-to-right small-12" id="create-store-box">Quero ser parceiro</button>
+        <form action="" class="form-cta cta-form">
+          <input class="input" name="email" type="email" placeholder="Digite seu e-mail">
+          <button class="btn-cta hvr-sweep-to-right small-12" id="create-store">Quero ser parceiro</button>
         </form>
       </div>
     </div>
   </section>
+<script>
+  jQuery(function () {
+    jQuery('#create-store').click(function() {
+      email = jQuery('input[type="email"]').first().val();
+      
+      if (email == '') {
+        email = jQuery('input[type="email"]').last().val();
+      }
 
+      jQuery.ajax({
+        url: "https://app.minestore.com.br/leads.json",
+        type: "POST",
+        data: {
+          email: email,
+          type: 'parceiro'
+        }
+      })
+      .done(function(data) {
+        window.location.href = "https://minestore.typeform.com/to/DGbgoS";
+      })
+      .fail(function(data) {
+        mixpanel.track('Fail to capture Lead');
+        jQuery('.cta-form').addClass('shake');
+        jQuery('input[type="email"]').attr('placeholder', 'pode digitar o email de novo?').val('');
+        setTimeout(function() {
+          jQuery('.cta-form').removeClass('shake');
+        }, 500);
+      });
+
+    });
+
+  });
+</script>
