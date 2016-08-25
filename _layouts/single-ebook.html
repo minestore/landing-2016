@@ -8,8 +8,8 @@ layout: default
         <img src="{{ "/assets/img/" | prepend: site.baseurl }}{{ page.main_page_image }}" alt="" />
       </div>
       <div class="form-ebook large-4 large-pull-1 columns">
-        <h1>{{ page.main_page_title }}</h1>
-        {% include cta-header.html %}
+        <h1 id="ebook-title" data-rd-title="{{ page.ebook_rd }}">{{ page.main_page_title }}</h1>
+        {% include cta-ebook-header.html %}
       </div>
     </div>
 	</header>
@@ -39,4 +39,4 @@ layout: default
 	</div>
 </section>
 
-{% include cta-footer.html %}
+{% include cta-ebook-footer.html %}

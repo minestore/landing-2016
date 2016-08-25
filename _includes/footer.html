@@ -85,43 +85,15 @@
 <script src="{{ "/assets/vendor/foundation-sites/dist/foundation.min.js" | prepend: site.baseurl }}"></script>
 <script src="{{ "/assets/js/main.js" | prepend: site.baseurl }}"></script>
 <script type="text/javascript" src="https://d335luupugsy2.cloudfront.net/js/integration/stable/rd-js-integration.min.js"></script>  
-<script>
-  jQuery(function () {
-    jQuery('#create-store').click(function() {
-      email = jQuery('input[type="email"]').first().val();
-      if (email == '') {
-        email = jQuery('input[type="email"]').last().val()
-      }
-
-      jQuery.ajax({
-        url: "https://app.minestore.com.br/leads.json",
-        type: "POST",
-        data: {
-          email: email,
-          type: 'lead'
-        }
-      }).done(function(data) {
-        window.location.href = "https://app.minestore.com.br/criar-loja?email=" + data.email;
-      }).fail(function(data) {
-        mixpanel.track('Fail to capture Lead');
-        jQuery('.cta-form').addClass('shake');
-        jQuery('input[type="email"]').attr('placeholder', 'pode digitar o email de novo?').val('');
-        setTimeout(function() {
-          jQuery('.cta-form').removeClass('shake');
-        }, 500);
-      });
-    });
-  });
-</script>
-
-
 
 <script type="text/javascript">
-   var meus_campos = {
-       'email': 'email'
-    };
-   options = { fieldMapping: meus_campos };
-   RdIntegration.integrate('7fb48ac5a32815771ae19340276ad371', 'solicitou ebook como divulgar', options);  
+  var meus_campos = {
+      'email-book': 'email'
+   };
+  options = { fieldMapping: meus_campos };
+  RdIntegration.integrate('7fb48ac5a32815771ae19340276ad371', 'solicitou ebook ' + $("#ebook-title").data('rd-title'), options);  
 </script>
+
+
 
 
