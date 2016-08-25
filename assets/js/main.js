@@ -19,6 +19,12 @@ document.getElementById( "nav-toggle" ).addEventListener( "click", function() {
     createStore($('#email-box').val());
   });
 
+  $('#create-parceiro-box').on("click", function(event){
+    event.preventDefault();
+
+    createStore($('#email-box-parceiro').val());
+  });
+
   function createStore(email) {
     var payload = {
       email: email,
@@ -29,6 +35,11 @@ document.getElementById( "nav-toggle" ).addEventListener( "click", function() {
     .done(function(data) {
       window.location.href = "https://app.minestore.com.br/criar-loja?email=" + data.email;
     });
+    $.post("https://app.minestore.com.br/leads.json", payload)
+    .done(function(data) {
+        window.location.href = "https://minestore.typeform.com/to/DGbgoS";
+    });
+
   }
  
  /* JS ebook */
