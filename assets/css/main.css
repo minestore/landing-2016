@@ -4403,7 +4403,9 @@ h4 {
   .header-pg .navigation li > a {
     color: #fff; }
   .header-pg a {
-    margin-bottom: 0.5rem; } }
+    margin-bottom: 0.5rem; }
+  .hero-wrapper .title-hero header {
+    padding-left: 0; } }
 
 /**
  * Section steps
@@ -4835,14 +4837,16 @@ h4 {
   .tabs {
     padding: 0; }
   .tabs .tabs-title {
-    padding: 0.7rem; }
+    padding: 0.2rem; }
   .tabs-title > a {
     padding: 0 1rem;
     font-size: 1rem; }
   .box-nichos picture {
-    padding-bottom: 0; }
+    margin-bottom: 0; }
   .box-nichos picture:before {
     height: 450px; }
+  .box-comunidade.box-comunidade-home picture {
+    height: 23rem; }
   .box-comunidade {
     padding-bottom: 0; }
   .box-comunidade h2 {
@@ -5005,7 +5009,9 @@ h4 {
     padding: 2rem;
     border-bottom: 1px solid #f4ebe6; }
   .small-pull-5 {
-    left: -41.66667%; } }
+    left: -41.66667%; }
+  .box-funcionalidades .row {
+    padding: 0; } }
 
 /**
  * Box CTA
