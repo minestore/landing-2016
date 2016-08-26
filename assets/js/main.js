@@ -22,7 +22,7 @@ document.getElementById( "nav-toggle" ).addEventListener( "click", function() {
   $('#create-parceiro-box').on("click", function(event){
     event.preventDefault();
 
-    createStore($('#email-box-parceiro').val());
+    createPartner($('#email-box-parceiro').val());
   });
 
   function createStore(email) {
@@ -35,6 +35,13 @@ document.getElementById( "nav-toggle" ).addEventListener( "click", function() {
     .done(function(data) {
       window.location.href = "https://app.minestore.com.br/criar-loja?email=" + data.email;
     });
+  }
+
+  function createPartner(email) {
+    var payload = {
+      email: email,
+      type: 'email'
+    }
     $.post("https://app.minestore.com.br/leads.json", payload)
     .done(function(data) {
         window.location.href = "https://minestore.typeform.com/to/DGbgoS";
