@@ -4865,7 +4865,7 @@ h4 {
   z-index: 9997;
   overflow: hidden;
   padding: 5rem 3rem;
-  margin-left: 25rem;
+  left: 20rem;
   top: 10rem; }
 
 .box-ecommerce .text-position {
@@ -4925,9 +4925,8 @@ h4 {
  * Ipad ecommerce
  */
 @media only screen and (max-width: 90em) {
-  /*		.box-ecommerce {
-			margin-left:5rem;
-		}*/
+  .box-ecommerce {
+    left: 0; }
   .bg-mockup {
     background: url(../img/mockup-1.png) no-repeat top right; }
   .box-comunidade.box-comunidade-home .tabs, .tabs-content {
