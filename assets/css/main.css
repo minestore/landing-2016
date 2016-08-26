@@ -4848,7 +4848,9 @@ h4 {
   .box-comunidade {
     padding-bottom: 0; }
   .box-comunidade h2 {
-    font-size: 2rem !important; } }
+    font-size: 2rem !important; }
+  .box-nichos h4 {
+    font-size: 2rem; } }
 
 /**
  * Box Ecommerce
@@ -4999,7 +5001,7 @@ h4 {
  */
 @media only screen and (max-width: 90em) {
   .box-funcionalidades .row {
-    padding: 2rem; } }
+    padding: 0 2rem; } }
 
 /**
  * Mobile funcionalidades
@@ -5268,7 +5270,7 @@ h4 {
   border: 1px solid #ddd;
   padding: 1rem;
   margin-bottom: 3rem;
-  background: url(../img/arrow-links.svg) no-repeat 12rem 1.4rem; }
+  background: url(../img/arrow-links.svg) no-repeat 13rem 1.4rem; }
 
 .logo-parceiros a:hover {
   background: #fff2f8 url(../img/arrow-links.svg) no-repeat 12rem 1.4rem; }
@@ -5284,7 +5286,9 @@ h4 {
   .box-itens-parceiros li:last-child {
     margin-right: 15px; }
   .logo-parceiros ul li {
-    width: 30%; } }
+    width: 30%; }
+  .logo-parceiros a {
+    background: url(../img/arrow-links.svg) no-repeat 27rem 1.4rem; } }
 
 /**
  * Ipad comunidade
@@ -5300,7 +5304,9 @@ h4 {
   .box-itens-parceiros li {
     width: 100%; }
   .box-itens-parceiros li:last-child {
-    margin-right: 0; } }
+    margin-right: 0; }
+  .logo-parceiros a {
+    background: url(../img/arrow-links.svg) no-repeat 13rem 1.4rem; } }
 
 /**
  * Lojistas
@@ -5668,8 +5674,6 @@ h4 {
   .box-ebooks h1 {
     font-size: 1.5rem;
     padding: 3rem 0; }
-  .logo-parceiros a {
-    background: url(../img/arrow-links.svg) no-repeat 15rem 1.4rem; }
   .ebooks {
     margin: 2rem 0; }
   .single-ebook-virtual header, .single-ebook-facebook header {

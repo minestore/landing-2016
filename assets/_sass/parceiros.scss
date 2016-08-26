@@ -86,7 +86,7 @@
 		border: 1px solid #ddd;
 		padding: 1rem;
 		margin-bottom: 3rem;
-		background: url(../img/arrow-links.svg) no-repeat 12rem 1.4rem; 
+		background: url(../img/arrow-links.svg) no-repeat 13rem 1.4rem; 
 	}
 	.logo-parceiros a:hover {
 		background: #fff2f8 url(../img/arrow-links.svg) no-repeat 12rem 1.4rem; 
@@ -109,6 +109,9 @@
     .logo-parceiros ul li { 
       width: 30%; 
     } 
+    .logo-parceiros a {
+    	background: url(../img/arrow-links.svg) no-repeat 27rem 1.4rem;
+    }
   }
 /**
  * Ipad comunidade
@@ -127,6 +130,9 @@
 	}
 	.box-itens-parceiros li:last-child {
 		margin-right: 0;
+	}
+	.logo-parceiros a {
+		background: url(../img/arrow-links.svg) no-repeat 13rem 1.4rem;
 	}
 }
 
