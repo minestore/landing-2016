@@ -4855,9 +4855,9 @@ h4 {
   background: url(../img/mockup.png) no-repeat top right;
   position: relative;
   z-index: 9998;
-  margin-top: -650px;
   height: 726px;
-  margin-left: 64rem; }
+  right: -10rem;
+  top: -40rem; }
 
 .box-ecommerce {
   background: #f8f8f8;
@@ -4875,10 +4875,6 @@ h4 {
 .position-ecommerce {
   height: 85rem; }
 
-/*.bg-mockup {	
-		height: 726px;
-		width: 1176px;
-	}*/
 .bg-woman-bicycle {
   background: url(../img/woman-bicycle.jpg) no-repeat left top;
   position: absolute;
@@ -4888,13 +4884,6 @@ h4 {
   height: 1418px;
   right: 0; }
 
-/*.bg-mockup {
-		background: url(../img/mockup.png) no-repeat right bottom; 	
-		height:726px; 
-		width:100%;
-		position: relative;
-		z-index: 9999;
-	}*/
 .box-ecommerce h2 {
   color: #ee2778; }
 
@@ -4914,7 +4903,8 @@ h4 {
  */
 @media screen and (max-device-width: 1366px) {
   .bg-mockup {
-    margin-left: 40rem; } }
+    right: -20rem;
+    margin-left: 0; } }
 
 /**
  * mac ecommerce
@@ -4926,19 +4916,20 @@ h4 {
     width: 35rem;
     padding-bottom: 2rem; }
   .bg-mockup {
-    margin-left: 35rem;
+    right: -20rem;
     background: url(../img/mockup-1.png) no-repeat left bottom;
-    margin-top: -850px;
+    /*margin-top:-850px;*/
     height: 763px; } }
 
 /**
  * Ipad ecommerce
  */
 @media only screen and (max-width: 90em) {
-  .box-ecommerce {
-    margin-left: 5rem; }
+  /*		.box-ecommerce {
+			margin-left:5rem;
+		}*/
   .bg-mockup {
-    background: url(../img/mockup-1.png) no-repeat 0 5rem; }
+    background: url(../img/mockup-1.png) no-repeat top right; }
   .box-comunidade.box-comunidade-home .tabs, .tabs-content {
     padding-bottom: 0; }
   .box-comunidade.box-comunidade-home {
