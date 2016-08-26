@@ -4845,8 +4845,6 @@ h4 {
     margin-bottom: 0; }
   .box-nichos picture:before {
     height: 450px; }
-  .box-comunidade.box-comunidade-home picture {
-    height: 23rem; }
   .box-comunidade {
     padding-bottom: 0; }
   .box-comunidade h2 {
@@ -4958,12 +4956,14 @@ h4 {
     height: inherit;
     margin-top: 0; }
   .position-ecommerce {
-    height: 70rem;
+    height: 60rem;
     overflow: hidden; }
   .box-ecommerce {
     margin-left: 0;
     top: 0;
-    padding: 2rem 0 2rem 0; } }
+    padding: 2rem 0 2rem 0; }
+  .box-ecommerce .text-position {
+    width: 100%; } }
 
 /**
  * Box Funcionalidades
