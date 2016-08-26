@@ -17,7 +17,7 @@
 	    z-index: 9997;
 	    overflow: hidden;
 	    padding: 5rem 3rem;
-	    left: 20rem;
+	    left: 10rem;
 	    top:10rem;
 	}
 	.box-ecommerce .text-position {
@@ -84,6 +84,7 @@
 	@media only screen and (max-width: 90em) {
 		.box-ecommerce {
 			left:0;
+			margin-left: 0;
 		}
 		.bg-mockup {
 			background: url(../img/mockup-1.png) no-repeat top right;
@@ -97,10 +98,14 @@
 		.box-comunidade.box-comunidade-home .row {
 			padding: 0;
 		}
+		.box-ecommerce .text-position {
+			width: 65%;
+		}
+		
 	}
 	@media only screen and (max-width: 90em) and (orientation : portrait) { 
 		.bg-mockup {
-			background: inherit;
+			right: -30rem;
 		}
 	}
 
