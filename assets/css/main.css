@@ -2646,7 +2646,8 @@ body {
   width: 100%;
   overflow-x: hidden;
   position: relative;
-  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
   -webkit-overflow-scrolling: auto; }
 
 .off-canvas-wrapper-inner {
@@ -2664,7 +2665,8 @@ body {
   min-height: 100%;
   background: #fff;
   transition: transform 0.5s ease;
-  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
   z-index: 1;
   padding-bottom: 0.1px;
   box-shadow: 0 0 10px rgba(102, 102, 102, 0.5); }
@@ -3483,7 +3485,8 @@ table.hover tr:nth-of-type(even):hover {
   -ms-transform: translateY(-100%);
       transform: translateY(-100%);
   transition-property: transform, opacity;
-  backface-visibility: hidden; }
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden; }
 
 .slide-in-down.mui-enter.mui-enter-active {
   -ms-transform: translateY(0);
@@ -3495,7 +3498,8 @@ table.hover tr:nth-of-type(even):hover {
   -ms-transform: translateX(-100%);
       transform: translateX(-100%);
   transition-property: transform, opacity;
-  backface-visibility: hidden; }
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden; }
 
 .slide-in-left.mui-enter.mui-enter-active {
   -ms-transform: translateX(0);
@@ -3507,7 +3511,8 @@ table.hover tr:nth-of-type(even):hover {
   -ms-transform: translateY(100%);
       transform: translateY(100%);
   transition-property: transform, opacity;
-  backface-visibility: hidden; }
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden; }
 
 .slide-in-up.mui-enter.mui-enter-active {
   -ms-transform: translateY(0);
@@ -3519,7 +3524,8 @@ table.hover tr:nth-of-type(even):hover {
   -ms-transform: translateX(100%);
       transform: translateX(100%);
   transition-property: transform, opacity;
-  backface-visibility: hidden; }
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden; }
 
 .slide-in-right.mui-enter.mui-enter-active {
   -ms-transform: translateX(0);
@@ -3531,7 +3537,8 @@ table.hover tr:nth-of-type(even):hover {
   -ms-transform: translateY(0);
       transform: translateY(0);
   transition-property: transform, opacity;
-  backface-visibility: hidden; }
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden; }
 
 .slide-out-down.mui-leave.mui-leave-active {
   -ms-transform: translateY(100%);
@@ -3543,7 +3550,8 @@ table.hover tr:nth-of-type(even):hover {
   -ms-transform: translateX(0);
       transform: translateX(0);
   transition-property: transform, opacity;
-  backface-visibility: hidden; }
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden; }
 
 .slide-out-right.mui-leave.mui-leave-active {
   -ms-transform: translateX(100%);
@@ -3555,7 +3563,8 @@ table.hover tr:nth-of-type(even):hover {
   -ms-transform: translateY(0);
       transform: translateY(0);
   transition-property: transform, opacity;
-  backface-visibility: hidden; }
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden; }
 
 .slide-out-up.mui-leave.mui-leave-active {
   -ms-transform: translateY(-100%);
@@ -3567,7 +3576,8 @@ table.hover tr:nth-of-type(even):hover {
   -ms-transform: translateX(0);
       transform: translateX(0);
   transition-property: transform, opacity;
-  backface-visibility: hidden; }
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden; }
 
 .slide-out-left.mui-leave.mui-leave-active {
   -ms-transform: translateX(-100%);
@@ -4993,6 +5003,7 @@ h4 {
   vertical-align: middle;
   transform: translateZ(0);
   box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   transition-duration: .3s;
@@ -5007,6 +5018,7 @@ h4 {
   vertical-align: middle;
   transform: translateZ(0);
   box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   transition-duration: .3s;
@@ -5027,6 +5039,7 @@ h4 {
   vertical-align: middle;
   transform: translateZ(0);
   box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale; }
 
@@ -5045,6 +5058,7 @@ h4 {
   vertical-align: middle;
   transform: translateZ(0);
   box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale; }
 
@@ -5064,6 +5078,7 @@ h4 {
   vertical-align: middle;
   transform: translateZ(0);
   box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale; }
 
@@ -5085,6 +5100,7 @@ h4 {
   vertical-align: middle;
   transform: translateZ(0);
   box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale; }
 
@@ -5103,6 +5119,7 @@ h4 {
   vertical-align: middle;
   transform: translateZ(0);
   box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale; }
 
@@ -5117,6 +5134,7 @@ h4 {
   vertical-align: middle;
   transform: translateZ(0);
   box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   transition-duration: .5s; }
@@ -5131,6 +5149,7 @@ h4 {
   vertical-align: middle;
   transform: translateZ(0);
   box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   transition-duration: .5s; }
@@ -5145,6 +5164,7 @@ h4 {
   vertical-align: middle;
   transform: translateZ(0);
   box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   transition-duration: .3s;
@@ -5159,6 +5179,7 @@ h4 {
   vertical-align: middle;
   transform: translateZ(0);
   box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   transition-duration: .3s;
@@ -5173,6 +5194,7 @@ h4 {
   vertical-align: middle;
   transform: translateZ(0);
   box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   transition-duration: .3s;
@@ -5188,6 +5210,7 @@ h4 {
   vertical-align: middle;
   transform: translateZ(0);
   box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   transition-duration: .3s;
@@ -5215,6 +5238,7 @@ h4 {
   vertical-align: middle;
   transform: translateZ(0);
   box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale; }
 
@@ -5244,6 +5268,7 @@ h4 {
   vertical-align: middle;
   transform: translateZ(0);
   box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale; }
 
@@ -5261,6 +5286,7 @@ h4 {
   vertical-align: middle;
   transform: translateZ(0);
   box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   transition-duration: .3s;
@@ -5275,6 +5301,7 @@ h4 {
   vertical-align: middle;
   transform: translateZ(0);
   box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   transition-duration: .3s;
@@ -5291,6 +5318,7 @@ h4 {
   vertical-align: middle;
   transform: translateZ(0);
   box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   transition-duration: .3s;
@@ -5321,6 +5349,7 @@ h4 {
   vertical-align: middle;
   transform: translateZ(0);
   box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale; }
 
@@ -5349,6 +5378,7 @@ h4 {
   vertical-align: middle;
   transform: translateZ(0);
   box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale; }
 
@@ -5377,6 +5407,7 @@ h4 {
   vertical-align: middle;
   transform: translateZ(0);
   box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale; }
 
@@ -5405,6 +5436,7 @@ h4 {
   vertical-align: middle;
   transform: translateZ(0);
   box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale; }
 
@@ -5433,6 +5465,7 @@ h4 {
   vertical-align: middle;
   transform: translateZ(0);
   box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   -ms-transform-origin: 0 100%;
@@ -5463,6 +5496,7 @@ h4 {
   vertical-align: middle;
   transform: translateZ(0);
   box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   -ms-transform-origin: 100% 0;
@@ -5493,6 +5527,7 @@ h4 {
   vertical-align: middle;
   transform: translateZ(0);
   box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale; }
 
@@ -5513,6 +5548,7 @@ h4 {
   vertical-align: middle;
   transform: translateZ(0);
   box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale; }
 
@@ -5549,6 +5585,7 @@ h4 {
   vertical-align: middle;
   transform: translateZ(0);
   box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale; }
 
@@ -5563,6 +5600,7 @@ h4 {
   vertical-align: middle;
   transform: translateZ(0);
   box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   overflow: hidden;
@@ -5582,6 +5620,7 @@ h4 {
   vertical-align: middle;
   transform: translateZ(0);
   box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   overflow: hidden;
@@ -5603,6 +5642,7 @@ h4 {
   vertical-align: middle;
   transform: translateZ(0);
   box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
@@ -5638,6 +5678,7 @@ h4 {
   vertical-align: middle;
   transform: translateZ(0);
   box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
@@ -5673,6 +5714,7 @@ h4 {
   vertical-align: middle;
   transform: translateZ(0);
   box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
@@ -5708,6 +5750,7 @@ h4 {
   vertical-align: middle;
   transform: translateZ(0);
   box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
@@ -5743,6 +5786,7 @@ h4 {
   vertical-align: middle;
   transform: translateZ(0);
   box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
@@ -5779,6 +5823,7 @@ h4 {
   vertical-align: middle;
   transform: translateZ(0);
   box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
@@ -5815,6 +5860,7 @@ h4 {
   vertical-align: middle;
   transform: translateZ(0);
   box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
@@ -5851,6 +5897,7 @@ h4 {
   vertical-align: middle;
   transform: translateZ(0);
   box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
@@ -5887,6 +5934,7 @@ h4 {
   vertical-align: middle;
   transform: translateZ(0);
   box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
@@ -5923,6 +5971,7 @@ h4 {
   vertical-align: middle;
   transform: translateZ(0);
   box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
@@ -5959,6 +6008,7 @@ h4 {
   vertical-align: middle;
   transform: translateZ(0);
   box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
@@ -5993,6 +6043,7 @@ h4 {
   vertical-align: middle;
   transform: translateZ(0);
   box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
@@ -6027,6 +6078,7 @@ h4 {
   vertical-align: middle;
   transform: translateZ(0);
   box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
@@ -6063,6 +6115,7 @@ h4 {
   vertical-align: middle;
   transform: translateZ(0);
   box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
@@ -6099,6 +6152,7 @@ h4 {
   vertical-align: middle;
   transform: translateZ(0);
   box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
@@ -6135,6 +6189,7 @@ h4 {
   vertical-align: middle;
   transform: translateZ(0);
   box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
@@ -6170,6 +6225,7 @@ h4 {
   display: inline-block;
   vertical-align: middle;
   transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   transition-duration: .3s;
@@ -6183,6 +6239,7 @@ h4 {
   display: inline-block;
   vertical-align: middle;
   transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   transition-duration: .3s;
@@ -6197,6 +6254,7 @@ h4 {
   vertical-align: middle;
   transform: translateZ(0);
   box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   position: relative; }
@@ -6229,6 +6287,7 @@ h4 {
   vertical-align: middle;
   transform: translateZ(0);
   box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   position: relative; }
@@ -6259,6 +6318,7 @@ h4 {
   vertical-align: middle;
   transform: translateZ(0);
   box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   position: relative; }
@@ -6282,6 +6342,7 @@ h4 {
   vertical-align: middle;
   transform: translateZ(0);
   box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   position: relative; }
@@ -6308,6 +6369,7 @@ h4 {
   vertical-align: middle;
   transform: translateZ(0);
   box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   position: relative; }
@@ -6337,6 +6399,7 @@ h4 {
   vertical-align: middle;
   transform: translateZ(0);
   box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   transition-duration: .3s;
@@ -6350,6 +6413,7 @@ h4 {
   vertical-align: middle;
   transform: translateZ(0);
   box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
@@ -6376,6 +6440,7 @@ h4 {
   vertical-align: middle;
   transform: translateZ(0);
   box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
@@ -6403,6 +6468,7 @@ h4 {
   vertical-align: middle;
   transform: translateZ(0);
   box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
@@ -6429,6 +6495,7 @@ h4 {
   vertical-align: middle;
   transform: translateZ(0);
   box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
@@ -6455,6 +6522,7 @@ h4 {
   vertical-align: middle;
   transform: translateZ(0);
   box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
@@ -6482,6 +6550,7 @@ h4 {
   vertical-align: middle;
   transform: translateZ(0);
   box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
@@ -6508,6 +6577,7 @@ h4 {
   vertical-align: middle;
   transform: translateZ(0);
   box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
@@ -6538,6 +6608,7 @@ h4 {
   vertical-align: middle;
   transform: translateZ(0);
   box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
@@ -6567,6 +6638,7 @@ h4 {
   vertical-align: middle;
   transform: translateZ(0);
   box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
@@ -6596,6 +6668,7 @@ h4 {
   vertical-align: middle;
   transform: translateZ(0);
   box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   transition-duration: .3s;
@@ -6609,6 +6682,7 @@ h4 {
   vertical-align: middle;
   transform: translateZ(0);
   box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   transition-duration: .3s;
@@ -6622,6 +6696,7 @@ h4 {
   vertical-align: middle;
   transform: translateZ(0);
   box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   transition-duration: .3s;
@@ -6637,6 +6712,7 @@ h4 {
   vertical-align: middle;
   transform: translateZ(0);
   box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   transition-duration: .3s;
@@ -6649,6 +6725,7 @@ h4 {
   display: inline-block;
   vertical-align: middle;
   transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   transition-duration: .3s;
@@ -6663,6 +6740,7 @@ h4 {
   vertical-align: middle;
   transform: translateZ(0);
   box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
@@ -6697,6 +6775,7 @@ h4 {
   vertical-align: middle;
   transform: translateZ(0);
   box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   position: relative; }
@@ -6729,6 +6808,7 @@ h4 {
   vertical-align: middle;
   transform: translateZ(0);
   box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   position: relative; }
@@ -6755,6 +6835,7 @@ h4 {
   vertical-align: middle;
   transform: translateZ(0);
   box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   position: relative; }
@@ -6781,6 +6862,7 @@ h4 {
   vertical-align: middle;
   transform: translateZ(0);
   box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   position: relative; }
@@ -6807,6 +6889,7 @@ h4 {
   vertical-align: middle;
   transform: translateZ(0);
   box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   position: relative; }
@@ -6833,6 +6916,7 @@ h4 {
   vertical-align: middle;
   transform: translateZ(0);
   box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
@@ -6864,6 +6948,7 @@ h4 {
   vertical-align: middle;
   transform: translateZ(0);
   box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
@@ -6895,6 +6980,7 @@ h4 {
   vertical-align: middle;
   transform: translateZ(0);
   box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
@@ -6926,6 +7012,7 @@ h4 {
   vertical-align: middle;
   transform: translateZ(0);
   box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
@@ -6957,6 +7044,7 @@ h4 {
   vertical-align: middle;
   transform: translateZ(0);
   box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
@@ -6983,6 +7071,7 @@ h4 {
   vertical-align: middle;
   transform: translateZ(0);
   box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
@@ -7015,6 +7104,7 @@ h4 {
   vertical-align: middle;
   transform: translateZ(0);
   box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
@@ -7044,6 +7134,7 @@ h4 {
   vertical-align: middle;
   transform: translateZ(0);
   box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
@@ -7067,6 +7158,7 @@ h4 {
   vertical-align: middle;
   transform: translateZ(0);
   box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
@@ -7100,6 +7192,7 @@ h4 {
   vertical-align: middle;
   transform: translateZ(0);
   box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
@@ -7128,6 +7221,7 @@ h4 {
   vertical-align: middle;
   transform: translateZ(0);
   box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
@@ -7158,6 +7252,7 @@ h4 {
   vertical-align: middle;
   transform: translateZ(0);
   box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
@@ -7191,6 +7286,7 @@ h4 {
   vertical-align: middle;
   transform: translateZ(0);
   box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
@@ -7218,6 +7314,7 @@ h4 {
   vertical-align: middle;
   transform: translateZ(0);
   box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
@@ -7243,6 +7340,7 @@ h4 {
   vertical-align: middle;
   transform: translateZ(0);
   box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
@@ -7275,6 +7373,7 @@ h4 {
   vertical-align: middle;
   transform: translateZ(0);
   box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
@@ -7304,6 +7403,7 @@ h4 {
   vertical-align: middle;
   transform: translateZ(0);
   box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
@@ -7334,6 +7434,7 @@ h4 {
   vertical-align: middle;
   transform: translateZ(0);
   box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
@@ -7364,6 +7465,7 @@ h4 {
   vertical-align: middle;
   transform: translateZ(0);
   box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
@@ -7396,6 +7498,7 @@ h4 {
   vertical-align: middle;
   transform: translateZ(0);
   box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
@@ -7424,6 +7527,7 @@ h4 {
   vertical-align: middle;
   transform: translateZ(0);
   box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
@@ -7451,6 +7555,7 @@ h4 {
   vertical-align: middle;
   transform: translateZ(0);
   box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
@@ -7477,6 +7582,7 @@ h4 {
   vertical-align: middle;
   transform: translateZ(0);
   box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
@@ -7503,6 +7609,7 @@ h4 {
   vertical-align: middle;
   transform: translateZ(0);
   box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
@@ -7529,6 +7636,7 @@ h4 {
   vertical-align: middle;
   transform: translateZ(0);
   box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
@@ -7567,6 +7675,7 @@ h4 {
   vertical-align: middle;
   transform: translateZ(0);
   box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
@@ -7607,6 +7716,7 @@ h4 {
   vertical-align: middle;
   transform: translateZ(0);
   box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
@@ -7649,6 +7759,7 @@ h4 {
   vertical-align: middle;
   transform: translateZ(0);
   box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
@@ -7688,6 +7799,7 @@ h4 {
   vertical-align: middle;
   transform: translateZ(0);
   box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
@@ -7719,6 +7831,7 @@ h4 {
   vertical-align: middle;
   transform: translateZ(0);
   box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
@@ -7766,6 +7879,7 @@ h4 {
   vertical-align: middle;
   transform: translateZ(0);
   box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
@@ -7791,6 +7905,7 @@ h4 {
   vertical-align: middle;
   transform: translateZ(0);
   box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   position: relative; }
@@ -7820,6 +7935,7 @@ h4 {
   vertical-align: middle;
   transform: translateZ(0);
   box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   position: relative; }
@@ -7847,6 +7963,7 @@ h4 {
   vertical-align: middle;
   transform: translateZ(0);
   box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   position: relative; }
@@ -7874,6 +7991,7 @@ h4 {
   vertical-align: middle;
   transform: translateZ(0);
   box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   position: relative; }
