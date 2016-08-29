@@ -29,7 +29,7 @@ $blue:			   #4192af;
 $green:			   #77b075;
 $purple-light:	   #9e84c3;
 $pink-light:	   #ffbad7;
-$purple:		   #7d95ff;		
+$purple:		   #7d95ff;
 $white:			   #fff;
 $grey:			   #333;
 $black:			   #666;
@@ -105,9 +105,10 @@ $on-laptop:        800px;
 @import 'box-cta';
 @import 'recursos';
 @import 'parceiros';
-@import 'lojistas';
+@import 'comunidade';
 @import 'precos';
+@import 'ebooks';
 @import 'footer';
 @import 'hover';
-
-
+@import 'termos_uso';
+@import 'politica_privacidade';

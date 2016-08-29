@@ -6,27 +6,47 @@
 	margin-bottom: 10rem;
 }
 	.box-recursos  header {
-		background: url(../img/man-phone.jpg) no-repeat top center; 
+		background: url(../img/man-phone.jpg) no-repeat top center;
 		height: 403px;
 		margin-bottom: 3rem;
+		background-size: cover;
 	}
-		.box-recursos .page-title h1 {
-			color:$white;
-			font-size: 3rem;
-			font-weight: $extra-light;
-			padding: 8rem 0;
-		}
-		.vertical li a {
-			font-weight: $medium;
-			font-size: 1rem;
-			color:$grey-color;
-			padding: 1.5rem;
-		}
-		.vertical li a:hover, .vertical li a.active {
-			background: #f6f6f6;
-			color:$pink;
-			text-decoration: none;
-		}
+	.box-recursos .page-title h1 {
+		color:$white;
+		font-size: 3rem;
+		font-weight: $extra-light;
+		padding: 8rem 0;
+	}
+	.vertical li a {
+		font-weight: $medium;
+		font-size: 1rem;
+		color:$grey-color;
+		padding: 1.5rem;
+	}
+	.vertical li a:hover, .vertical li a.active {
+		background: #f6f6f6;
+		color:$pink;
+		text-decoration: none;
+	}
+	.accordion li a {
+		font-weight: $medium;
+		font-size: 1rem;
+		color:$pink;
+		padding: 1.5rem;
+	}
+	.accordion li a:hover {
+		background: #f6f6f6;
+		text-decoration: none;
+	}
+	.accordion h3 {
+		font-weight: bold;
+	}
+	.accordion p {
+		margin-bottom: 1.6rem;
+	}
+	.accordion-title::before {
+		color:$grey-color;
+	}
 	.text-aside h2 {
 		color:$pink;
 		margin:3rem 0;
@@ -34,14 +54,14 @@
 		font-size: 1.5rem;
 	}
 	.text-aside #temas h2 {
-		margin-top: 0; 
+		margin-top: 0;
 	}
 	.text-aside img {
 		margin-bottom: 3rem;
 	}
 	.sections h3 {
 		font-weight: bold;
-	}	
+	}
 	.sections section {
 		border-top: 1px solid $grey-light;
 	}
@@ -51,3 +71,12 @@
 	.sections p {
 		margin-bottom: 4rem;
 	}
+
+/** 
+* Mobile recursos 
+*/ 
+@media only screen and (max-width: 40em) { 
+  .box-recursos .page-title h1 { 
+    font-size: 2rem; 
+  } 
+}

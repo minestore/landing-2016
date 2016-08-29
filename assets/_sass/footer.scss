@@ -41,23 +41,28 @@
 		height: 46px;
 		width: 46px;
 		display: block;
-	}	
+	}
+	.box-redes .links-redes a:hover {
+		opacity: 0.7;
+    	filter: alpha(opacity=50); /* For IE8 and earlier */
+	}
 	.box-redes .text-redes {
-		padding: 2rem 10rem;
-		overflow: hidden;
+		padding: 2rem 0;
+	    display: table;
+    	margin: 0 auto;
 	}
 	.box-redes .links-redes li {
 		float: left;
 		 margin: 0 1rem;
 	}
 	.box-redes .links-redes .face {
-		background: url(../img/icon-face.png) no-repeat 0 0; 
+		background: url(../img/icon-face.png) no-repeat 0 0;
 	}
 	.box-redes .links-redes .twitter {
-		background: url(../img/icon-face.png) no-repeat 0 0; 
+		background: url(../img/icon-twitter.png) no-repeat 0 0;
 	}
 	.box-redes .links-redes .youtube {
-		background: url(../img/icon-face.png) no-repeat 0 0; 
+		background: url(../img/icon-youtube.png) no-repeat 0 0; 
 	}
 	.box-redes .logo-mine-pink {
 		height: 51px;
@@ -65,3 +70,23 @@
 		margin: 1rem 0;
 
 	}
+/**
+ * Ipad comunidade
+ */
+	@media only screen and (max-width: 90em) and (orientation : portrait) { 
+		.box-redes .text-redes {
+			padding: 2rem 0;
+		}
+	}
+/**
+ * Mobile footer
+ */
+ @media only screen and (max-width: 40em) {
+ 	.box-redes .text-redes {
+ 		padding:0;
+ 		margin:2rem 0;
+ 	}
+ 	.box-redes .links-redes li {
+ 		margin-left: 2rem;
+ 	}
+ }

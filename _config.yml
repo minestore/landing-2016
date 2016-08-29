@@ -1,7 +1,7 @@
 # Site settings
 title: minestore new
 email: contato@minestore.com.br
-baseurl: "/minestore-new"
+baseurl: "/landing-2016"
 url: "http://yourdomain.com"
 sass:
   load_paths:
@@ -9,5 +9,9 @@ sass:
 
 # Build settings
 markdown: kramdown
+permalink: /:title
 exclude :
+  - bower.json
   - node_modules
+  - package.json
+  - Rakefile

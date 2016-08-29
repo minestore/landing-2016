@@ -1,13 +1,15 @@
 ---
 layout: default
 title: Preços
-permalink: /precos
+permalink: /preco
+
+cta_text: Aqui não se<br> cadastrou?<br> Aproveite!
 ---
 
 <section class="box-precos">
 	<header>
-		<div class="large-6 large-centered columns text-center">
-			<h1>O empurrãozinho que faltava pra você vender pela internet!</h1>
+		<div class="large-centered columns text-center">
+			<h1>O empurrãozinho que faltava pra <br>você vender pela internet!</h1>
 		</div>
 	</header>
 
@@ -20,22 +22,43 @@ permalink: /precos
       </p>
     </div>
     <form class="large-16 columns box-form">
-      <div class="row">
-        <div class="large-3 large-push-3 columns">
-            <input class="input-txt" type="text" id="email" placeholder="E-mail">
-          </label>
+      <div class="row cta-preco">
+        <div class="large-4 large-push-3 small-12 columns"> 
+          <input class="input-txt" type="text" id="email" placeholder="E-mail">
         </div>
-        <div class="large-4 large-pull-2 columns">
-            <button class="hvr-sweep-to-right btn-cta" type="button" id="create" value="Crie sua loja">Crie sua loja</button>
-          </label>
-        </div>
+          <button class="hvr-sweep-to-right btn-cta small-12 large-2 button" type="button" id="create" value="Crie sua loja">Crie sua loja</button> 
       </div>
     </form>
 	</div>
-
-
-
-  <div class="row box-itens">
+  <div class="box-itens">
+    <div class="row small-up-1 medium-up-2 large-up-4">
+      <div class="column">
+          <h4>Instalação gratuita</h4>
+      </div>
+      <div class="column">
+          <h4>Produtos ilimitados</h4>
+      </div>
+      <div class="column">
+          <h4>Acessos ilimitados</h4>
+      </div>
+      <div class="column">
+          <h4>Temas gratuitos</h4>
+      </div>
+      <div class="column">
+          <h4>Suporte exclusivo</h4>
+      </div>
+      <div class="column">
+          <h4>Pronto para mobile</h4>
+      </div>
+      <div class="column">
+          <h4>Segurança e confidencialidade</h4>
+      </div>
+      <div class="column">
+          <h4>Focada para conversão de vendas</h4>
+      </div>
+    </div>
+  </div>
+  <!--<div class="row box-itens">
     <ul>
       <li class="large-3 large-up-3 columns">Instalação gratuita</li>
       <li class="large-3 columns">Acessos ilimitados</li>
@@ -46,10 +69,11 @@ permalink: /precos
       <li class="large-3 columns">Pronto para mobile</li>
       <li class="large-3 columns">Focada para conversão de vendas</li>
     </ul>
-  </div>
+  </div>-->
 
   <section class="box-depoimentos">
-  {% include slider.html slider_posts=site.categories.landing-home %}
+        {% include slider.html slider_posts=site.categories.landing-home-testimony %}
+
   </section>
 
 
@@ -115,4 +139,4 @@ permalink: /precos
 
 </section>
 
-{% include box-cta.html %}
+{% include box-cta.html  cta_text=page.cta_text %}

@@ -27,7 +27,13 @@
 	}
 	.box-comunidade .tabs {
 		border-bottom: 1px solid #ccc;
+		display: table;
+    	margin: 0 auto;
+
 	}	
+	.box-comunidade .columns {
+		padding:3rem 0;
+	}
 	.box-nichos .tabs-panel:nth-child(2) h4 {
 		color:#a4cfde;
 	}
@@ -50,7 +56,6 @@
 			text-align: center;
 			line-height: 18px;
 			font-size: 1rem;
-			padding: 2rem 0rem 2rem 6rem;
 			color:$grey-color
 		}
 		.tabs, .tabs-content {
@@ -85,9 +90,6 @@
 	    top: -69px;
 	    padding-bottom: 8px;
 	}
-		.box-nichos:nth-child(2) picture:before {
-			background: #fff2f8;
-		}
 	.box-nichos img {
 		position: absolute;
 	    z-index: 9999;
@@ -106,3 +108,42 @@
 		position: relative;
 		z-index: 9999;
 	}
+ /**
+ * Ipad comunidade
+ */
+	@media only screen and (max-width: 90em) and (orientation : portrait) { 
+		.tabs {
+			padding: 0;
+		}
+		.box-nichos picture {
+			padding-bottom: 13rem;
+			padding-left: 0;
+		}
+	}
+/**
+ * Mobile comunidade
+ */
+@media only screen and (max-width: 40em) {
+	.tabs {
+		padding:0;
+	}
+	.tabs .tabs-title {
+		width: 100%;
+		padding: 0.7rem;
+	}
+	.tabs-title > a {
+		padding: 0 1rem;
+	}
+	.box-nichos picture {
+		padding-bottom: 0;
+	}
+	.box-nichos picture:before {
+		height: 450px;
+	}
+	.box-comunidade {
+		padding-bottom: 0;
+	}
+	.box-comunidade h2 {
+		font-size: 2rem!important;
+	}
+}

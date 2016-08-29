@@ -1,7 +1,14 @@
 /**
  * Home
  */ 
-
+main {
+    overflow: hidden;
+}
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
  .btn-cta-small {
 	background: $pink;
 	border-radius: 3px;
@@ -39,7 +46,6 @@
     height: 70px;
 }
 .form-cta .btn-cta {
-    width: 25rem;
     font-weight: $medium;
     font-size: 1.2rem;
     background: $pink;
@@ -63,6 +69,12 @@
 .hvr-underline-from-center:before {
     background: #ff408d!important;
     height: 2px!important;
+}
+ /**
+ * Menu
+ */ 
+.off-canvas-content, .off-canvas-content {
+    background: inherit;
 }
  /**
  * Titulos

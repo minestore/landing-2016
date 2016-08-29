@@ -3,26 +3,30 @@
  * Box Ecommerce
  */
 .bg-mockup {
-	background:  url(../img/mockup.png) no-repeat right bottom; 
-	overflow: hidden;
+	background:  url(../img/mockup.png) no-repeat top right; 
     position: relative;
-    z-index: 9999;
-    margin-top: 8rem;
-    padding: 5rem;
-    padding-right: 35rem;
-    top: 200px;
+    z-index: 9998;
+    margin-top: -650px;
     height: 726px;
+    margin-left: 64rem;
     
 }
 	.box-ecommerce {
 		background: #f8f8f8;
 	    position: relative;
-	    z-index: 9998;
+	    z-index: 9997;
 	    overflow: hidden;
-	    top: -500px;
-	    padding: 5rem;
-	    width: 100%;	
-}
+	    padding: 5rem 3rem;
+	    margin-left: 25rem;
+	    top:10rem;
+	}
+	.box-ecommerce .text-position {
+		position: relative;
+		z-index: 9999;
+	}
+	.position-ecommerce {
+		height: 85rem;
+	}
 	/*.bg-mockup {	
 		height: 726px;
 		width: 1176px;
@@ -57,3 +61,59 @@
 		height: 726px;
 		width: 560px;
 	}
+	@media screen and (max-device-width: 1280px) {
+		.box-ecommerce {
+			margin-left: 15rem;
+		}
+		.text-position h2 {
+			width: 35rem!important;
+    		padding-bottom: 2rem!important;
+		}
+		.bg-mockup {
+			margin-left:35rem;
+			background: url(../img/mockup-1.png) no-repeat left bottom; 
+			margin-top:-850px;
+			height: 763px;
+		}
+
+	}
+/**
+ * Ipad ecommerce
+ */
+	@media only screen and (max-width: 90em) {
+		.box-ecommerce {
+			margin-left:5rem;
+		}
+		.bg-mockup {
+			background: url(../img/mockup-1.png) no-repeat 0 5rem;
+		}
+	}
+	@media only screen and (max-width: 90em) and (orientation : portrait) { 
+		.bg-mockup {
+			background: inherit;
+		}
+	}
+
+/**
+ * Mobile ecommerce
+ */
+	@media only screen and (max-width: 40em) {
+		.bg-woman-bicycle {
+			background: 0;
+			height: inherit;
+		}
+		.bg-mockup {
+			height: inherit;
+			margin-top: 0;
+		}
+		.position-ecommerce {
+			height: 70rem;
+			overflow: hidden;
+		}
+		.box-ecommerce {
+			margin-left: 0;
+			top:0;
+			padding: 2rem 0 2rem 0;
+		}
+	}
+

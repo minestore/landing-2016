@@ -1,0 +1,49 @@
+---
+layout: post
+title:  "Temas (templates)"
+date:   2016-07-28 17:20:27 -0300
+categories: recursos
+
+link: temas
+
+images:
+ - title: Frame Black
+   archive: frame-black.jpg
+ - title: Frame Light
+   archive: frame-light.jpg
+ - title: Frame Color
+   archive: frame-color.jpg
+ - title: Topaz
+   archive: topaz.jpg
+ - title: Sapphire White
+   archive: sapphire-white.jpg
+ - title: Sapphire Black
+   archive: sapphire-black.jpg
+ - title: Sapphire
+   archive: sapphire.jpg
+ - title: Opala Light
+   archive: opala-light.jpg
+ - title: Opala Flowers
+   archive: opala-flowers.jpg
+ - title: Opala Black
+   archive: opala-black.jpg
+ - title: Onyx Light
+   archive: onyx-light.jpg
+ - title: Onyx
+   archive: onyx.jpg
+ - title: Leaf
+   archive: leaf.jpg
+ - title: Crystal
+   archive: crystal.jpg
+ - title: City
+   archive: city.jpg
+---
+
+<div class="row small-up-2">
+  {% for img in page.images %}
+    <div class="column">
+        <h3>{{ img.title }}</h3>
+        <img src="{{ "/assets/img/" | prepend: site.baseurl }}{{ img.archive }}" alt="{{ img.title }}" />
+    </div>
+  {% endfor %}
+</div>

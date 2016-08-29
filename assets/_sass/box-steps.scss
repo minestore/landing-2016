@@ -15,13 +15,16 @@
     height: 100%;
     right: 0;
 }
-
 .container-steps {
 	padding-top:5%;
 	background:#f8f8f8;
 }	
 	.container-steps h2 {
 		color:$pink;		
+	}
+	.container-steps header {
+		position: relative;
+		z-index: 9999;
 	}
 		.box-steps {
 			margin-top: 3rem;
@@ -47,12 +50,40 @@
 				.box-steps div {
 					background: $white;
 					margin:1rem;
-				    position: relative;
-				    z-index: 9999;
-				    padding: 1rem;
+    				position: relative;
+    				z-index: 9997;				    
+    				padding: 1rem;
+    				top: -2rem;
 				}
-				.box-steps .media-object {
-					width: 35.5rem;
+				.box-steps .media-object:before {
+					content: ' ';
+					background: url(../img/arrow-steps.png) no-repeat 0 0; 
+					width: 143px;
+					height: 61px;
+					position: relative;
+					z-index: 9999;
+					display: block;
+				}
+				.box-steps .media-object:nth-child(1):before {
+					background: none;
+				}
+				.box-steps .media-object:nth-child(2):before {
+					right: 6rem;
+				}
+				.box-steps .media-object:nth-child(3):before {
+					top: -2rem;
+					left: 25rem;
+					right: 0;
+ 					-moz-transform: scaleX(-1);
+        			-o-transform: scaleX(-1);
+        			-webkit-transform: scaleX(-1);
+        			transform: scaleX(-1);
+        			filter: FlipH;
+        			-ms-filter: "FlipH";
+				}
+				.box-steps .media-object:nth-child(4):before {
+					top: 2rem;
+					right: 6rem;
 				}
 				.box-steps .media-object:nth-child(2){
 					margin-top: 70px;
@@ -70,3 +101,68 @@
 				.box-steps .columns:last-child {
 					float: left;
 				}
+
+
+/**
+* Large 1280
+*/
+	@media only screen and (max-width: 80em) {
+		.bg-women {
+			background: url(../img/woman-clothes-1.jpg) no-repeat right 30rem;
+		}
+		.box-steps .media-object {
+			width: 25rem;
+		}
+		.box-steps .media-object:nth-child(3):before {
+			left: 20rem;
+		}
+	}		
+ /**
+ * Ipad comunidade
+ */
+	@media only screen and (max-width: 90em) {
+		.container-steps h2 {
+			font-size: 2rem;
+		}
+	@media only screen and (max-width: 90em) and (orientation : portrait) { 
+		.box-steps .media-object {
+			width: 20rem;
+		}
+	}
+/**
+* Mobile header
+*/		
+	@media only screen and (max-width: 40em) { 	
+		.container-steps {
+			padding-top: 10%;
+		}	
+		.bg-women, .box-steps .media-object:before {
+			background: none; 
+		}
+		.box-steps .media-object:nth-child(2) {
+			margin-top: 0;
+		}
+		.box-steps .media-object:nth-child(3) {
+			margin-top:0;
+		}
+		.box-steps .media-object {
+			width: 100%;
+			margin: 0;
+			margin-bottom: 2rem;
+		}
+	}
+
+	/*@media only screen (max-width: 40em) and(orientation : portrait) {
+		.box-steps .media-object {
+			background: #f00;
+		}*/
+	}
+
+	/* STYLES GO HERE */ 
+    /*$small-range: (0em, 40em); /* 0, 640px /
+	$medium-range: (40.063em, 64em); / 641px, 1024px /
+	$large-range: (64.063em, 90em); / 1025px, 1440px /
+	$xlarge-range: (90.063em, 120em); / 1441px, 1920px /
+	$xxlarge-range: (120.063em); / 1921px */
+	
+

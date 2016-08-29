@@ -1,14 +1,15 @@
 /**
  * Home
  */
-
-
 .tp-header {
     padding-top: 1rem;
 }
 .bg-home {
-	background: url(../img/banner-hero.jpg) no-repeat top center; 
+	background: url(../img/banner-hero.jpg) no-repeat top center;
 	font-style: normal;
+	background-size: cover;
+	position: relative;
+	top:0;
 }
 .tp-header {
 
@@ -17,7 +18,6 @@
 		display: block;
 		height:52px;
 		width:181px;
-		margin-top:10px;
 	}
 	.navigation {
 		list-style: none;
@@ -29,33 +29,40 @@
 		.navigation li > a {
 			color: $white;
 			text-transform: capitalize;
-			margin: 0.5rem 1.5rem;
 			font-weight: $medium;
+			display: inline-block;
+			line-height: 30px;
+			margin: 0.7rem 1rem;
+    		padding: 0 0 0.2rem 0;
 		}
 		.navigation li:last-child > a {
-			padding: 1rem;
 			margin-left: 1.5rem;
 		}
-
+		.menu-home li {
+			padding:0;
+			margin:0;
+		}
+		.header-pg .logo-mine {
+			margin-top: -10px!important;
+		}	
 /**
  * Hero
  */
 
 .hero-wrapper {
 	color:$white;
-	
+	padding: 10rem 0;
+
 }		
 	.hero-wrapper h2 {
 		font-size:  1.5rem;
-	}
-	.title-hero {
-		margin: 10rem 0 15.4rem 0;
 	}
 
 
 /**
  * Header page
  */
+
  .header-pg {
  	border-bottom: 1px solid #DDD; 	
  }
@@ -78,5 +85,118 @@
 	.header-pg .navigation li:last-child > a:hover {
 		color:$white;
 	}
+	.top-bar, .top-bar ul {
+		background: inherit;
+	}
 
+/**
+ * Ipad comunidade
+ */
 
+  @media only screen and (max-width: 90em) {
+	.title-bar {
+		background: inherit;
+	}
+
+/* Menu mobile */
+	.top-bar, .top-bar ul {
+		background-color: inherit;
+		position: fixed;
+		left:0;
+		top:5rem;
+		width: 100%;
+		height: 100%;
+		z-index: 9999;
+	}
+	.is-drilldown {
+		overflow: inherit;
+		position: inherit;
+	}
+	.title-bar {
+		background: inherit;
+	}
+	.top-bar, .top-bar ul {
+		background: #5a424c;
+		top: 0;
+		text-align: center;
+		padding-top: 2rem;
+	}
+	.tab-bar .menu-icon {
+	    color: #FFFFFF;
+	    display: block;
+	    height: 2.5rem;
+	    padding: 0;
+	    position: fixed;
+	    top:0.9rem;
+	    right:0.9rem;
+	    text-indent: 1.94444rem;
+	    transform: translate3d(0, 0, 0);
+	    width: 2.5rem;
+	    z-index: 99999;
+	}
+	.tab-bar .menu-icon span::after {
+	    content: "";
+	    display: block;
+	    height: 0;
+	    position: absolute;
+	    top: 50%;
+	    margin-top: -0.44444rem;
+	    left: 0.80556rem;
+	    box-shadow: 0 0 0 1px #FFFFFF, 0 7px 0 1px #FFFFFF, 0 14px 0 1px #FFFFFF;
+	    -webkit-box-shadow: 0 0 0 1px #FFFFFF, 0 7px 0 1px #FFFFFF, 0 14px 0 1px #FFFFFF;
+	    width: 1.5rem;
+	}
+	.header-pg .tab-bar .menu-icon span::after {
+	    box-shadow: 0 0 0 1px #666, 0 7px 0 1px #666, 0 14px 0 1px #666;
+	    -webkit-box-shadow: 0 0 0 1px #666, 0 7px 0 1px #666, 0 14px 0 1px #666;
+	}
+	#nav-toggle.active span::after {
+	   box-shadow: 0 0 0 1px #fff, 0 7px 0 1px #fff, 0 14px 0 1px #fff;
+		-webkit-box-shadow: 0 0 0 1px #fff, 0 7px 0 1px #fff, 0 14px 0 1px #fff;
+	}	
+	.header-pg .navigation li > a {
+		color: #fff;
+	}
+  }
+
+@media only screen and (max-width: 90em) and (orientation : landscape) { 
+	.top-bar, .top-bar ul {
+		background: inherit;
+		position: inherit;
+		left: inherit;
+		padding-top: inherit;
+	}
+	.top-bar[aria-expanded="true"] {
+		background: #f00;
+	}
+	.header-pg .tab-bar .menu-icon span::after{
+		box-shadow: 0 0 0 1px #fff, 0 7px 0 1px #fff, 0 14px 0 1px #fff;
+	    -webkit-box-shadow: 0 0 0 1px #fff, 0 7px 0 1px #fff, 0 14px 0 1px #fff;
+	}
+} 
+/**
+* Large 1280
+*/
+	@media only screen and (max-width: 80em) {
+		.hero-wrapper {
+			padding:6rem 0;
+			padding-left: 2rem;
+		}
+	}
+
+/**
+* Mobile header
+*/
+@media only screen and (max-width: 40em) {
+	.logo-mobile .logo-mine {
+		height: 40px;
+		width:150px;
+	}
+	.hero-wrapper {
+		padding:8rem 2rem;
+	}
+	.bg-home {
+		background-size: inherit;
+	}
+
+}

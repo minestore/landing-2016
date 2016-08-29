@@ -1,0 +1,48 @@
+---
+layout: default
+title: Comunidade
+permalink: /comunidade
+
+cta_text: Faça parte da nossa comunidade
+---
+
+<section class="row container-comunidade">
+	<header class="text-center">
+		<h1>A comunidade minestore</h1>
+		<h2 class="large-7 columns large-centered">Nós temos muito orgulho da nossa comunidade de lojistas. Eles são protagonistas do movimento slow e trabalham diariamente para criar produtos de qualidade. Cada vez que alguém desse grupo conquista alguma vitória, vibramos junto! </h2>
+		<h3>Confira algumas das marcas que usam a nossa plataforma:</h3>
+	</header>
+	<article class="box-comunidade">
+
+		{% for post in site.categories.shopkeepers %}
+			{% capture theCycle %}{% cycle 'odd', 'even' %}{% endcapture %}
+
+			{% if theCycle == 'odd' %}
+				<div class="row">
+					<div class="large-6 columns">
+						<picture><img src="{{ "/assets/img/" | prepend: site.baseurl }}{{ post.image }}" alt=""></picture>
+					</div>
+					<div class="large-5 columns large-pull-1  fewer-styles">
+						<h2 class="{{post.title_color}}">{{ post.title }}</h2>
+						<p>{{ post.paragraph }}</p>
+						<a href="{{ post.site_url }}" target="_blank">Visite o site</a>
+					</div>
+				</div>
+		  {% else %}
+				<div class="row">
+					<div class="large-6 large-push-6 columns">
+						<picture><img src="{{ "/assets/img/" | prepend: site.baseurl }}{{ post.image }}" alt=""></picture>
+					</div>
+					<div class="large-5 large-pull-6 columns mui">
+						<h2 class="{{post.title_color}}">{{ post.title }}</h2>
+						<p>{{ post.paragraph }}</p>
+						<a href="{{ post.site_url }}" target="_blank">Visite o site</a>
+					</div>
+				</div>
+		  {% endif %}
+	  {% endfor %}
+
+	</article>
+</section>
+
+{% include box-cta.html  cta_text=page.cta_text %}
